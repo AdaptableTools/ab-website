@@ -1,7 +1,6 @@
 ---
-templateKey: 'adaptable-blotter-page'
-path: /other-data-tools-partners
-title: Other data tools (Partners)
+templateKey: adaptable-blotter-page
+title: Other data tools....
 ---
 
 ### Shade-grown coffee
