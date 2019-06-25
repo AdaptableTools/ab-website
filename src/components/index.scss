@@ -1,0 +1,19 @@
+html,
+body,
+#___gatsby,
+#___gatsby > :first-child {
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+  flex: 1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.columns:last-child {
+  margin-bottom: 0px;
+}
