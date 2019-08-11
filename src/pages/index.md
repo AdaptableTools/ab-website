@@ -2,20 +2,20 @@
 templateKey: index-page
 title: 'Transform your relationship to Data '
 image: /img/home-jumbotron.jpg
-heading: Main content
+heading: Transformation Tools
 subheading: Partner with Adaptable Tools to make data work for you
 mainpitch:
   title: Take control of your data universe with Adaptable Tools
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  description: >-
+    Data underpins business performance.  Being able to read what it is saying
+    accurately is fundamental to navigating the challenges of today and
+    tomorrow.  Adaptable Tools is an award-winning startup revolutionising the
+    desktop space to give users control of their data.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Adaptable Blotter is used by some of the world's largest financial services
+  businesses to manage data seamlessly.  The unique HTML5 data-grid solution
+  helps users dealing with multiple dynamic data streams to spot the information
+  that matters to them fast enough to make the decisions that matter. 
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -45,7 +45,7 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-  heading: What we offer
+  heading: Consultancy support
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
     java’s origin and support the farmers that grew it. We take coffee
