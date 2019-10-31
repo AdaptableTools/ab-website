@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: 'Transform your relationship to Data '
+title: 'Transform relationship to Data '
 image: /img/home-jumbotron.jpg
 heading: Transformation Tools
 subheading: Partner with Adaptable Tools to make data work for you
