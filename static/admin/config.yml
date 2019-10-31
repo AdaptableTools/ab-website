@@ -39,7 +39,6 @@ collections:
               widget: 'hidden',
               default: 'index-page',
             }
-          - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
@@ -59,8 +58,6 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
                   {
                     label: Blurbs,
                     name: blurbs,
@@ -68,7 +65,7 @@ collections:
                     fields:
                       [
                         { label: Image, name: image, widget: image },
-                        { label: Header, name: text, widget: text },
+                        { label: Header, name: header, widget: string },
                         { label: Text, name: text, widget: text },
                       ],
                   },
