@@ -1,10 +1,20 @@
 ---
 templateKey: adaptable-blotter-page
 title: Adaptable Blotter
+video: https://www.youtube.com/watch?v=fgF4msV8PFY
+headline: another headline after video
+keyfeatures:
+  - name: feature 1
+    description: >
+      description for feature 1
+  - name: feature 2
+    description: >
+      description for feature 2
 ---
-VIDEO
 
-![](/img/overview-html5-cover.png "Take Control of Your Data")
+HTML Content
+
+![](/img/overview-html5-cover.png 'Take Control of Your Data')
 
 HEADLINE
 
@@ -12,11 +22,11 @@ HEADLINE
 
 10 bullets - 2 columns
 
-* one
-* two
-* three
-* four
-* five
+- one
+- two
+- three
+- four
+- five
 
 ### Key Features
 

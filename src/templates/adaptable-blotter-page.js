@@ -7,6 +7,9 @@ import Content, { HTMLContent } from '../components/Content';
 export const AdaptableBlotterPageTemplate = ({
   title,
   content,
+  keyfeatures,
+  headline,
+  video,
   contentComponent
 }) => {
   const PageContent = contentComponent || Content;
@@ -20,7 +23,26 @@ export const AdaptableBlotterPageTemplate = ({
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+
+              {video}
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {headline}
+              </h2>
               <PageContent className="content" content={content} />
+              {keyfeatures ? (
+                <ul>
+                  {keyfeatures.map(feature => {
+                    return (
+                      <li key={feature.name}>
+                        <p>
+                          <b>{feature.name}</b>
+                        </p>
+                        <p>{feature.description}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : null}
             </div>
           </div>
         </div>
@@ -43,6 +65,9 @@ const AdaptableBlotterPage = ({ data }) => {
       <AdaptableBlotterPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        video={post.frontmatter.video}
+        headline={post.frontmatter.headline}
+        keyfeatures={post.frontmatter.keyfeatures}
         content={post.html}
       />
     </Layout>
@@ -61,6 +86,12 @@ export const adaptableBlotterPageQuery = graphql`
       html
       frontmatter {
         title
+        video
+        headline
+        keyfeatures {
+          name
+          description
+        }
       }
     }
   }

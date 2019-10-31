@@ -1,6 +1,7 @@
 import CMS from 'netlify-cms-app';
 import uploadcare from 'netlify-cms-media-library-uploadcare';
 import cloudinary from 'netlify-cms-media-library-cloudinary';
+import { Control, Preview } from './widgets/youtube';
 
 import AboutPagePreview from './preview-templates/AboutPagePreview';
 import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview';
@@ -21,3 +22,5 @@ CMS.registerPreviewTemplate('grid-gurus', AdaptableBlotterPagePreview);
 CMS.registerPreviewTemplate('about', AboutPagePreview);
 CMS.registerPreviewTemplate('products', ProductPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
+
+CMS.registerWidget('youtube', Control, Preview);
