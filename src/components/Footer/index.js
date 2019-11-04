@@ -11,6 +11,7 @@ import vimeo from '../../img/social/vimeo.svg';
 import theme from '../theme';
 
 import './index.scss'
+import GridLayout from '../GridLayout';
 
 const preventDefault = e => e.preventDefault();
 
@@ -28,8 +29,8 @@ const Footer = class extends React.Component {
           
         >
           <div className="container has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
+            <GridLayout>
+              
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
@@ -44,8 +45,8 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
-              </div>
-              <div className="column is-4">
+              
+              
                 <section>
                   <ul className="menu-list">
                     <li>
@@ -55,8 +56,8 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
-              </div>
-              <div className="column is-4">
+              
+              
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
@@ -110,8 +111,8 @@ const Footer = class extends React.Component {
                     />
                   </a>*/}
                 </section>
-              </div>
-            </div>
+              
+            </GridLayout>
           </div>
         </Box>
         </Flex>

@@ -127,6 +127,7 @@ export const ContactPageTemplate =  ({ title, headerImage, content,contentCompon
         backgroundImage: `url(${
           !!headerImage.childImageSharp ? headerImage.childImageSharp.fluid.src : headerImage
         })`,
+         backgroundPosition: 'left top', backgroundAttachment: 'fixed'
       }}
     ><h1 style={{color: 'white',}} className="title is-size-2 has-text-weight-bold is-bold-light">
                 {title}

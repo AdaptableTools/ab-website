@@ -4,10 +4,12 @@
 
 .Footer {
   background: var(--ab-color-footer-bg);
+  ul {
+    margin-left: 0 !important;
+  }
 }
 .Footer .Footer-navbar-item {
   color: whitesmoke;
-  // display: inline-block;
   &:hover {
     background: #fafafa;
     color: #656565 !important;
