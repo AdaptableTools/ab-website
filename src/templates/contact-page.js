@@ -123,13 +123,14 @@ export const ContactPageTemplate =  ({ title, headerImage, content,contentCompon
               {headerImage? <div
       className="full-width-image-container margin-top-0"
       style={{
+        
         backgroundImage: `url(${
           !!headerImage.childImageSharp ? headerImage.childImageSharp.fluid.src : headerImage
         })`,
       }}
-    ><h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+    ><h1 style={{color: 'white',}} className="title is-size-2 has-text-weight-bold is-bold-light">
                 {title}
-              </h2></div>: null}
+              </h1></div>: null}
 
               <PageContent className="content" content={content} />
               <ContactForm />
