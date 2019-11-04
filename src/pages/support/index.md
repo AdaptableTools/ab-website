@@ -5,7 +5,7 @@ title: Support
 headerimage: /img/jumbotron.jpg
 ---
 
-To find out more about the Adaptable Blotter and the other services we offer:
+Our awesome support
 
 **Email us: sales@adaptabletools.com**
 
