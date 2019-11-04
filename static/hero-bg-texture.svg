@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="602px" viewBox="0 0 1440 602" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#27CC8D" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#18252E" offset="0%"></stop>
+            <stop stop-color="#27CC8D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Hero-Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New-Hero----Green">
+            <g id="Background" transform="translate(-2.000000, -1.000000)">
+                <rect id="Rectangle-4" fill="url(#linearGradient-1)" opacity="0.100167411" x="2" y="1" width="1440" height="602"></rect>
+                <polygon id="Path-2" fill="url(#linearGradient-2)" opacity="0.039855" points="916.219171 2.88619343 281 534 0.263600783 299.273177 0.0492497937 0.619402531"></polygon>
+                <polygon id="Path-2-Copy" fill="url(#linearGradient-2)" opacity="0.019855" points="1220 1.972552 722 420 222.033617 1.972552"></polygon>
+                <polygon id="Path-2-Copy-2" fill="url(#linearGradient-2)" opacity="0.0180691071" points="722 1 1442 1 1442 603"></polygon>
+            </g>
+        </g>
+ <path fill="url(#linearGradient-2)" opacity="0.4" viewBox="0 0 24 24" d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+    </g>
+</svg>

@@ -30,6 +30,10 @@ const TemplateWrapper = ({ children }) => {
           <meta name="description" content={description} />
 
           <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+            rel="stylesheet"
+          ></link>
+          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/img/apple-touch-icon.png"
@@ -59,8 +63,10 @@ const TemplateWrapper = ({ children }) => {
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
-        <div style={{ flex: 1 }}>{children}</div>
+        <div style={{ flex: 1 }}>
+          <Navbar />
+          {children}
+        </div>
         <Footer />
       </div>
     </ThemeProvider>

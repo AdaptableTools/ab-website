@@ -4,6 +4,7 @@ import cloudinary from 'netlify-cms-media-library-cloudinary';
 import { Control, Preview } from './widgets/youtube';
 
 import AboutPagePreview from './preview-templates/AboutPagePreview';
+import ContactPagePreview from './preview-templates/ContactPagePreview';
 import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview';
 import BlogPostPreview from './preview-templates/BlogPostPreview';
 import ProductPagePreview from './preview-templates/ProductPagePreview';
@@ -20,6 +21,7 @@ CMS.registerPreviewTemplate(
 );
 CMS.registerPreviewTemplate('grid-gurus', AdaptableBlotterPagePreview);
 CMS.registerPreviewTemplate('about', AboutPagePreview);
+CMS.registerPreviewTemplate('contact', ContactPagePreview);
 CMS.registerPreviewTemplate('products', ProductPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 
