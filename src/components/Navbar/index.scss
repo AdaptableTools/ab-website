@@ -1,0 +1,84 @@
+:root {
+  --ab-color-nav-anchor: rgba(0, 97, 158, 0.88);
+  --ab-color-nav-anchor_hover: rgba(0, 0, 0, 0.7);
+}
+.Navbar {
+  min-height: 3.25rem;
+  position: relative;
+  z-index: 30;
+
+  a {
+    color: var(--ab-color-nav-anchor);
+    transition: color 0.1s ease-in-out;
+    &:hover {
+      color: var(--ab-color-nav-anchor_hover);
+    }
+  }
+}
+
+.Navbar-menu {
+}
+.Navbar-burger {
+  color: #4a4a4a;
+  cursor: pointer;
+
+  height: 3.25rem;
+  position: relative;
+  width: 3.25rem;
+  margin-left: auto;
+
+  & span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition-duration: 86ms;
+    transition-duration: 86ms;
+    -webkit-transition-property: background-color, opacity, -webkit-transform;
+    transition-property: background-color, opacity, -webkit-transform;
+    transition-property: background-color, opacity, transform;
+    transition-property: background-color, opacity, transform, -webkit-transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    width: 16px;
+  }
+
+  & span:first-child {
+    top: calc(50% - 6px);
+  }
+
+  & span:nth-child(2) {
+    top: calc(50% - 1px);
+  }
+
+  & span:nth-child(3) {
+    top: calc(50% + 4px);
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  &.is-active span:first-child {
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  &.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.is-active span:nth-child(3) {
+    -webkit-transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}
+
+.Navbar-brand {
+  align-items: stretch;
+  display: flex;
+  min-height: 3.25rem;
+}

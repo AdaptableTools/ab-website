@@ -1,40 +1,44 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import { Button, Box } from 'rebass';
+import { Button,Flex, Box } from 'rebass';
 
-import logo from '../img/logo.png';
-import facebook from '../img/social/facebook.svg';
-import instagram from '../img/social/instagram.svg';
-import twitter from '../img/social/twitter.svg';
-import vimeo from '../img/social/vimeo.svg';
-import theme from './theme';
+import logo from '../../img/logo.png';
+import facebook from '../../img/social/facebook.svg';
+import instagram from '../../img/social/instagram.svg';
+import twitter from '../../img/social/twitter.svg';
+import vimeo from '../../img/social/vimeo.svg';
+import theme from '../theme';
+
+import './index.scss'
 
 const preventDefault = e => e.preventDefault();
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img src={logo} alt="Kaldi" style={{ height: '10em' }} />
-        </div>
+      <Flex alignItems="center" width={1} as="footer"  flexDirection="column" className="Footer has-text-white-ter" paddingTop={4}>
+        
+        <Flex width={1} flexDirection="column" maxWidth="var(--ab-max-content-size)">
+        <Flex alignItems="center" flexDirection="column">
+          <img src={logo} alt="Kaldi" style={{ width: '10em' }} />
+        </Flex>
         <Box
-          className="content has-text-centered has-background-black has-text-white-ter"
-          fontSize={2}
+          className="content has-text-centered  has-text-white-ter"
+          
         >
-          <div className="container has-background-black has-text-white-ter">
+          <div className="container has-text-white-ter">
             <div className="columns">
               <div className="column is-4">
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <Link to="/" className="Footer-navbar-item">
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/adaptable-blotter">
+                      <Link className="Footer-navbar-item" to="/adaptable-blotter">
                         About Adaptable Blotter
                       </Link>
                     </li>
@@ -45,7 +49,7 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/contact">
+                      <Link className="Footer-navbar-item" to="/contact">
                         Contact
                       </Link>
                     </li>
@@ -56,24 +60,23 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <form onSubmit={preventDefault}>
+                      <Flex flexDirection="column" alignItems="stretch" as="form"  onSubmit={preventDefault}>
                         <Box marginBottom={2}>
                           Keep up with news at Adaptable Tools
                         </Box>
-                        <Box>
-                          <input
-                            style={{
-                              padding: theme.space[2],
-                              fontSize: theme.fontSizes[2]
-                            }}
+                        
+                          <Box as="input"
+                          width={1}
+                          padding={2}
+                          fontSize={3}
                             type="email"
                             placeholder="Your email"
                           />
-                        </Box>
-                        <Button backgroundColor="blue" marginTop={2}>
+                        
+                        <Button alignSelf="flex-start" backgroundColor="transparent" marginTop={2}>
                           Send
                         </Button>
-                      </form>
+                      </Flex>
                     </li>
                   </ul>
                   {/*
@@ -111,7 +114,8 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </Box>
-      </footer>
+        </Flex>
+      </Flex>
     );
   }
 };

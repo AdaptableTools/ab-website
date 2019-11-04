@@ -24,7 +24,7 @@
   --ab-font-size-7: 2.25rem; //36px for 1rem=16px
 
   --ab-color-blue: rgba(18, 127, 196);
-  --ab-color-washedblue: rgba(18, 127, 196, 0.1);
+  --ab-color-washedblue: rgb(239, 239, 244);
 }
 html,
 body,
@@ -50,4 +50,11 @@ html {
 
 .columns:last-child {
   margin-bottom: 0px;
+}
+
+.navbar-menu.navbar-menu {
+  background: transparent;
+}
+.navbar a {
+  color: rgba(11, 81, 125, 0.8);
 }

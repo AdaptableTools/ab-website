@@ -1,14 +1,16 @@
 import React from 'react';
 import { Text, Flex, Box } from 'rebass';
 import { Link } from 'gatsby';
-import github from '../img/github-icon.svg';
-import logo from '../img/logo.png';
+
+import logo from '../../img/logo.png';
+
+import './index.scss'
 
 const NavItem = props => {
   const { to, children, ...otherProps } = props;
   return (
     <Link {...otherProps} to={props.to}>
-      <Text fontSize={5} fontWeight={300} marginLeft={3}>
+      <Text fontSize={5} fontWeight={300} marginLeft={4}>
         {children}
       </Text>
     </Link>
@@ -20,34 +22,21 @@ const Navbar = class extends React.Component {
     super(props);
     this.state = {
       active: false,
-      navBarActiveClass: ''
+      
     };
   }
 
   toggleHamburger = () => {
     // toggle the active boolean in the state
-    this.setState(
-      {
+    this.setState({
         active: !this.state.active
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active'
-            })
-          : this.setState({
-              navBarActiveClass: ''
-            });
-      }
-    );
+      });
   };
 
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="Navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -58,29 +47,32 @@ const Navbar = class extends React.Component {
             mx="auto"
             width="100%"
           >
-            <div className="navbar-brand" style={{ flex: 1 }}>
+            <div className="Navbar-brand" style={{ flex: 1 }}>
               <NavItem to="/" title="Logo">
                 <img src={logo} alt="Kaldi" style={{ maxHeight: 100 }} />
               </NavItem>
-              {/* Hamburger menu */}
-              <div
-                className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              
+              <Box
+                display={["block","block","none"]}
+                className={`Navbar-burger burger ${this.state.active?'is-active':''}`}
                 data-target="navMenu"
                 onClick={() => this.toggleHamburger()}
               >
                 <span />
                 <span />
                 <span />
-              </div>
+              </Box>
             </div>
-            <div className={`navbar-menu ${this.state.navBarActiveClass}`}>
-              <div>
-                <Flex justifyContent={['center', 'center', 'flex-end']}>
+            <Box className={`Navbar-menu`}
+              display={[this.state.active?'block':'none',this.state.active?'block':'none', 'block']}
+            >
+              <Flex flexDirection="column"  justifyContent="center">
+                <Flex justifyContent={'flex-end'} marginBottom={3} flexDirection={["column", "column","row"]}>
                   <NavItem to="/contact">Contact</NavItem>
                   <NavItem to="/contact">Technical Support</NavItem>
                 </Flex>
 
-                <Flex className=" has-text-centered">
+                <Flex alignItems={["flex-start"]}  flexDirection={["column", "column","row"]}>
                   <NavItem to="/adaptable-blotter">Adaptable Blotter</NavItem>
                   <NavItem to="/grid-gurus">Grid Gurus</NavItem>
                   <NavItem to="/other-data-tools-partners">
@@ -98,13 +90,9 @@ const Navbar = class extends React.Component {
                     </a>
                   </NavItem>
 
-                  {/*
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>*/}
                 </Flex>
-              </div>
-            </div>
+              </Flex>
+            </Box>
           </Flex>
         </Flex>
       </nav>

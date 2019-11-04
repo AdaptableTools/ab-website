@@ -2,11 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from 'styled-components';
 import theme from './theme';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 import './all.sass';
-
 import './index.scss';
 
 import useSiteMetadata from './SiteMetadata';
