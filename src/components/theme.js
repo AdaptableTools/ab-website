@@ -2,12 +2,12 @@ export const colors = {
   blue: 'var(--ab-color-blue)',
   washedblue: 'var(--ab-color-washedblue)',
   red: 'red'
-};
+}
 
-export const borderRadius = [1, 3, 5, 8, 20];
+export const borderRadius = [1, 3, 5, 8, 20]
 
-//taken from bulma - see https://bulma.io/documentation/overview/responsiveness/
-export const breakpoints = ['40em', '52em', '64em'];
+//taken from tailwindcss - see https://tailwindcss.com/docs/breakpoints
+export const breakpoints = ['40rem', '48rem', '64rem', '80rem']
 
 export default {
   breakpoints,
@@ -37,4 +37,4 @@ export default {
     large: '0 0 24px rgba(0, 0, 0, .125)'
   },
   borderRadius
-};
+}

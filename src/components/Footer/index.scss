@@ -1,17 +1,10 @@
-:root {
-  --ab-color-footer-bg: rgb(67, 79, 97);
-}
-
 .Footer {
-  background: var(--ab-color-footer-bg);
   ul {
+    list-style: none !important;
+    text-align: left;
     margin-left: 0 !important;
-  }
-}
-.Footer .Footer-navbar-item {
-  color: whitesmoke;
-  &:hover {
-    background: #fafafa;
-    color: #656565 !important;
+    li {
+      width: 100%;
+    }
   }
 }

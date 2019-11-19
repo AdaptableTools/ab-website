@@ -6,14 +6,9 @@
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
-
-  a {
-    color: var(--ab-color-nav-anchor);
-    transition: color 0.1s ease-in-out;
-    &:hover {
-      color: var(--ab-color-nav-anchor_hover);
-    }
-  }
+}
+.NavItem {
+  transition: border-color 0.35s;
 }
 
 .Navbar-menu {

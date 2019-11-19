@@ -1,82 +1,99 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { Button,Flex, Box } from 'rebass';
+import { Flex, Box } from 'rebass'
 
-import logo from '../../img/logo.png';
-import facebook from '../../img/social/facebook.svg';
-import instagram from '../../img/social/instagram.svg';
-import twitter from '../../img/social/twitter.svg';
-import vimeo from '../../img/social/vimeo.svg';
-import theme from '../theme';
+import logo from '../../img/logo.png'
+import facebook from '../../img/social/facebook.svg'
+import instagram from '../../img/social/instagram.svg'
+import twitter from '../../img/social/twitter.svg'
+import vimeo from '../../img/social/vimeo.svg'
+import theme from '../theme'
+
+import Button from '../Button'
 
 import './index.scss'
-import GridLayout from '../GridLayout';
+import GridLayout from '../GridLayout'
 
-const preventDefault = e => e.preventDefault();
+const FooterMenuLink = ({ children, to }) => {
+  return (
+    <Link
+      className="Footer-navbar-item rounded-sm my-2 block p-3 w-full text-blue-100 hover:text-blue-800 hover:bg-white"
+      to={to}
+    >
+      {children}
+    </Link>
+  )
+}
+
+const preventDefault = e => e.preventDefault()
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <Flex alignItems="center" width={1} as="footer"  flexDirection="column" className="Footer has-text-white-ter" paddingTop={4}>
-        
-        <Flex width={1} flexDirection="column" maxWidth="var(--ab-max-content-size)">
-        <Flex alignItems="center" flexDirection="column">
-          <img src={logo} alt="Kaldi" style={{ width: '10em' }} />
-        </Flex>
-        <Box
-          className="content has-text-centered  has-text-white-ter"
-          
+      <Flex
+        alignItems="center"
+        width={1}
+        as="footer"
+        flexDirection="column"
+        className="Footer bg-blue-900"
+        paddingTop={4}
+      >
+        <Flex
+          width={1}
+          flexDirection="column"
+          maxWidth="var(--ab-max-content-size)"
         >
-          <div className="container has-text-white-ter">
-            <GridLayout>
-              
+          <Flex alignItems="center" flexDirection="column">
+            <img src={logo} alt="Kaldi" style={{ width: '10em' }} />
+          </Flex>
+          <Box className="content has-text-centered  has-text-white-ter">
+            <div className="container has-text-white-ter">
+              <GridLayout>
                 <section className="menu">
-                  <ul className="menu-list">
+                  <ul>
                     <li>
-                      <Link to="/" className="Footer-navbar-item">
-                        Home
-                      </Link>
+                      <FooterMenuLink to="/">Home</FooterMenuLink>
                     </li>
                     <li>
-                      <Link className="Footer-navbar-item" to="/adaptable-blotter">
+                      <FooterMenuLink to="/adaptable-blotter">
                         About Adaptable Blotter
-                      </Link>
+                      </FooterMenuLink>
                     </li>
                   </ul>
                 </section>
-              
-              
+
                 <section>
-                  <ul className="menu-list">
+                  <ul>
                     <li>
-                      <Link className="Footer-navbar-item" to="/contact">
-                        Contact
-                      </Link>
+                      <FooterMenuLink to="/contact">Contact</FooterMenuLink>
                     </li>
                   </ul>
                 </section>
-              
-              
+
                 <section className="menu">
-                  <ul className="menu-list">
+                  <ul>
                     <li>
-                      <Flex flexDirection="column" alignItems="stretch" as="form"  onSubmit={preventDefault}>
+                      <Flex
+                        flexDirection="column"
+                        alignItems="stretch"
+                        as="form"
+                        onSubmit={preventDefault}
+                      >
                         <Box marginBottom={2}>
                           Keep up with news at Adaptable Tools
                         </Box>
-                        
-                          <Box as="input"
+
+                        <Box
+                          as="input"
                           width={1}
-                          padding={2}
                           fontSize={3}
-                            type="email"
-                            placeholder="Your email"
-                          />
-                        
-                        <Button alignSelf="flex-start" backgroundColor="transparent" marginTop={2}>
-                          Send
-                        </Button>
+                          type="email"
+                          className="text-blue-800 rounded-sm p-3"
+                          placeholder="Your email"
+                        />
+
+                        <Button className="mt-3 self-start ">Send</Button>
                       </Flex>
                     </li>
                   </ul>
@@ -111,14 +128,13 @@ const Footer = class extends React.Component {
                     />
                   </a>*/}
                 </section>
-              
-            </GridLayout>
-          </div>
-        </Box>
+              </GridLayout>
+            </div>
+          </Box>
         </Flex>
       </Flex>
-    );
+    )
   }
-};
+}
 
-export default Footer;
+export default Footer

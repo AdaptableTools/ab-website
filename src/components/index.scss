@@ -1,3 +1,9 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
 :root {
   --ab-breakpoint-0: 40rem;
   --ab-breakpoint-1: 52rem;

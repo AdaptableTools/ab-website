@@ -1,4 +1,4 @@
-var proxy = require('http-proxy-middleware');
+var proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
@@ -8,7 +8,16 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          require('tailwindcss')
+          // require('./tailwind.config.js') // Optional: Load custom Tailwind CSS configuration
+        ]
+      }
+    },
+
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -68,12 +77,17 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+      // must be after other CSS plugins
+      resolve: `gatsby-plugin-purgecss`,
       options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'] // applies purging only on the bulma css file
+        printRejected: true, // Print removed selectors and processed file names
+        develop: false // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['whitelist'], // Don't remove this selector
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
-    }, // must be after other CSS plugins
+    },
     'gatsby-plugin-netlify' // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally
@@ -87,6 +101,6 @@ module.exports = {
           '/.netlify/functions/': ''
         }
       })
-    );
+    )
   }
-};
+}
