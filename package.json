@@ -57,6 +57,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-postcss": "^2.1.15",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-transformer-remark-frontmatter": "^0.1.0",
     "http-proxy-middleware": "^0.19.1",
     "netlify-lambda": "^1.4.3",
     "npm-run-all": "^4.1.5",

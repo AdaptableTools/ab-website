@@ -46,29 +46,41 @@ collections:
               label: Mainpitch,
               name: mainpitch,
               widget: object,
+              fields: [{ label: Title, name: title, widget: string }],
+            }
+          - {
+              label: Main Pitch description,
+              name: mainpitch_description,
+              widgeth: markdown,
+            }
+          - {
+              label: Highlights,
+              name: highlights,
+              widget: list,
               fields:
                 [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
                 ],
             }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: Quotes,
+              name: quotes,
+              widget: list,
               fields:
                 [
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Header, name: header, widget: string },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
+                ],
+            }
+          - {
+              label: Awards,
+              name: awards,
+              widget: list,
+              fields:
+                [
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: text },
                 ],
             }
       - file: 'src/pages/adaptable-blotter/index.md'
@@ -89,19 +101,16 @@ collections:
               label: 'Key Features',
               name: keyfeatures,
               widget: list,
-              fields: [
-                {
-                  label: "Feature name",
-                  name: name,
-                  widget: string
-                },
-                {
-                  label: "Feature description",
-                  name: descripton,
-                  widget: text
-                }
-              ]
-          }
+              fields:
+                [
+                  { label: 'Feature name', name: name, widget: string },
+                  {
+                    label: 'Feature description',
+                    name: descripton,
+                    widget: text,
+                  },
+                ],
+            }
       - file: 'src/pages/grid-gurus/index.md'
         label: 'Grid Gurus'
         name: 'grid-gurus'

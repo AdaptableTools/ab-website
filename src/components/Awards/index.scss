@@ -1,0 +1,14 @@
+.Award {
+  @apply bg-white;
+  opacity: 0.9;
+}
+
+.AwardText {
+  @apply text-center py-5 mb-4 font-medium text-blue-900 opacity-75;
+}
+
+.Award:hover {
+  .AwardText {
+    // @apply bg-white text-blue-800;
+  }
+}

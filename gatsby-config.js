@@ -17,6 +17,14 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    },
 
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -30,7 +38,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages'
+        name: 'pages',
+        ignore: [`**/_*`]
       }
     },
     {
@@ -65,6 +74,16 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static'
+            }
+          },
+          {
+            resolve: 'gatsby-transformer-remark-frontmatter',
+
+            options: {
+              // frontmatter fields to exclude, including all others
+              blacklist: ['templateKey']
+              // frontmatter fields to include, excluding all others
+              // whitelist: ['markdownField']
             }
           }
         ]

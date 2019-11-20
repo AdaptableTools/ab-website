@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 import logo from '../../img/logo.png'
 
 import './index.scss'
+import MaxWidth from '../MaxWidth'
 
 const NavItem = props => {
   const { to, children, ...otherProps } = props
@@ -43,13 +44,8 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <Flex width="100%" backgroundColor="washedblue">
-          <Flex
-            py={3}
-            maxWidth="var(--ab-max-content-size)"
-            mx="auto"
-            width="100%"
-          >
+        <Flex width="100%" backgroundColor="washedblue" justifyContent="center">
+          <Flex py={3} as={MaxWidth} width="100%">
             <div className="Navbar-brand" style={{ flex: 1 }}>
               <NavItem to="/" title="Logo">
                 <img src={logo} alt="Kaldi" style={{ maxHeight: 100 }} />
@@ -101,6 +97,7 @@ const Navbar = class extends React.Component {
                     <a
                       href="https://demo.adaptableblotter.com"
                       target="_blank"
+                      style={{ color: 'inherit' }}
                       rel="noopener noreferrer"
                     >
                       Demo

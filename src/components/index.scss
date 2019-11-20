@@ -12,13 +12,13 @@
   --ab-max-content-size: 70rem;
 
   --ab-space-0: 0px;
-  --ab-space-1: 4px;
-  --ab-space-2: 8px;
-  --ab-space-3: 16px;
-  --ab-space-4: 32px;
-  --ab-space-5: 64px;
-  --ab-space-6: 128px;
-  --ab-space-7: 256px;
+  --ab-space-1: 0.25rem;
+  --ab-space-2: 0.5rem;
+  --ab-space-3: 1rem;
+  --ab-space-4: 2rem;
+  --ab-space-5: 4rem;
+  --ab-space-6: 8rem;
+  --ab-space-7: 16rem;
 
   --ab-font-size-0: 0.5rem; //8px for 1rem=16px
   --ab-font-size-1: 0.625rem; //10px for 1rem=16px
@@ -61,6 +61,10 @@ html {
 .navbar-menu.navbar-menu {
   background: transparent;
 }
-.navbar a {
-  color: rgba(11, 81, 125, 0.8);
+a {
+  color: rgb(18, 127, 196);
+}
+
+p + p {
+  margin-top: var(--ab-space-4);
 }

@@ -1,10 +1,7 @@
-import React, { ReactNode, HTMLAttributes } from 'react';
+import React from 'react'
 
-const GridLayout = ({
-  children,
-  ...props
-}) => {
-  const minBoxWidth = props.minBoxWidth || 220;
+const GridLayout = ({ children, ...props }) => {
+  const minBoxWidth = props.minBoxWidth || 220
 
   return (
     <div
@@ -14,12 +11,12 @@ const GridLayout = ({
         padding: 20,
         gridGap: 20,
         gridTemplateColumns: `repeat(auto-fit, minmax(${minBoxWidth}px, 1fr))`,
-        ...props.style,
+        ...props.style
       }}
     >
       {children}
     </div>
-  );
-};
+  )
+}
 
-export default GridLayout;
+export default GridLayout

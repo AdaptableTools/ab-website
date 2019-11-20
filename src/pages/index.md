@@ -1,16 +1,51 @@
 ---
 templateKey: index-page
 title: Take control of your data universe with Adaptable Tools
-subtitle: Second line
-image: /img/home-jumbotron.jpg
+subtitle: We bring your data to life
+image: /img/Carousel6.png
 heading: We make data work for you
 mainpitch:
-  title: Main pitch title
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: Putting the power of data into your hands
+mainpitch_description: >
+  [The Adaptable Blotter](/adaptable-blotter) is used by some of the world's largest financial services businesses to turbocharge data grids from the frontlines to the back office.
+
+
+  The unique HTML5 toolbox makes working from large amounts of static or dynamic data straightforward, helping users work with the information that matters to them, to make the decisions that drive their business.
+
+
+  The largest suite of data controls [hotlink to functions] available in the market
+  Live data [visualisation tools](https://demo.adaptableblotter.com/charts/aggridcategorychartsdemo/) to help patterns emerge
+  Full [audit functionality](https://demo.adaptableblotter.com/admin/aggridauditdemo/) to help meet regulatory requirements
+
+
+  Adaptable Tools ["Grid Gurus"](/grid-gurus) team also offers full consultancy and development support to help integrate effective data management into new and existing systems.
+
+highlights:
+  - text: Brings the full picture together fast, allowing you to focus on getting more out of your data
+    image: /img/full-picture.png
+  - text: Infinite variations - a wealth of functions all within a single solution
+    image: /img/infinite-applications.png
+  - text: Giving users, support, developers and managers what they need time and again
+    image: /img/user-support.png
+
+quotes:
+  - text: A clever piece of software that delivers powerful, advanced functionality to the end user.​
+    image: /img/aggrid.jpg
+  - text: Wish I had this years ago! Quick to implement and easy to use.
+    image: /img/cyoda.png
+  - text: Technology that enhances operational and developmental productivity through excellence in design and implementation.
+    image: /img/finsemble.jpeg
+  - text: Incredibly useful and well overdue.  The Adaptable Blotter is likely to become standard on every trader’s desktop.
+    image: /img/InfragisticsLogo.png
+
+awards:
+  - text: Most Innovative FinTech Software Developer 2019 Data Product of the Year, 2019 International Finance Awards
+    image: /img/new-international-finance-awards-logo.png
+  - text: Selected for WOSNA programme (Women of Start Up Nation accelerator) at Google, recognizing the most exciting female-led startups, August 2019
+    image: /img/wosna.png
+  - text: Shortlisted, Best Digital Transformation Solution, Trading Tech Insight Awards 2019 North America
+    image: /img/trading-tech-insight-awards-2019.png
+
 intro:
   blurbs:
     - image: /img/coffee.png

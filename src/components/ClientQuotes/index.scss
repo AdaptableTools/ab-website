@@ -1,0 +1,12 @@
+.ClientQuote {
+}
+
+.ClientQuoteText {
+  @apply bg-blue-100 text-center py-5 mb-4 font-medium text-blue-900 opacity-75;
+}
+
+.ClientQuote:hover {
+  .ClientQuoteText {
+    @apply bg-blue-700 text-white;
+  }
+}

@@ -4,11 +4,6 @@ import { Link } from 'gatsby'
 import { Flex, Box } from 'rebass'
 
 import logo from '../../img/logo.png'
-import facebook from '../../img/social/facebook.svg'
-import instagram from '../../img/social/instagram.svg'
-import twitter from '../../img/social/twitter.svg'
-import vimeo from '../../img/social/vimeo.svg'
-import theme from '../theme'
 
 import Button from '../Button'
 
