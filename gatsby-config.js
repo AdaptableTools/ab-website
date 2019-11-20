@@ -1,5 +1,12 @@
 var proxy = require('http-proxy-middleware')
 
+// define extractor class
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || []
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: 'AdaptableTools - we build AdaptableBlotter',
@@ -99,6 +106,12 @@ module.exports = {
       // must be after other CSS plugins
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        extractors: [
+          {
+            extractor: TailwindExtractor,
+            extensions: ['html']
+          }
+        ],
         printRejected: true, // Print removed selectors and processed file names
         develop: false // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
