@@ -34,6 +34,7 @@ const Footer = class extends React.Component {
         flexDirection="column"
         className="Footer bg-blue-900"
         paddingTop={4}
+        paddingBottom={4}
       >
         <MaxWidth className="text-white">
           <Flex alignItems="center" flexDirection="column">
