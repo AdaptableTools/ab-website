@@ -12,18 +12,6 @@ import join from '../join'
 export default ({ awards }) => (
   <GridLayout minBoxWidth={320}>
     {awards.map((award, i) => {
-      const quoteImage = (
-        <Quote
-          style={{
-            fill: 'currentColor',
-            height: '4rem',
-            width: '4rem',
-            position: 'absolute',
-            top: 0,
-            [i % 2 == 0 ? 'left' : 'right']: 0
-          }}
-        ></Quote>
-      )
       return (
         <div
           key={award.text}
@@ -35,7 +23,6 @@ export default ({ awards }) => (
               i % 2 == 0 ? 'pl-16 pr-5' : 'pr-16 pl-5'
             )}
           >
-            {quoteImage}
             {award.text}
           </p>
           <div

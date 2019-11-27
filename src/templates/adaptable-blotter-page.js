@@ -21,14 +21,30 @@ export const AdaptableBlotterPageTemplate = ({
 
   return (
     <>
-      <BackgroundImage src={'/img/blog-index.jpg'} title={title}>
+      <BackgroundImage src={'/img/Carousel2.png'}>
         <AbsoluteNav />
+
+        <MaxWidth className="mt-16 pb-8 bg-white opacity-75">
+          {'video comes here'}
+          <br />
+          HTML content to be customized for later
+          <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+            {headline}
+          </h2>
+          More details about the blotter & Link to demo site
+        </MaxWidth>
       </BackgroundImage>
-      <MaxWidth className="mt-16 pb-8">
-        {video}
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {headline}
-        </h2>
+      <MaxWidth className="mt-16 pb-8 ">
+        The power of data is our ability to read and manipulate it.​ Adaptable
+        Tools is a FinTech software house committed to building the tools to
+        make data work for users, helping decision-making and enhancing
+        productivity throughout data-driven organisations. Development focuses
+        on end-users, creating products which meet their needs intuitively.
+        Adaptable Tools works with financial services businesses and software
+        houses globally to change the way they work. Adaptable Tools is
+        recognised as one of the leading innovators in the web-desktop financial
+        space and was the winner of the Best FinTech Innovation award at the
+        Fixed Income Leaders’ Summit in 2018. ​
       </MaxWidth>
 
       {keyfeatures && keyfeatures.length ? (
@@ -55,6 +71,13 @@ export const AdaptableBlotterPageTemplate = ({
           </MaxWidth>
         </div>
       ) : null}
+
+      <MaxWidth>usecases</MaxWidth>
+      <MaxWidth>
+        what clients are saying - something along the lines from the grid gurus
+        page
+      </MaxWidth>
+      <MaxWidth>AB features with icons from the app</MaxWidth>
 
       <MaxWidth className="mt-16 pb-8">
         <PageContent className="content" content={content} />

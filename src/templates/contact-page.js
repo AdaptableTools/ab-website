@@ -124,7 +124,7 @@ export const ContactPageTemplate = ({
 
       <MaxWidth className="mt-16 pb-8">
         <PageContent className="content" content={content} />
-        <ContactForm />
+        {/*<ContactForm />*/}
       </MaxWidth>
     </Layout>
   )
@@ -141,14 +141,12 @@ const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
-      <ContactPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        headerImage={post.frontmatter.headerimage}
-        content={post.html}
-      />
-    </Layout>
+    <ContactPageTemplate
+      contentComponent={HTMLContent}
+      title={post.frontmatter.title}
+      headerImage={post.frontmatter.headerimage}
+      content={post.html}
+    />
   )
 }
 

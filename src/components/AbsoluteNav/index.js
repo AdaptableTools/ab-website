@@ -8,11 +8,22 @@ let maxScrolledBg = 'rgba(255, 255, 255, 1)'
 const AbsoluteNav = () => {
   const domRef = useRef()
   useEffect(() => {
+    if (!domRef.current || !domRef.current.firstChild) {
+      return
+    }
     const navbar = domRef.current.firstChild
+    if (!domRef.current.parentNode) {
+      navbar.style.position = 'absolute'
+      return
+    }
+
     const getHeights = () => {
       let height = navbar.offsetHeight
 
-      let parentHeight = domRef.current.parentNode.offsetHeight
+      let parentHeight =
+        domRef.current && domRef.current.parentNode
+          ? domRef.current.parentNode.offsetHeight
+          : 0
 
       return { height, parentHeight }
     }
@@ -26,7 +37,9 @@ const AbsoluteNav = () => {
       const { height: h, parentHeight: ph } = getHeights()
 
       height = h
-      parentHeight = ph
+      if (ph) {
+        parentHeight = ph
+      }
     })
 
     const setNavbarVisible = visible => {
@@ -70,6 +83,7 @@ const AbsoluteNav = () => {
           position: 'fixed',
           top: 0,
           width: '100%',
+          zIndex: 1000,
           background: initialBg
         }}
         className="bg-white"

@@ -24,24 +24,16 @@ export const GridGurusTemplate = ({
 
   return (
     <>
-      <BackgroundImage src={'/img/blog-index.jpg'} title={title}>
+      <BackgroundImage src={'/img/Carousel5.png'} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
         {video}
         <h2 className="text-5xl font-thin  text-blue-800">
           headline comes here {headline}
+          CTA - get in touch
         </h2>
       </MaxWidth>
-
-      {testimonials && testimonials.length ? (
-        <MaxWidth className=" pb-8">
-          <h2 className="text-5xl font-thin  text-blue-800">
-            What clients are saying
-          </h2>
-          <ClientQuotes quotes={testimonials} />
-        </MaxWidth>
-      ) : null}
 
       {services && services.length ? (
         <div className="bg-blue-800">
@@ -58,8 +50,18 @@ export const GridGurusTemplate = ({
                 )
               })}
             </GridLayout>
+            CTA in services
           </MaxWidth>
         </div>
+      ) : null}
+
+      {testimonials && testimonials.length ? (
+        <MaxWidth className="mt-16 pb-8">
+          <h2 className="text-5xl font-thin  text-blue-800">
+            What clients are saying
+          </h2>
+          <ClientQuotes quotes={testimonials} />
+        </MaxWidth>
       ) : null}
 
       <MaxWidth>

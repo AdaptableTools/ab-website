@@ -10,7 +10,7 @@ import join from '../join'
 // const quoteSrc = ''
 
 export default ({ quotes }) => (
-  <GridLayout minBoxWidth={320}>
+  <GridLayout minBoxWidth={420}>
     {quotes.map((quote, i) => {
       const quoteImage = (
         <Quote

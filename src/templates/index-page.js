@@ -39,13 +39,16 @@ export const IndexPageTemplate = ({
         <h1 className="text-3xl text-center md:text-4xl p-4 text-blue-900 rounded-tr rounded-tl bg-blue-100 opacity-75 shadow-lg">
           {title}
         </h1>
-        <h3
-          style={{ marginRight: 0 }}
-          className=" font-thin italic inline-block self-end text-right text-xl md:text-3xl p-4 text-blue-900 rounded-br rounded-bl bg-blue-100 opacity-75 shadow-lg"
-        >
-          <HTMLContent>{subtitle}</HTMLContent>
-        </h3>
       </div>
+
+      <h3
+        style={{ margin: '20px auto' }}
+        className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
+      >
+        <a style={{ color: 'white' }} href="http://demo.adaptableblotter.com/">
+          {subtitle}
+        </a>
+      </h3>
     </BackgroundImage>
 
     <MaxWidth className="mt-16">

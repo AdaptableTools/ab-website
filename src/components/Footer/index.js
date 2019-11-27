@@ -34,11 +34,16 @@ const Footer = class extends React.Component {
         flexDirection="column"
         className="Footer bg-blue-900"
         paddingTop={4}
-        paddingBottom={4}
+        paddingBottom={5}
       >
         <MaxWidth className="text-white">
-          <Flex alignItems="center" flexDirection="column">
-            <img src={logo} alt="Kaldi" style={{ width: '10em' }} />
+          <Flex
+            marginTop={4}
+            marginBottom={4}
+            alignItems="center"
+            flexDirection="column"
+          >
+            <img src={logo} style={{ width: '10em' }} />
           </Flex>
 
           <GridLayout style={{ padding: 0 }} gridGap={'5rem'}>
@@ -56,7 +61,7 @@ const Footer = class extends React.Component {
                   <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
                 </li>
                 <li>
-                  <FooterMenuLink to="/blog">News</FooterMenuLink>
+                  <FooterMenuLink to="/blog">Demo</FooterMenuLink>
                 </li>
                 <li>
                   <FooterMenuLink to="/contact">Contact</FooterMenuLink>
@@ -65,13 +70,14 @@ const Footer = class extends React.Component {
             </section>
 
             <section className="menu mt-2 p-3">
+              <p>About Adaptable Tools</p>
               <p>
-                Cupidatat eu do aliquip labore non ea deserunt ullamco. Sint in
-                irure ullamco esse qui aliquip dolore. Ullamco nisi officia
+                Adaptable Tools is a startup focussed on transforming the user
+                interface in data systems.
               </p>
               <p>
-                in do cupidatat sint tempor id id deserunt mollit cupidatat
-                eiusmod.
+                It currently works with clients in Financial Services from its
+                London HQ.
               </p>
             </section>
             <section className="menu mt-2 p-3">

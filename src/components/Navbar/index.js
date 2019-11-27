@@ -8,17 +8,23 @@ import './index.scss'
 import MaxWidth from '../MaxWidth'
 import join from '../join'
 
+const NavText = props => {
+  return (
+    <Text
+      style={{ cursor: 'pointer' }}
+      fontSize={3}
+      fontWeight={400}
+      className="ml-3 p-3 border-solid border-b-4 border-transparent hover:border-blue-800 text-blue-800 hover:text-blue-800 NavItem"
+    >
+      {props.children}
+    </Text>
+  )
+}
 const NavItem = props => {
   const { to, children, ...otherProps } = props
   return (
     <Link {...otherProps} to={props.to}>
-      <Text
-        fontSize={3}
-        fontWeight={300}
-        className="ml-3 p-3 border-solid border-b-4 border-transparent hover:border-blue-800 text-blue-800 hover:text-blue-800 NavItem"
-      >
-        {children}
-      </Text>
+      <NavText>{children}</NavText>
     </Link>
   )
 }
@@ -81,7 +87,16 @@ const Navbar = class extends React.Component {
                   flexDirection={['column', 'column', 'row']}
                 >
                   <NavItem to="/contact">Contact</NavItem>
-                  <NavItem to="/contact">Technical Support</NavItem>
+                  <NavText>
+                    <a
+                      target="_blank"
+                      style={{ color: 'inherit' }}
+                      rel="noopener noreferrer"
+                      href="https://adaptabletools.zendesk.com/hc/en-us"
+                    >
+                      Technical Support
+                    </a>
+                  </NavText>
                 </Flex>
 
                 <Flex
@@ -95,7 +110,7 @@ const Navbar = class extends React.Component {
                   </NavItem>
                   <NavItem to="/blog">News</NavItem>
 
-                  <NavItem>
+                  <NavText>
                     <a
                       href="https://demo.adaptableblotter.com"
                       target="_blank"
@@ -104,7 +119,7 @@ const Navbar = class extends React.Component {
                     >
                       Demo
                     </a>
-                  </NavItem>
+                  </NavText>
                 </Flex>
               </Flex>
             </Box>
