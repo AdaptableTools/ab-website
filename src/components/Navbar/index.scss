@@ -6,6 +6,12 @@
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
+
+  transition-property: background-color, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+
+  will-change: transform;
 }
 .NavItem {
   transition: border-color 0.35s;

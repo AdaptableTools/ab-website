@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import GridLayout from './GridLayout'
+import Button from './Button'
 
 class BlogRoll extends React.Component {
   render() {
@@ -9,18 +11,29 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <GridLayout minBoxWidth="20rem">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
+            <div key={post.id}>
               <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                className={`p-6 rounded`}
+                style={{
+                  margin: 0,
+                  boxShadow:
+                    '0 0.5em 1em -0.125em rgba(101, 101, 101, 0.1), 0 0px 0 1px rgba(101, 101, 101, 0.02)',
+                  backgroundColor: post.frontmatter.featuredpost
+                    ? '#c5d6ff33'
+                    : '#f5f5f5'
+                }}
               >
-                <header>
+                <header
+                  style={{
+                    display: 'flex',
+                    marginBottom: '1rem'
+                  }}
+                >
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div style={{ flexBasis: '45%' }} className="mr-4">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -29,34 +42,29 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
+                  <p>
                     <Link
-                      className="title is-size-4"
-                      style={{
-                        color: 'var(--blue)'
-                      }}
+                      className="text-2xl text-blue-600 hover:text-blue-600 hover:underline"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
+                    <span className="text-base">{post.frontmatter.date}</span>
                   </p>
                 </header>
                 <p>
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
+                  <Link to={post.fields.slug}>
+                    <Button>Keep Reading →</Button>
                   </Link>
                 </p>
               </article>
             </div>
           ))}
-      </div>
+      </GridLayout>
     )
   }
 }

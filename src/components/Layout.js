@@ -1,25 +1,25 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { ThemeProvider } from 'styled-components'
+import theme from './theme'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
-import './all.sass';
-import './index.scss';
+import './all.sass'
+import './index.scss'
 
-import useSiteMetadata from './SiteMetadata';
+import useSiteMetadata from './SiteMetadata'
 
 const colors = Object.keys(theme.colors).reduce((acc, key) => {
-  const value = theme.colors[key];
+  const value = theme.colors[key]
 
-  acc[`--${key}`] = value;
+  acc[`--${key}`] = value
 
-  return acc;
-}, {});
+  return acc
+}, {})
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description } = useSiteMetadata()
   return (
     <ThemeProvider theme={theme}>
       <div style={{ display: 'flex', flexFlow: 'column', flex: 1, ...colors }}>
@@ -62,14 +62,11 @@ const TemplateWrapper = ({ children }) => {
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <div style={{ flex: 1 }}>
-          <Navbar />
-          {children}
-        </div>
+        <div style={{ flex: 1 }}>{children}</div>
         <Footer />
       </div>
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default TemplateWrapper;
+export default TemplateWrapper

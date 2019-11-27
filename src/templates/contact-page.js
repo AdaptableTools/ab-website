@@ -4,6 +4,9 @@ import { navigate } from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import Layout from '../components/Layout'
 import Button from '../components/Button'
+import BackgroundImage from '../components/BackgroundImage'
+import AbsoluteNav from '../components/AbsoluteNav'
+import MaxWidth from '../components/MaxWidth'
 
 function encode(data) {
   return Object.keys(data)
@@ -114,38 +117,16 @@ export const ContactPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content
   return (
-    <section className=" section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            {headerImage ? (
-              <div
-                className="full-width-image-container margin-top-0"
-                style={{
-                  backgroundImage: `url(${
-                    !!headerImage.childImageSharp
-                      ? headerImage.childImageSharp.fluid.src
-                      : headerImage
-                  })`,
-                  backgroundPosition: 'left top',
-                  backgroundAttachment: 'fixed'
-                }}
-              >
-                <h1
-                  style={{ color: 'white' }}
-                  className="title is-size-2 has-text-weight-bold is-bold-light"
-                >
-                  {title}
-                </h1>
-              </div>
-            ) : null}
+    <Layout>
+      <BackgroundImage title={title} image={headerImage}>
+        <AbsoluteNav />
+      </BackgroundImage>
 
-            <PageContent className="content" content={content} />
-            <ContactForm />
-          </div>
-        </div>
-      </div>
-    </section>
+      <MaxWidth className="mt-16 pb-8">
+        <PageContent className="content" content={content} />
+        <ContactForm />
+      </MaxWidth>
+    </Layout>
   )
 }
 

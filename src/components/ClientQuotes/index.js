@@ -34,26 +34,32 @@ export default ({ quotes }) => (
               'ClientQuoteText',
               i % 2 == 0 ? 'pl-16 pr-5' : 'pr-16 pl-5'
             )}
+            style={{
+              [!quote.image ? 'marginBottom' : '']: 0,
+              [!quote.image ? 'flex' : '']: 1
+            }}
           >
             {quoteImage}
             {quote.text}
           </p>
-          <div
-            style={{ xmaxHeight: '20rem', width: '100%' }}
-            className="p-6 flex flex-col flex-1 justify-center"
-          >
-            <div style={{ width: '100%' }}>
-              {/*<Img fixed={quote.image.childImageSharp.fixed} />*/}
-              {
-                <PreviewCompatibleImage
-                  imageStyle={{ xmaxHeight: '20rem' }}
-                  imageInfo={{
-                    image: quote.image
-                  }}
-                />
-              }
+          {quote.image ? (
+            <div
+              style={{ xmaxHeight: '20rem', width: '100%' }}
+              className="p-6 flex flex-col flex-1 justify-center"
+            >
+              <div style={{ width: '100%' }}>
+                {/*<Img fixed={quote.image.childImageSharp.fixed} />*/}
+                {
+                  <PreviewCompatibleImage
+                    imageStyle={{ xmaxHeight: '20rem' }}
+                    imageInfo={{
+                      image: quote.image
+                    }}
+                  />
+                }
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       )
     })}

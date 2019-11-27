@@ -9,6 +9,7 @@ import Button from '../Button'
 
 import './index.scss'
 import GridLayout from '../GridLayout'
+import MaxWidth from '../MaxWidth'
 
 const FooterMenuLink = ({ children, to }) => {
   return (
@@ -34,65 +35,71 @@ const Footer = class extends React.Component {
         className="Footer bg-blue-900"
         paddingTop={4}
       >
-        <Flex
-          width={1}
-          flexDirection="column"
-          maxWidth="var(--ab-max-content-size)"
-        >
+        <MaxWidth className="text-white">
           <Flex alignItems="center" flexDirection="column">
             <img src={logo} alt="Kaldi" style={{ width: '10em' }} />
           </Flex>
-          <Box className="content has-text-centered  has-text-white-ter">
-            <div className="container has-text-white-ter">
-              <GridLayout>
-                <section className="menu">
-                  <ul>
-                    <li>
-                      <FooterMenuLink to="/">Home</FooterMenuLink>
-                    </li>
-                    <li>
-                      <FooterMenuLink to="/adaptable-blotter">
-                        About Adaptable Blotter
-                      </FooterMenuLink>
-                    </li>
-                  </ul>
-                </section>
 
-                <section>
-                  <ul>
-                    <li>
-                      <FooterMenuLink to="/contact">Contact</FooterMenuLink>
-                    </li>
-                  </ul>
-                </section>
+          <GridLayout style={{ padding: 0 }} gridGap={'5rem'}>
+            <section className="-m-5">
+              <ul>
+                <li>
+                  <FooterMenuLink to="/">Home</FooterMenuLink>
+                </li>
+                <li>
+                  <FooterMenuLink to="/adaptable-blotter">
+                    Adaptable Blotter
+                  </FooterMenuLink>
+                </li>
+                <li>
+                  <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
+                </li>
+                <li>
+                  <FooterMenuLink to="/blog">News</FooterMenuLink>
+                </li>
+                <li>
+                  <FooterMenuLink to="/contact">Contact</FooterMenuLink>
+                </li>
+              </ul>
+            </section>
 
-                <section className="menu">
-                  <ul>
-                    <li>
-                      <Flex
-                        flexDirection="column"
-                        alignItems="stretch"
-                        as="form"
-                        onSubmit={preventDefault}
-                      >
-                        <Box marginBottom={2}>
-                          Keep up with news at Adaptable Tools
-                        </Box>
+            <section className="menu mt-2 p-3">
+              <p>
+                Cupidatat eu do aliquip labore non ea deserunt ullamco. Sint in
+                irure ullamco esse qui aliquip dolore. Ullamco nisi officia
+              </p>
+              <p>
+                in do cupidatat sint tempor id id deserunt mollit cupidatat
+                eiusmod.
+              </p>
+            </section>
+            <section className="menu mt-2 p-3">
+              <ul>
+                <li>
+                  <Flex
+                    flexDirection="column"
+                    alignItems="flex-end"
+                    as="form"
+                    onSubmit={preventDefault}
+                  >
+                    <Box style={{ textAlign: 'right' }} marginBottom={3}>
+                      Keep up with news at Adaptable Tools
+                    </Box>
 
-                        <Box
-                          as="input"
-                          width={1}
-                          fontSize={3}
-                          type="email"
-                          className="text-blue-800 rounded-sm p-3"
-                          placeholder="Your email"
-                        />
+                    <Box
+                      as="input"
+                      width={1}
+                      fontSize={3}
+                      type="email"
+                      className="text-blue-800 rounded-sm p-3"
+                      placeholder="Your email"
+                    />
 
-                        <Button className="mt-3 self-start ">Send</Button>
-                      </Flex>
-                    </li>
-                  </ul>
-                  {/*
+                    <Button className="mt-3 self-end ">Send</Button>
+                  </Flex>
+                </li>
+              </ul>
+              {/*
                   <a title="facebook" href="https://facebook.com">
                     <img
                       src={facebook}
@@ -122,11 +129,9 @@ const Footer = class extends React.Component {
                       style={{ width: '1em', height: '1em' }}
                     />
                   </a>*/}
-                </section>
-              </GridLayout>
-            </div>
-          </Box>
-        </Flex>
+            </section>
+          </GridLayout>
+        </MaxWidth>
       </Flex>
     )
   }

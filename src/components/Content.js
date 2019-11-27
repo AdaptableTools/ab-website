@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import './Content.scss'
+
 export const HTMLContent = ({ content, children, className }) => (
   <div
-    className={className}
+    className={`${className || ''} ContentCmp ContentCmp--html`}
     dangerouslySetInnerHTML={{ __html: content || children }}
   />
 )
 
 const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
+  <div className={`${className || ''} ContentCmp`}>{content}</div>
 )
 
 Content.propTypes = {

@@ -6,6 +6,7 @@ import logo from '../../img/logo.png'
 
 import './index.scss'
 import MaxWidth from '../MaxWidth'
+import join from '../join'
 
 const NavItem = props => {
   const { to, children, ...otherProps } = props
@@ -14,7 +15,7 @@ const NavItem = props => {
       <Text
         fontSize={3}
         fontWeight={300}
-        className="ml-3 p-3 border-solid border-b-4 border-white hover:border-blue-800 text-blue-600 hover:text-blue-800 NavItem"
+        className="ml-3 p-3 border-solid border-b-4 border-transparent hover:border-blue-800 text-blue-800 hover:text-blue-800 NavItem"
       >
         {children}
       </Text>
@@ -40,7 +41,8 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="Navbar is-transparent"
+        {...this.props}
+        className={join('Navbar is-transparent', this.props.className)}
         role="navigation"
         aria-label="main-navigation"
       >

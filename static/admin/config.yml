@@ -96,6 +96,7 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Video', name: 'video', widget: 'youtube' }
           - { label: 'Headline', name: 'headline', widget: 'string' }
+
           - { label: 'Content', name: 'body', widget: 'markdown' }
           - {
               label: 'Key Features',
@@ -109,6 +110,7 @@ collections:
                     name: descripton,
                     widget: text,
                   },
+                  { label: 'Feature image', name: image, widget: image },
                 ],
             }
       - file: 'src/pages/grid-gurus/index.md'
@@ -120,6 +122,17 @@ collections:
               name: 'templateKey',
               widget: 'hidden',
               default: 'grid-gurus-page',
+            }
+          - {
+              name: 'services',
+              widget: list,
+              fields: [{ label: 'service name', name: name, widget: string }],
+            }
+          - {
+              name: 'testimonials',
+              widget: list,
+              fields:
+                [{ label: 'testimonial text', name: text, widget: string }],
             }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }

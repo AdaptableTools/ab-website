@@ -4,12 +4,15 @@ title: Adaptable Blotter
 video: https://www.youtube.com/watch?v=fgF4msV8PFY
 headline: another headline after video
 keyfeatures:
-  - name: feature 1
-    description: >
-      description for feature 1
-  - name: feature 2
-    description: >
-      description for feature 2
+  - description: Brings the full picture together fast, allowing you to focus on getting more out of your data
+    name: Feature 1
+    image: /img/full-picture.png
+  - description: Infinite variations - a wealth of functions all within a single solution
+    image: /img/infinite-applications.png
+    name: Feature 2
+  - description: Giving users, support, developers and managers what they need time and again
+    image: /img/user-support.png
+    name: Feature 3
 ---
 
 HTML Content

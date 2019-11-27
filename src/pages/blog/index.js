@@ -1,20 +1,19 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../../components/Layout';
-import BlogRoll from '../../components/BlogRoll';
+import Layout from '../../components/Layout'
+import BlogRoll from '../../components/BlogRoll'
+import MaxWidth from '../../components/MaxWidth'
+import BackgroundImage from '../../components/BackgroundImage'
+import AbsoluteNav from '../../components/AbsoluteNav'
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
-          className="full-width-image-container margin-top-0"
-          style={{
-            backgroundImage: `url('/img/blog-index.jpg')`
-          }}
-        >
+        <BackgroundImage src={'/img/blog-index.jpg'}>
+          <AbsoluteNav />
           <h1
-            className="has-text-weight-bold is-size-1"
+            className="text-5xl text-center font-bold"
             style={{
               boxShadow: '0.5rem 0 0 var(--blue), -0.5rem 0 0 var(--blue)',
               backgroundColor: 'var(--blue)',
@@ -24,15 +23,12 @@ export default class BlogIndexPage extends React.Component {
           >
             Latest Stories
           </h1>
-        </div>
-        <section className="section">
-          <div className="container">
-            <div className="content">
-              <BlogRoll />
-            </div>
-          </div>
-        </section>
+        </BackgroundImage>
+
+        <MaxWidth className="mt-16 pb-8">
+          <BlogRoll />
+        </MaxWidth>
       </Layout>
-    );
+    )
   }
 }

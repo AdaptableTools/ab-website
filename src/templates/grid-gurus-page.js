@@ -4,15 +4,18 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
+import Nav from '../components/Navbar'
 import GridLayout from '../components/GridLayout'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ClientQuotes from '../components/ClientQuotes'
+
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 
-export const AdaptableBlotterPageTemplate = ({
+export const GridGurusTemplate = ({
   title,
   content,
-  keyfeatures,
+  testimonials,
+  services,
   headline,
   video,
   contentComponent
@@ -26,27 +29,30 @@ export const AdaptableBlotterPageTemplate = ({
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
         {video}
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {headline}
+        <h2 className="text-5xl font-thin  text-blue-800">
+          headline comes here {headline}
         </h2>
       </MaxWidth>
 
-      {keyfeatures && keyfeatures.length ? (
+      {testimonials && testimonials.length ? (
+        <MaxWidth className=" pb-8">
+          <h2 className="text-5xl font-thin  text-blue-800">
+            What clients are saying
+          </h2>
+          <ClientQuotes quotes={testimonials} />
+        </MaxWidth>
+      ) : null}
+
+      {services && services.length ? (
         <div className="bg-blue-800">
           <MaxWidth className="mt-16 pb-8">
+            <h2 className="pt-8 text-5xl font-thin text-white">Our services</h2>
             <GridLayout>
-              {keyfeatures.map(feature => {
+              {services.map(service => {
                 return (
-                  <div key={feature.name} className="p-4  ">
-                    <div className="p-16">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: feature.image
-                        }}
-                      />
-                    </div>
+                  <div key={service.name} className="p-4  ">
                     <p className="text-center mt-4 text-xl font-normal text-white">
-                      {feature.description}
+                      {service.name}
                     </p>
                   </div>
                 )
@@ -56,44 +62,45 @@ export const AdaptableBlotterPageTemplate = ({
         </div>
       ) : null}
 
-      <MaxWidth className="mt-16 pb-8">
-        <PageContent className="content" content={content} />
+      <MaxWidth>
+        <PageContent className="content mt-16" content={content} />
       </MaxWidth>
     </>
   )
 }
 
-AdaptableBlotterPageTemplate.propTypes = {
+GridGurusTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 }
 
-const AdaptableBlotterPage = ({ data }) => {
+const GridGurus = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <AdaptableBlotterPageTemplate
+      <GridGurusTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}
         headline={post.frontmatter.headline}
-        keyfeatures={post.frontmatter.keyfeatures}
+        services={post.frontmatter.services}
+        testimonials={post.frontmatter.testimonials}
         content={post.html}
       />
     </Layout>
   )
 }
 
-AdaptableBlotterPage.propTypes = {
+GridGurus.propTypes = {
   data: PropTypes.object.isRequired
 }
 
-export default AdaptableBlotterPage
+export default GridGurus
 
-export const adaptableBlotterPageQuery = graphql`
-  query AdaptableBlotterPage($id: String!) {
+export const GridGurusQuery = graphql`
+  query GridGurus($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -101,16 +108,12 @@ export const adaptableBlotterPageQuery = graphql`
         video
         headline
 
-        keyfeatures {
+        services {
           name
-          description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+        }
+
+        testimonials {
+          text
         }
       }
     }

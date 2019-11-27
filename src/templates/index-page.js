@@ -5,13 +5,15 @@ import { Box } from 'rebass'
 
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
-import Features from '../components/Features'
+
 import BlogRoll from '../components/BlogRoll'
 import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
 import ClientQuotes from '../components/ClientQuotes'
 import Awards from '../components/Awards'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import BackgroundImage from '../components/BackgroundImage'
+import AbsoluteNav from '../components/AbsoluteNav'
 
 export const IndexPageTemplate = ({
   image,
@@ -24,17 +26,8 @@ export const IndexPageTemplate = ({
   intro
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundSize: 'contain',
-        backgroundAttachment: `fixed`
-      }}
-    >
+    <BackgroundImage image={image}>
+      <AbsoluteNav />
       <div
         style={{
           display: 'flex',
@@ -53,7 +46,7 @@ export const IndexPageTemplate = ({
           <HTMLContent>{subtitle}</HTMLContent>
         </h3>
       </div>
-    </div>
+    </BackgroundImage>
 
     <MaxWidth className="mt-16">
       <h1 className="text-5xl font-thin  text-blue-800">{mainpitch.title}</h1>

@@ -1,16 +1,22 @@
 import React from 'react'
 
 const GridLayout = ({ children, ...props }) => {
-  const minBoxWidth = props.minBoxWidth || 220
+  let { minBoxWidth, gridGap, ...domProps } = props
+
+  minBoxWidth = minBoxWidth || 220
+
+  if (typeof minBoxWidth !== 'string') {
+    minBoxWidth = `${minBoxWidth}px`
+  }
 
   return (
     <div
-      {...props}
+      {...domProps}
       style={{
         display: 'grid',
         padding: 20,
-        gridGap: 20,
-        gridTemplateColumns: `repeat(auto-fit, minmax(${minBoxWidth}px, 1fr))`,
+        gridGap: gridGap || 20,
+        gridTemplateColumns: `repeat(auto-fit, minmax(${minBoxWidth}, 1fr))`,
         ...props.style
       }}
     >
