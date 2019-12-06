@@ -7,7 +7,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
     className={join('full-width-image margin-top-0', props.className)}
     style={{
       height: 550,
-      maxHeight: '50vh',
+      maxHeight: '55vh',
       flexFlow: 'column',
       backgroundImage: `url(${
         image && !!image.childImageSharp

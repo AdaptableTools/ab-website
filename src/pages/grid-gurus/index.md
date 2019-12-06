@@ -1,25 +1,28 @@
 ---
-
 templateKey: grid-gurus-page
 title: Grid Gurus
+cta1: Get in touch
+cta2: Find out more
+headline: Driving Forward the Data Management Revolution Together
+description: Ad ipsum ad adipisicing ad irure non. Sint officia quis quis pariatur nostrud ad ipsum. Voluptate sit id consequat eiusmod velit anim cillum esse Lorem ad incididunt. Nulla voluptate aliqua non irure eiusmod consectetur.
+
 services:
-    - name: Excepteur labore culpa commodo proident labore mollit sit.
+  - name: Excepteur labore culpa commodo proident labore mollit sit.
 
-    - name: Sunt eiusmod aute laborum nulla aliquip anim cillum nulla nostrud.
+  - name: Sunt eiusmod aute laborum nulla aliquip anim cillum nulla nostrud.
 
-    - name: Nisi adipisicing sit dolore sit irure esse voluptate esse id magna velit.
+  - name: Nisi adipisicing sit dolore sit irure esse voluptate esse id magna velit.
 
-    - name: Exercitation enim eu ipsum irure velit dolore laboris sunt consequat.
+  - name: Exercitation enim eu ipsum irure velit dolore laboris sunt consequat.
 
 testimonials:
-    - text: Hugely valuable input at a key point in my project.
+  - text: Hugely valuable input at a key point in my project.
 
-    - text: Worked well with my developers providing specialist know-how and training them
+  - text: Worked well with my developers providing specialist know-how and training them
 
-    - text: I’m not sure I would ever have got a demo off the ground without them
+  - text: I’m not sure I would ever have got a demo off the ground without them
 
-    - text: Very professional... really know what they are doing.
-  
+  - text: Very professional... really know what they are doing.
 ---
 
 ### Getting Grids to Work for You

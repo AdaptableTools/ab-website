@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, Flex, Box } from 'rebass'
+import { Text, Image, Flex, Box } from 'rebass'
 import { Link } from 'gatsby'
 
 import logo from '../../img/logo.png'
@@ -7,6 +7,7 @@ import logo from '../../img/logo.png'
 import './index.scss'
 import MaxWidth from '../MaxWidth'
 import join from '../join'
+import ExternalLink from '../ExternalLink'
 
 const NavText = props => {
   return (
@@ -48,15 +49,15 @@ const Navbar = class extends React.Component {
     return (
       <nav
         {...this.props}
-        className={join('Navbar is-transparent', this.props.className)}
+        className={join('Navbar', this.props.className)}
         role="navigation"
         aria-label="main-navigation"
       >
         <Flex width="100%" backgroundColor="washedblue" justifyContent="center">
-          <Flex py={3} as={MaxWidth} width="100%">
+          <Flex py={[2, 2, 3]} as={MaxWidth} width="100%">
             <div className="Navbar-brand" style={{ flex: 1 }}>
               <NavItem to="/" title="Logo">
-                <img src={logo} alt="Kaldi" style={{ maxHeight: 100 }} />
+                <Image src={logo} alt="AdaptableTools" maxHeight={[80, 100]} />
               </NavItem>
 
               <Box
@@ -88,14 +89,9 @@ const Navbar = class extends React.Component {
                 >
                   <NavItem to="/contact">Contact</NavItem>
                   <NavText>
-                    <a
-                      target="_blank"
-                      style={{ color: 'inherit' }}
-                      rel="noopener noreferrer"
-                      href="https://adaptabletools.zendesk.com/hc/en-us"
-                    >
+                    <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
                       Technical Support
-                    </a>
+                    </ExternalLink>
                   </NavText>
                 </Flex>
 
@@ -111,14 +107,9 @@ const Navbar = class extends React.Component {
                   <NavItem to="/blog">News</NavItem>
 
                   <NavText>
-                    <a
-                      href="https://demo.adaptableblotter.com"
-                      target="_blank"
-                      style={{ color: 'inherit' }}
-                      rel="noopener noreferrer"
-                    >
+                    <ExternalLink href="https://demo.adaptableblotter.com">
                       Demo
-                    </a>
+                    </ExternalLink>
                   </NavText>
                 </Flex>
               </Flex>

@@ -4,6 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 import GridLayout from './GridLayout'
 import Button from './Button'
+import AnimateWhenVisible from './AnimateWhenVisible'
 
 class BlogRoll extends React.Component {
   render() {
@@ -13,8 +14,8 @@ class BlogRoll extends React.Component {
     return (
       <GridLayout minBoxWidth="20rem">
         {posts &&
-          posts.map(({ node: post }) => (
-            <div key={post.id}>
+          posts.map(({ node: post }, i) => (
+            <AnimateWhenVisible key={post.id} animationDelay={`0.${i}s`}>
               <article
                 className={`p-6 rounded`}
                 style={{
@@ -62,7 +63,7 @@ class BlogRoll extends React.Component {
                   </Link>
                 </p>
               </article>
-            </div>
+            </AnimateWhenVisible>
           ))}
       </GridLayout>
     )

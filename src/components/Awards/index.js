@@ -6,6 +6,7 @@ import Quote from '../../img/quote.inline.svg'
 
 import './index.scss'
 import join from '../join'
+import AnimateWhenVisible from '../AnimateWhenVisible'
 
 // const awardsrc = ''
 
@@ -13,7 +14,8 @@ export default ({ awards }) => (
   <GridLayout minBoxWidth={320}>
     {awards.map((award, i) => {
       return (
-        <div
+        <AnimateWhenVisible
+          animationDelay={`0.${i + 2}s`}
           key={award.text}
           className="relative italic Award text-xl md:text-2xl overflow-hidden rounded flex flex-col items-center"
         >
@@ -41,7 +43,7 @@ export default ({ awards }) => (
               }
             </div>
           </div>
-        </div>
+        </AnimateWhenVisible>
       )
     })}
   </GridLayout>

@@ -10,15 +10,17 @@ import Button from '../Button'
 import './index.scss'
 import GridLayout from '../GridLayout'
 import MaxWidth from '../MaxWidth'
+import ExternalLink from '../ExternalLink'
 
-const FooterMenuLink = ({ children, to }) => {
+const FooterMenuLink = ({ children, to, as }) => {
+  const Component = as || Link
   return (
-    <Link
+    <Component
       className="Footer-navbar-item rounded-sm my-2 block p-3 w-full text-blue-100 hover:text-blue-800 hover:bg-white"
       to={to}
     >
       {children}
-    </Link>
+    </Component>
   )
 }
 
@@ -47,7 +49,7 @@ const Footer = class extends React.Component {
           </Flex>
 
           <GridLayout style={{ padding: 0 }} gridGap={'5rem'}>
-            <section className="-m-5">
+            <section className="xl:-m-5">
               <ul>
                 <li>
                   <FooterMenuLink to="/">Home</FooterMenuLink>
@@ -61,7 +63,11 @@ const Footer = class extends React.Component {
                   <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
                 </li>
                 <li>
-                  <FooterMenuLink to="/blog">Demo</FooterMenuLink>
+                  <FooterMenuLink as="div">
+                    <ExternalLink href="https://demo.adaptableblotter.com">
+                      Demo
+                    </ExternalLink>
+                  </FooterMenuLink>
                 </li>
                 <li>
                   <FooterMenuLink to="/contact">Contact</FooterMenuLink>

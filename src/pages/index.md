@@ -30,13 +30,13 @@ highlights:
 
 quotes:
   - text: A clever piece of software that delivers powerful, advanced functionality to the end user.​
-    image: /img/aggrid.jpg
+    image: /img/ag-grid-logo.png
   - text: Wish I had this years ago! Quick to implement and easy to use.
     image: /img/cyoda.png
   - text: Technology that enhances operational and developmental productivity through excellence in design and implementation.
-    image: /img/finsemble.jpeg
+    image: /img/finsemble.png
   - text: Incredibly useful and well overdue.  The Adaptable Blotter is likely to become standard on every trader’s desktop.
-    image: /img/InfragisticsLogo.png
+    image: /img/Infragistics.png
 
 awards:
   - text: Most Innovative FinTech Software Developer 2019 Data Product of the Year, 2019 International Finance Awards

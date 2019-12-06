@@ -14,6 +14,7 @@ import Awards from '../components/Awards'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
+import AnimateWhenVisible from '../components/AnimateWhenVisible'
 
 export const IndexPageTemplate = ({
   image,
@@ -36,19 +37,28 @@ export const IndexPageTemplate = ({
           flexDirection: 'column'
         }}
       >
-        <h1 className="text-3xl text-center md:text-4xl p-4 text-blue-900 rounded-tr rounded-tl bg-blue-100 opacity-75 shadow-lg">
+        <AnimateWhenVisible
+          animationName="enter-from-left"
+          as="h1"
+          className="text-2xl text-center md:text-4xl p-3 md:p-4 text-blue-900 rounded-tr rounded-tl bg-blue-100 shadow-lg"
+          style={{
+            opacity: 0.9
+          }}
+        >
           {title}
-        </h1>
+        </AnimateWhenVisible>
       </div>
 
-      <h3
+      <AnimateWhenVisible
+        as="h3"
+        animationName="enter-from-right"
         style={{ margin: '20px auto' }}
         className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
       >
         <a style={{ color: 'white' }} href="http://demo.adaptableblotter.com/">
           {subtitle}
         </a>
-      </h3>
+      </AnimateWhenVisible>
     </BackgroundImage>
 
     <MaxWidth className="mt-16">
@@ -61,9 +71,13 @@ export const IndexPageTemplate = ({
     <div className="bg-blue-800">
       <MaxWidth className="mt-16 pb-8">
         <GridLayout>
-          {highlights.map(highlight => {
+          {highlights.map((highlight, i) => {
             return (
-              <div key={highlight.text} className="p-4  ">
+              <AnimateWhenVisible
+                animationDelay={`0.${i + 2}s`}
+                key={highlight.text}
+                className="p-4  "
+              >
                 <div className="p-16">
                   <PreviewCompatibleImage
                     imageInfo={{
@@ -74,7 +88,7 @@ export const IndexPageTemplate = ({
                 <p className="text-center mt-4 text-xl font-normal text-white">
                   {highlight.text}
                 </p>
-              </div>
+              </AnimateWhenVisible>
             )
           })}
         </GridLayout>

@@ -6,11 +6,12 @@ import Quote from '../../img/quote.inline.svg'
 
 import './index.scss'
 import join from '../join'
+import AnimateWhenVisible from '../AnimateWhenVisible'
 
 // const quoteSrc = ''
 
-export default ({ quotes }) => (
-  <GridLayout minBoxWidth={420}>
+export default ({ quotes, avatars }) => (
+  <GridLayout minBoxWidth={380} style={{ padding: 0 }}>
     {quotes.map((quote, i) => {
       const quoteImage = (
         <Quote
@@ -24,17 +25,24 @@ export default ({ quotes }) => (
           }}
         ></Quote>
       )
+
+      const Cmp = AnimateWhenVisible
       return (
-        <div
+        <Cmp
+          animationDelay={`0.${i + 2}s`}
+          debug={i === 0}
           key={quote.text}
           className="relative italic text-xl md:text-2xl ClientQuote overflow-hidden border-blue-300 border-solid border rounded flex flex-col items-center"
         >
           <p
             className={join(
               'ClientQuoteText',
-              i % 2 == 0 ? 'pl-16 pr-5' : 'pr-16 pl-5'
+              i % 2 == 0
+                ? 'pl-12 pr-4 md:pl-16 md:pr-5'
+                : 'pr-12 pl-4 dm:pr-16 md:pl-5'
             )}
             style={{
+              width: '100%',
               [!quote.image ? 'marginBottom' : '']: 0,
               [!quote.image ? 'flex' : '']: 1
             }}
@@ -42,6 +50,16 @@ export default ({ quotes }) => (
             {quoteImage}
             {quote.text}
           </p>
+          {avatars ? (
+            <AnimateWhenVisible animationDelay={`0.${((i * 2) % 8) + 2}s`}>
+              {React.cloneElement(avatars[i % avatars.length], {
+                pieceSize: 50,
+                style: {
+                  marginBottom: 'var(--ab-space-4)'
+                }
+              })}
+            </AnimateWhenVisible>
+          ) : null}
           {quote.image ? (
             <div
               style={{ xmaxHeight: '20rem', width: '100%' }}
@@ -51,7 +69,7 @@ export default ({ quotes }) => (
                 {/*<Img fixed={quote.image.childImageSharp.fixed} />*/}
                 {
                   <PreviewCompatibleImage
-                    imageStyle={{ xmaxHeight: '20rem' }}
+                    imageStyle={{ maxHeight: '20rem', maxWidth: '50vw' }}
                     imageInfo={{
                       image: quote.image
                     }}
@@ -60,7 +78,7 @@ export default ({ quotes }) => (
               </div>
             </div>
           ) : null}
-        </div>
+        </Cmp>
       )
     })}
   </GridLayout>

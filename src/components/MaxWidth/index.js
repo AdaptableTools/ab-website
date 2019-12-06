@@ -8,7 +8,7 @@ export default props => {
       {...props}
       className={join(
         props.className,
-        'w-full px-5 mx-auto max-w-2xl md:max-w-6xl'
+        'w-full px-2 md:px-5 mx-auto max-w-2xl md:max-w-6xl'
       )}
     >
       {props.children}

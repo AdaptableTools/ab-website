@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import Navbar from '../Navbar'
 
-let initialBg = 'rgba(255, 255, 255, 0.85)'
-let scrolledBg = 'rgba(255, 255, 255, 0.95)'
+let initialBg = 'rgba(255, 255, 255, 0.95)'
+let scrolledBg = 'rgba(255, 255, 255, 0.98)'
 let maxScrolledBg = 'rgba(255, 255, 255, 1)'
 
 const AbsoluteNav = () => {
@@ -30,33 +30,25 @@ const AbsoluteNav = () => {
 
     let { height, parentHeight } = getHeights()
 
-    let currentlyVisible = true
+    domRef.current.style.height = `${height}px`
+
     let currentScrollTop = 0
 
     window.addEventListener('resize', () => {
       const { height: h, parentHeight: ph } = getHeights()
 
       height = h
+      // domRef.current.style.height = `${height}px`
       if (ph) {
         parentHeight = ph
       }
     })
 
-    const setNavbarVisible = visible => {
-      if (visible == currentlyVisible) {
-        return
-      }
-      currentlyVisible = visible
-      navbar.style.opacity = visible ? 1 : 0
-    }
-
     const onScroll = () => {
       const scrollTop = window.scrollY
-      const navbarBottom = scrollTop + height
       const maxAllowed = parentHeight - height
 
       const visible = scrollTop < maxAllowed
-      // setNavbarVisible(visible)
 
       if (visible) {
         if (!!currentScrollTop != !!scrollTop) {
@@ -66,7 +58,7 @@ const AbsoluteNav = () => {
         navbar.style.background = maxScrolledBg
       }
       const transitionPos = visible ? 0 : scrollTop - maxAllowed
-      console.log(transitionPos)
+
       navbar.style.transform = `translate3d(0px, -${transitionPos}px, 0px)`
       currentScrollTop = scrollTop
     }
@@ -77,7 +69,7 @@ const AbsoluteNav = () => {
     }
   })
   return (
-    <div className="mb-20" style={{ width: '100%' }} ref={domRef}>
+    <div style={{ width: '100%' }} ref={domRef}>
       <Navbar
         style={{
           position: 'fixed',
