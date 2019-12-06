@@ -23,7 +23,7 @@ export const AdaptableBlotterPageTemplate = ({
 
   return (
     <>
-      <BackgroundImage src={'/img/Carousel7.png'}>
+      <BackgroundImage src={'/img/Carousel7.png'} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">

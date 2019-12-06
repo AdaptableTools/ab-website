@@ -41,9 +41,9 @@ export const IndexPageTemplate = ({
         <AnimateWhenVisible
           animationName="enter-from-left"
           as="h1"
-          className="text-2xl text-center md:text-4xl p-3 md:p-4 text-blue-900 rounded-tr rounded-tl  shadow-lg"
+          className="text-2xl text-center md:text-4xl p-3 md:p-4 rounded-tr rounded-tl  shadow-lg text-white"
           style={{
-            background: 'rgba(235, 248, 255, 0.86)'
+            background: 'var(--ab-color-blue)'
           }}
         >
           {title}
@@ -53,7 +53,7 @@ export const IndexPageTemplate = ({
       <AnimateWhenVisible
         as="h3"
         animationName="enter-from-right"
-        style={{ margin: '20px auto' }}
+        style={{ margin: '20px auto', background: 'var(--ab-color-blue)' }}
         className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
       >
         <ExternalLink href="http://demo.adaptableblotter.com/">
