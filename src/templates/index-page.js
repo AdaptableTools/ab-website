@@ -16,6 +16,7 @@ import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 import ExternalLink from '../components/ExternalLink'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
+import PageTitle from '../components/PageTitle'
 
 export const IndexPageTemplate = ({
   image,
@@ -38,16 +39,7 @@ export const IndexPageTemplate = ({
           flexDirection: 'column'
         }}
       >
-        <AnimateWhenVisible
-          animationName="enter-from-left"
-          as="h1"
-          className="text-2xl text-center md:text-4xl p-3 md:p-4 rounded-tr rounded-tl  shadow-lg text-white"
-          style={{
-            background: 'var(--ab-color-blue)'
-          }}
-        >
-          {title}
-        </AnimateWhenVisible>
+        <PageTitle title={title} />
       </div>
 
       <AnimateWhenVisible

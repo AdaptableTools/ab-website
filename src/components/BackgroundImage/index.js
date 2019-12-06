@@ -1,5 +1,6 @@
 import React from 'react'
 import join from '../join'
+import PageTitle from '../PageTitle'
 
 const BackgroundImage = ({ src, image, title, ...props }) => (
   <div
@@ -23,19 +24,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
     }}
   >
     {props.children}
-    {title ? (
-      <h1
-        className="text-5xl text-center font-bold"
-        style={{
-          boxShadow: '0.5rem 0 0 var(--blue), -0.5rem 0 0 var(--blue)',
-          backgroundColor: 'var(--blue)',
-          color: 'white',
-          padding: '1rem'
-        }}
-      >
-        {title}
-      </h1>
-    ) : null}
+    {title ? <PageTitle title={title} /> : null}
   </div>
 )
 
