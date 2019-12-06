@@ -4,6 +4,23 @@
 
 @import 'tailwindcss/utilities';
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: '';
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
 :root {
   --ab-breakpoint-0: 40rem;
   --ab-breakpoint-1: 52rem;
@@ -94,4 +111,8 @@ p + p {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
+}
+
+.ratio-16-9 {
+  @include aspect-ratio(16, 9);
 }

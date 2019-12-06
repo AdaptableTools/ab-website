@@ -19,14 +19,7 @@ export default ({ awards }) => (
           key={award.text}
           className="relative italic Award text-xl md:text-2xl overflow-hidden rounded flex flex-col items-center"
         >
-          <p
-            className={join(
-              'AwardText',
-              i % 2 == 0 ? 'pl-16 pr-5' : 'pr-16 pl-5'
-            )}
-          >
-            {award.text}
-          </p>
+          <p className={join('AwardText', 'px-5')}>{award.text}</p>
           <div
             style={{ xmaxHeight: '20rem', width: '100%' }}
             className="p-6 flex flex-col flex-1 justify-center"

@@ -1,7 +1,7 @@
 ---
 templateKey: adaptable-blotter-page
 title: Adaptable Blotter
-video: https://www.youtube.com/watch?v=fgF4msV8PFY
+video: https://www.youtube.com/embed/-YsDeiDL9A4
 headline: another headline after video
 keyfeatures:
   - description: Brings the full picture together fast, allowing you to focus on getting more out of your data

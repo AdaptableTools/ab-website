@@ -2,12 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Video from '../components/Video'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
+import AnimateWhenVisible from '../components/AnimateWhenVisible'
 
 export const AdaptableBlotterPageTemplate = ({
   title,
@@ -23,17 +25,16 @@ export const AdaptableBlotterPageTemplate = ({
     <>
       <BackgroundImage src={'/img/Carousel7.png'}>
         <AbsoluteNav />
-
-        <MaxWidth className="mt-16 pb-8 bg-white opacity-75">
-          {'video comes here'}
-          <br />
-          HTML content to be customized for later
-          <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-            {headline}
-          </h2>
-          More details about the blotter & Link to demo site
-        </MaxWidth>
       </BackgroundImage>
+      <MaxWidth className="mt-16 pb-8">
+        {video ? <Video src={video} /> : null}
+        <br />
+        HTML content to be customized for later
+        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+          {headline}
+        </h2>
+        More details about the blotter & Link to demo site
+      </MaxWidth>
       <MaxWidth className="mt-16 pb-8 ">
         The power of data is our ability to read and manipulate it.​ Adaptable
         Tools is a FinTech software house committed to building the tools to
@@ -51,9 +52,13 @@ export const AdaptableBlotterPageTemplate = ({
         <div className="bg-blue-800">
           <MaxWidth className="mt-16 pb-8">
             <GridLayout>
-              {keyfeatures.map(feature => {
+              {keyfeatures.map((feature, i) => {
                 return (
-                  <div key={feature.name} className="p-4  ">
+                  <AnimateWhenVisible
+                    animationDelay={`0.${i + 2}s`}
+                    key={feature.name}
+                    className="p-4  "
+                  >
                     <div className="p-16">
                       <PreviewCompatibleImage
                         imageInfo={{
@@ -64,7 +69,7 @@ export const AdaptableBlotterPageTemplate = ({
                     <p className="text-center mt-4 text-xl font-normal text-white">
                       {feature.description}
                     </p>
-                  </div>
+                  </AnimateWhenVisible>
                 )
               })}
             </GridLayout>

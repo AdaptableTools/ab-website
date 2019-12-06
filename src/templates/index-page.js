@@ -14,6 +14,7 @@ import Awards from '../components/Awards'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
+import ExternalLink from '../components/ExternalLink'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
 
 export const IndexPageTemplate = ({
@@ -55,9 +56,12 @@ export const IndexPageTemplate = ({
         style={{ margin: '20px auto' }}
         className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
       >
-        <a style={{ color: 'white' }} href="http://demo.adaptableblotter.com/">
+        <ExternalLink
+          style={{ color: 'white' }}
+          href="http://demo.adaptableblotter.com/"
+        >
           {subtitle}
-        </a>
+        </ExternalLink>
       </AnimateWhenVisible>
     </BackgroundImage>
 

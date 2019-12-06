@@ -13,6 +13,7 @@ import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 import Button from '../components/Button'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
+import Video from '../components/Video'
 
 // get them from https://getavataaars.com
 
@@ -107,21 +108,27 @@ export const GridGurusTemplate = ({
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
-        {video}
-        <AnimateWhenVisible
-          as="h2"
-          className="text-5xl font-thin  text-blue-800"
-        >
-          {headline}
-        </AnimateWhenVisible>
-        <AnimateWhenVisible animationDelay="0.35s">
-          <p></p>
-          <p>{description}</p>
-        </AnimateWhenVisible>
+        {video ? <Video src={video} className="mb-4" /> : null}
+        {headline ? (
+          <AnimateWhenVisible
+            as="h2"
+            className="text-5xl font-thin  text-blue-800"
+          >
+            {headline}
+          </AnimateWhenVisible>
+        ) : null}
+        {description ? (
+          <AnimateWhenVisible animationDelay="0.35s">
+            <p></p>
+            <p>{description}</p>
+          </AnimateWhenVisible>
+        ) : null}
 
-        <AnimateWhenVisible animationDelay="0.5s">
-          <Button className="mt-6 text-3xl">{cta1}</Button>
-        </AnimateWhenVisible>
+        {cta1 ? (
+          <AnimateWhenVisible animationDelay="0.5s">
+            <Button className="mt-6 text-3xl">{cta1}</Button>
+          </AnimateWhenVisible>
+        ) : null}
       </MaxWidth>
 
       {services && services.length ? (

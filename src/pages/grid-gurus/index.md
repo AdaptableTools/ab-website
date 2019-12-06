@@ -3,6 +3,7 @@ templateKey: grid-gurus-page
 title: Grid Gurus
 cta1: Get in touch
 cta2: Find out more
+video: https://www.youtube.com/embed/-YsDeiDL9A4
 headline: Driving Forward the Data Management Revolution Together
 description: Ad ipsum ad adipisicing ad irure non. Sint officia quis quis pariatur nostrud ad ipsum. Voluptate sit id consequat eiusmod velit anim cillum esse Lorem ad incididunt. Nulla voluptate aliqua non irure eiusmod consectetur.
 
