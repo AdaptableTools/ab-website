@@ -41,7 +41,10 @@ export const IndexPageTemplate = ({
         <AnimateWhenVisible
           animationName="enter-from-left"
           as="h1"
-          className="text-2xl text-center md:text-4xl p-3 md:p-4 text-blue-900 rounded-tr rounded-tl bg-blue-100 shadow-lg"
+          className="text-2xl text-center md:text-4xl p-3 md:p-4 text-blue-900 rounded-tr rounded-tl  shadow-lg"
+          style={{
+            background: 'rgba(235, 248, 255, 0.86)'
+          }}
         >
           {title}
         </AnimateWhenVisible>
