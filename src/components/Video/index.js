@@ -4,10 +4,19 @@ import join from '../join'
 
 export default ({ src, className, ...domProps }) => {
   const domRef = useRef()
-  const [size, setSize] = useState(null)
-  useResizeObserver(domRef, size => {
-    setSize(size)
+  const [size, setSize] = useState({
+    width: 640,
+    height: 320
   })
+  useResizeObserver(
+    domRef,
+    size => {
+      setSize(size)
+    },
+    {
+      earlyAttach: true
+    }
+  )
   return (
     <div {...domProps} className={join('ratio-16-9', className)} ref={domRef}>
       {size ? (
