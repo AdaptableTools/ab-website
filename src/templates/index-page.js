@@ -56,10 +56,7 @@ export const IndexPageTemplate = ({
         style={{ margin: '20px auto' }}
         className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
       >
-        <ExternalLink
-          style={{ color: 'white' }}
-          href="http://demo.adaptableblotter.com/"
-        >
+        <ExternalLink href="http://demo.adaptableblotter.com/">
           {subtitle}
         </ExternalLink>
       </AnimateWhenVisible>

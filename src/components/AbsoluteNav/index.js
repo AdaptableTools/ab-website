@@ -1,8 +1,8 @@
 import React, { useLayoutEffect, useEffect, useRef } from 'react'
 import Navbar from '../Navbar'
 
-let initialBg = 'rgba(255, 255, 255, 0.95)'
-let scrolledBg = 'rgba(255, 255, 255, 0.98)'
+let initialBg = 'rgba(255, 255, 255, 0.91)'
+let scrolledBg = 'rgba(255, 255, 255, 0.95)'
 let maxScrolledBg = 'rgba(255, 255, 255, 1)'
 
 const AbsoluteNav = () => {
@@ -30,7 +30,7 @@ const AbsoluteNav = () => {
 
     let { height, parentHeight } = getHeights()
 
-    domRef.current.style.height = `${height}px`
+    // domRef.current.style.height = `${height}px`
 
     let currentScrollTop = 0
 
@@ -69,7 +69,7 @@ const AbsoluteNav = () => {
     }
   })
   return (
-    <div style={{ width: '100%' }} ref={domRef}>
+    <div style={{ width: '100%' }} className="mb-20" ref={domRef}>
       <Navbar
         style={{
           position: 'fixed',

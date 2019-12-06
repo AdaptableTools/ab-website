@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Take control of your data universe with Adaptable Tools - we bring your data to life
 subtitle: See for yourself
-image: /img/Carousel6.png
+image: /img/Carousel7.png
 heading: We make data work for you
 mainpitch:
   title: Putting the power of data into your hands

@@ -9,6 +9,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
       height: 550,
       maxHeight: '55vh',
       flexFlow: 'column',
+      justifyContent: 'center',
       backgroundImage: `url(${
         image && !!image.childImageSharp
           ? image.childImageSharp.fluid.src
