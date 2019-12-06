@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useLayoutEffect, useEffect, useRef } from 'react'
 import Navbar from '../Navbar'
 
 let initialBg = 'rgba(255, 255, 255, 0.95)'
@@ -7,7 +7,7 @@ let maxScrolledBg = 'rgba(255, 255, 255, 1)'
 
 const AbsoluteNav = () => {
   const domRef = useRef()
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!domRef.current || !domRef.current.firstChild) {
       return
     }
