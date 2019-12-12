@@ -17,6 +17,7 @@ export default ({ title, className, style, animate = true, as = 'h1' }) => {
   return animate ? (
     <AnimateWhenVisible
       animationName="enter-from-left"
+      animationDuration="0.7s"
       className={className}
       style={style}
       as={Cmp}

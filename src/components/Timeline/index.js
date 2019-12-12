@@ -1,9 +1,11 @@
 import React from 'react'
+import AnimateWhenVisible from '../AnimateWhenVisible'
 
 const width = 5
 
 export default ({
   steps,
+  withAnimation = true,
   variant = 'dark',
   darkColor = 'var(--ab-color-blue)',
   space = 20,
@@ -79,14 +81,23 @@ export default ({
         if (i % 2) {
           dotStyle.marginLeft = 'calc(50% + 20px)'
         }
+        const Cmp = withAnimation ? AnimateWhenVisible : 'div'
         return (
           <>
-            <div style={{ position: 'relative', width: '100%' }}>
+            <Cmp
+              style={{
+                position: 'relative',
+                width: '100%',
+                animationDuration: '1s'
+              }}
+              animationDelay={`${i * 300 + 300}ms`}
+              animationName={!(i % 2) ? 'enter-from-left' : 'enter-from-right'}
+            >
               <div style={style} key={i}>
                 <div style={dotStyle}></div>
                 {step}
               </div>
-            </div>
+            </Cmp>
           </>
         )
       })}

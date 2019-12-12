@@ -58,7 +58,7 @@ export const AdaptableBlotterPageTemplate = ({
               {keyfeatures.map((feature, i) => {
                 return (
                   <AnimateWhenVisible
-                    animationDelay={`0.${i + 2}s`}
+                    animationDelay={`${i * 300 + 200}ms`}
                     key={feature.name}
                     className="p-4  "
                   >
@@ -105,7 +105,7 @@ export const AdaptableBlotterPageTemplate = ({
           {usecases.map((usecase, i) => {
             return (
               <AnimateWhenVisible
-                animationDelay={`0.${i + 3}s`}
+                animationDelay={`${i * 200 + 200}ms`}
                 key={usecase.who}
                 className={` text-xl font-normal  ${
                   i % 2 ? 'bg-white ' : 'text-white'
