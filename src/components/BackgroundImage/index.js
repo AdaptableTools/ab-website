@@ -9,6 +9,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
     style={{
       height: 550,
       maxHeight: '55vh',
+      minHeight: 380,
       flexFlow: 'column',
       justifyContent: 'center',
       backgroundImage: `url(${

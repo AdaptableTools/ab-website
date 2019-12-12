@@ -10,9 +10,7 @@ exports.createPages = ({ actions, graphql }) => {
     {
       allMarkdownRemark(
         limit: 1000
-        filter: {
-          parent: { internal: { type: { ne: "FrontmatterMarkdownFile" } } }
-        }
+        filter: { parent: { internal: { type: { eq: "File" } } } }
       ) {
         edges {
           node {

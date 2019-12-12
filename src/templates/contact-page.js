@@ -7,6 +7,7 @@ import Button from '../components/Button'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 import MaxWidth from '../components/MaxWidth'
+import Timeline from '../components/Timeline'
 
 function encode(data) {
   return Object.keys(data)
@@ -126,6 +127,14 @@ export const ContactPageTemplate = ({
         <PageContent className="content" content={content} />
         {/*<ContactForm />*/}
       </MaxWidth>
+      <Timeline
+        steps={[
+          <div>Traders in london</div>,
+          <div>Live data</div>,
+          <div>+ AdaptableBlotter</div>,
+          <div>= great results</div>
+        ]}
+      />
     </Layout>
   )
 }

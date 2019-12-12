@@ -1,8 +1,27 @@
 ---
 templateKey: adaptable-blotter-page
-title: Adaptable Blotter
+title: 'Adaptable Blotter: Transforming your relationship with Data'
 video: https://www.youtube.com/embed/-YsDeiDL9A4
-headline: another headline after video
+headline: great headline after video content
+description: |
+  Cupidatat labore *laborum* ullsamco aute! Ut est officia aute consectetur aliquip et aliqua nisi deserunt [tempor](https://google.com) ullamco ad. Ad minim dolor ad nostrud nulla anim sit mollit veniam commodo fugiat ad. Veniam amet laborum nisi occaecat aliquip aute nulla enim.
+keyfeaturestitle: Customizable title for key features
+usecaseTitle: The Adaptable Blotter can help to drive any area of business
+cta: See it in action
+usecases:
+  - who: Traders in London and New York
+    where: FX trade data
+    result: System that allows data changes to be seen clearly with easy, accurate editing
+    image: /img/full-picture.png
+  - who: Front office sales teams in global bank
+    where: Cross-asset sales data
+    result: Allows rapid querying across millions of rows returning rapid results to highlight relevant data
+    image: /img/user-support.png
+  - who: Millions unstructured data records referencing Libor
+    where: Third party applications reading data
+    result: Searching and filtering unstructured data, with reports and views to show up to date Libor exposure
+    image: /img/infinite-applications.png
+
 keyfeatures:
   - description: Brings the full picture together fast, allowing you to focus on getting more out of your data
     name: Feature 1
@@ -13,11 +32,15 @@ keyfeatures:
   - description: Giving users, support, developers and managers what they need time and again
     image: /img/user-support.png
     name: Feature 3
+
+testimonials:
+  - text: Everything you could possibly want from a table tool.
+  - text: Setting the standard for the user interface.
+  - text: Users love it – and are asking for more.
+  - text: Well on its way to becoming the Excel of front-office tools.
+  - text: Genuinely transformational.
+  - text: I wish I’d had this years ago.
 ---
-
-HTML Content
-
-![](/img/overview-html5-cover.png 'Take Control of Your Data')
 
 HEADLINE
 

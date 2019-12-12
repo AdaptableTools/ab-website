@@ -96,8 +96,13 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Video', name: 'video', widget: 'youtube' }
           - { label: 'Headline', name: 'headline', widget: 'string' }
-
+          - { label: Description, name: description, widgeth: markdown }
           - { label: 'Content', name: 'body', widget: 'markdown' }
+          - {
+              label: 'Key features title',
+              name: 'keyfeaturestitle',
+              widget: 'string',
+            }
           - {
               label: 'Key Features',
               name: keyfeatures,
@@ -111,6 +116,20 @@ collections:
                     widget: text,
                   },
                   { label: 'Feature image', name: image, widget: image },
+                ],
+            }
+          - { label: 'Usecases title', name: 'usecaseTitle', widget: string }
+          - { label: 'Call to action text', name: 'cta', widget: string }
+          - {
+              label: 'Usecases',
+              name: usecases,
+              widget: list,
+              fields:
+                [
+                  { label: 'Who', name: who, widget: text },
+                  { label: 'Where', name: where, widget: text },
+                  { label: 'Result', name: result, widget: text },
+                  { label: 'Image', name: image, widget: image },
                 ],
             }
       - file: 'src/pages/grid-gurus/index.md'

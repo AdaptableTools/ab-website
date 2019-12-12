@@ -1,94 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import Avatar from 'avataaars'
+
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
 import Nav from '../components/Navbar'
 import GridLayout from '../components/GridLayout'
-import ClientQuotes from '../components/ClientQuotes'
 
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 import Button from '../components/Button'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
 import Video from '../components/Video'
+import ClientQuotes from '../components/ClientQuotes'
+import avatars from '../components/avatars'
 
 // get them from https://getavataaars.com
 
-const avatars = [
-  <Avatar
-    avatarStyle="Circle"
-    pieceSize={100}
-    topType="LongHairMiaWallace"
-    accessoriesType="Blank"
-    hairColor="BrownDark"
-    facialHairType="Blank"
-    clotheType="BlazerShirt"
-    eyeType="Default"
-    eyebrowType="Default"
-    mouthType="Default"
-    skinColor="Light"
-  />,
-  <Avatar
-    avatarStyle="Circle"
-    pieceSize={100}
-    topType="ShortHairShortFlat"
-    accessoriesType="Round"
-    hairColor="Brown"
-    facialHairType="BeardLight"
-    facialHairColor="Brown"
-    clotheType="BlazerShirt"
-    eyeType="Default"
-    eyebrowType="Default"
-    mouthType="Smile"
-    skinColor="Brown"
-  />,
-  <Avatar
-    avatarStyle="Circle"
-    pieceSize={100}
-    topType="LongHairStraightStrand"
-    accessoriesType="Blank"
-    hairColor="Brown"
-    facialHairType="Blank"
-    clotheType="BlazerShirt"
-    eyeType="Happy"
-    eyebrowType="RaisedExcited"
-    mouthType="Twinkle"
-    skinColor="Brown"
-  />,
-  <Avatar
-    avatarStyle="Circle"
-    pieceSize={100}
-    topType="LongHairStraightStrand"
-    accessoriesType="Blank"
-    hairColor="Black"
-    facialHairType="Blank"
-    clotheType="ShirtScoopNeck"
-    clotheColor="Red"
-    eyeType="Default"
-    eyebrowType="DefaultNatural"
-    mouthType="Twinkle"
-    skinColor="Pale"
-  />,
-  <Avatar
-    avatarStyle="Circle"
-    pieceSize={100}
-    topType="ShortHairShortRound"
-    accessoriesType="Blank"
-    hairColor="BrownDark"
-    facialHairType="Blank"
-    clotheType="Hoodie"
-    clotheColor="Heather"
-    eyeType="Default"
-    eyebrowType="DefaultNatural"
-    mouthType="Twinkle"
-    skinColor="Black"
-  />
-]
-
-export const GridGurusTemplate = ({
+export const GridGurusPageTemplate = ({
   title,
   content,
   testimonials,
@@ -167,7 +97,7 @@ export const GridGurusTemplate = ({
 
       {testimonials && testimonials.length ? (
         <MaxWidth className="mt-16 pb-8">
-          <AnimateWhenVisible className="text-5xl font-thin text-blue-800">
+          <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
             <h3>What clients are saying</h3>
           </AnimateWhenVisible>
           <ClientQuotes quotes={testimonials} avatars={avatars} />
@@ -183,7 +113,7 @@ export const GridGurusTemplate = ({
   )
 }
 
-GridGurusTemplate.propTypes = {
+GridGurusPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func
@@ -194,7 +124,7 @@ const GridGurus = ({ data }) => {
 
   return (
     <Layout>
-      <GridGurusTemplate
+      <GridGurusPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}

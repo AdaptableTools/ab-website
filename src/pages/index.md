@@ -9,14 +9,12 @@ mainpitch:
 mainpitch_description: >
   [The Adaptable Blotter](/adaptable-blotter) is used by some of the world's largest financial services businesses to turbocharge data grids from the frontlines to the back office.
 
-
   The unique HTML5 toolbox makes working from large amounts of static or dynamic data straightforward, helping users work with the information that matters to them, to make the decisions that drive their business.
 
 
   The largest suite of data controls [hotlink to functions] available in the market
   Live data [visualisation tools](https://demo.adaptableblotter.com/charts/aggridcategorychartsdemo/) to help patterns emerge
   Full [audit functionality](https://demo.adaptableblotter.com/admin/aggridauditdemo/) to help meet regulatory requirements
-
 
   Adaptable Tools ["Grid Gurus"](/grid-gurus) team also offers full consultancy and development support to help integrate effective data management into new and existing systems.
 
