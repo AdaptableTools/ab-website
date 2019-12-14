@@ -64,6 +64,10 @@ const TemplateWrapper = ({ children }) => {
         </Helmet>
         <div style={{ flex: 1 }}>{children}</div>
         <Footer />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        ></link>
       </div>
     </ThemeProvider>
   )

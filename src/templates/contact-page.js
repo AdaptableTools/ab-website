@@ -7,7 +7,8 @@ import Button from '../components/Button'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
 import MaxWidth from '../components/MaxWidth'
-import Timeline from '../components/Timeline'
+
+import { graphql } from 'gatsby'
 
 function encode(data) {
   return Object.keys(data)

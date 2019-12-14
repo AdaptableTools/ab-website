@@ -15,12 +15,15 @@ import Button from '../components/Button'
 import avatars from '../components/avatars'
 import ExternalLink from '../components/ExternalLink'
 import Timeline from '../components/Timeline'
+import Headline from '../components/Headline'
 
 export const AdaptableBlotterPageTemplate = ({
   title,
   content,
   cta,
   keyfeatures,
+  functionalities,
+  functionalitiestitle,
   headline,
   usecases,
   usecaseTitle,
@@ -38,21 +41,27 @@ export const AdaptableBlotterPageTemplate = ({
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
-        {video ? <Video src={video} /> : null}
+        {video ? (
+          <AnimateWhenVisible>
+            <Video src={video} />
+          </AnimateWhenVisible>
+        ) : null}
         <br />
-        <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-          {headline}
-        </h2>
-        <p className="mt-10 text-xl">
-          <HTMLContent>{description}</HTMLContent>
-        </p>
+        <AnimateWhenVisible>
+          <Headline as="h2" className="text-blue-800 mb-5">
+            {headline}
+          </Headline>
+          <p className="mt-10 text-xl">
+            <HTMLContent>{description}</HTMLContent>
+          </p>
+        </AnimateWhenVisible>
       </MaxWidth>
 
       {keyfeatures && keyfeatures.length ? (
         <div className="bg-blue-800">
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible className="text-5xl font-thin text-white pt-16">
-              <h3>{keyfeaturestitle}</h3>
+            <AnimateWhenVisible as={Headline} className="text-white pt-16">
+              {keyfeaturestitle}
             </AnimateWhenVisible>
             <GridLayout>
               {keyfeatures.map((feature, i) => {
@@ -82,10 +91,8 @@ export const AdaptableBlotterPageTemplate = ({
 
       {testimonials && testimonials.length ? (
         <MaxWidth className="mt-16 pb-8">
-          <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
-            <h3>
-              Here's what some of those using the Adaptable Blotter have to say
-            </h3>
+          <AnimateWhenVisible as={Headline} className="text-blue-800 mb-5">
+            Here's what some of those using the Adaptable Blotter have to say
           </AnimateWhenVisible>
           <ClientQuotes quotes={testimonials} avatars={avatars} />
         </MaxWidth>
@@ -94,11 +101,8 @@ export const AdaptableBlotterPageTemplate = ({
       {usecases && usecases.length ? (
         <div className="bg-blue-800">
           <MaxWidth>
-            <AnimateWhenVisible
-              as="h2"
-              className="pt-8 text-5xl font-thin text-white"
-            >
-              <h3>{usecaseTitle}</h3>
+            <AnimateWhenVisible as={Headline} className="pt-8 text-white">
+              {usecaseTitle}
             </AnimateWhenVisible>
           </MaxWidth>
 
@@ -134,12 +138,24 @@ export const AdaptableBlotterPageTemplate = ({
                       <div className="text-3xl font-thin">
                         <b style={{ letterSpacing: '0.1rem' }}>RESULT:</b>{' '}
                         {usecase.result}
-                        <div style={{ maxHeight: 300 }}>
-                          {/*<PreviewCompatibleImage
-                            imageInfo={{
-                              image: usecase.image
-                            }}
-                          />*/}
+                        <div
+                          style={{ width: '100%' }}
+                          className="p-6 flex flex-col flex-1 justify-center"
+                        >
+                          <div style={{ width: '100%' }}>
+                            {/*<Img fixed={quote.image.childImageSharp.fixed} />*/}
+                            {
+                              <PreviewCompatibleImage
+                                imageStyle={{
+                                  maxHeight: '20rem',
+                                  maxWidth: '50vw'
+                                }}
+                                imageInfo={{
+                                  image: usecase.image
+                                }}
+                              />
+                            }
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -181,6 +197,43 @@ export const AdaptableBlotterPageTemplate = ({
         </div>
       ) : null}
 
+      {functionalities && functionalities.length ? (
+        <MaxWidth className="mt-16 pb-8">
+          <AnimateWhenVisible as={Headline} className="pt-16 mb-8">
+            {functionalitiestitle}
+          </AnimateWhenVisible>
+          <GridLayout style={{ padding: 0 }}>
+            {functionalities.map((functionality, i) => {
+              return (
+                <AnimateWhenVisible
+                  animationDelay={`${i * 100 +
+                    100 +
+                    Math.floor(Math.random() * 200)}ms`}
+                  key={functionality.name}
+                  className="p-3 bg-blue-800 text-white"
+                >
+                  <div
+                    className="p-8 text-2xl"
+                    style={{
+                      display: 'flex',
+                      flexFlow: 'row',
+                      alignItems: 'center'
+                    }}
+                  >
+                    <i class="material-icons text-2xl">{functionality.icon}</i>
+                    <h4>{functionality.name}</h4>
+                  </div>
+
+                  <p className="text-center mt-4 text-xl pb-4 font-normal ">
+                    {functionality.description}
+                  </p>
+                </AnimateWhenVisible>
+              )
+            })}
+          </GridLayout>
+        </MaxWidth>
+      ) : null}
+
       <MaxWidth className="mt-16 pb-8">
         <PageContent className="content" content={content} />
       </MaxWidth>
@@ -207,6 +260,8 @@ const AdaptableBlotterPage = ({ data }) => {
         title={post.frontmatter.title}
         video={post.frontmatter.video}
         keyfeaturestitle={post.frontmatter.keyfeaturestitle}
+        functionalities={post.frontmatter.functionalities}
+        functionalitiestitle={post.frontmatter.functionalitiestitle}
         testimonials={post.frontmatter.testimonials}
         usecases={post.frontmatter.usecases}
         cta={post.frontmatter.cta}
@@ -264,6 +319,13 @@ export const adaptableBlotterPageQuery = graphql`
               }
             }
           }
+        }
+
+        functionalitiestitle
+        functionalities {
+          name
+          description
+          icon
         }
 
         cta

@@ -112,10 +112,29 @@ collections:
                   { label: 'Feature name', name: name, widget: string },
                   {
                     label: 'Feature description',
-                    name: descripton,
+                    name: description,
                     widget: text,
                   },
                   { label: 'Feature image', name: image, widget: image },
+                ],
+            }
+          - {
+              label: 'Functionalities',
+              name: functionalities,
+              widget: list,
+              fields:
+                [
+                  { label: 'Functionality name', name: name, widget: string },
+                  {
+                    label: 'Functionality description',
+                    name: description,
+                    widget: text,
+                  },
+                  {
+                    label: 'Functionality icon name (from material icons)',
+                    name: icon,
+                    widget: string,
+                  },
                 ],
             }
           - { label: 'Usecases title', name: 'usecaseTitle', widget: string }

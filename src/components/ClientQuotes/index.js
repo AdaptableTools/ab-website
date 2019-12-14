@@ -62,7 +62,7 @@ export default ({ quotes, avatars }) => (
           ) : null}
           {quote.image ? (
             <div
-              style={{ xmaxHeight: '20rem', width: '100%' }}
+              style={{ width: '100%' }}
               className="p-6 flex flex-col flex-1 justify-center"
             >
               <div style={{ width: '100%' }}>
