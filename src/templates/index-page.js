@@ -23,8 +23,7 @@ export const IndexPageTemplate = ({
   highlights,
   quotes,
   awards,
-  mainpitch,
-  intro
+  mainpitch
 }) => (
   <div>
     <BackgroundImage image={image}>

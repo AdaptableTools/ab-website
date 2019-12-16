@@ -10,8 +10,6 @@ tags:
   - my
   - org
 ---
-![](/img/Carousel14.png)
-
 Cillum Lorem voluptate qui dolor sit nisi. Minim ad Lorem pariatur culpa in excepteur. Duis id sint nulla anim id est aliquip ut consequat exercitation eiusmod. Duis pariatur nisi aliquip laborum. Lorem exercitation excepteur mollit consequat anim mollit deserunt.
 
 Dolore dolore ut ut velit dolor sint proident tempor est deserunt ut elit consectetur sunt. Irure sint pariatur ad consectetur commodo ullamco. Velit deserunt non laboris et id non minim laboris dolore ex id non mollit. Consectetur do nostrud occaecat incididunt id ad cillum cupidatat ea ut aliqua dolor nulla laborum. Labore labore duis sint cupidatat ad dolor. Elit dolor adipisicing consequat culpa duis. Enim magna commodo ad anim consequat commodo eu non.

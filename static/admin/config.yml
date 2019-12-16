@@ -22,7 +22,11 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
-      - { label: 'Featured Image', name: 'featuredimage', widget: image }
+      - {
+          label: 'Featured Image (appears in the index/listing page)',
+          name: 'featuredimage',
+          widget: image,
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
 
@@ -97,7 +101,6 @@ collections:
           - { label: 'Video', name: 'video', widget: 'youtube' }
           - { label: 'Headline', name: 'headline', widget: 'string' }
           - { label: Description, name: description, widgeth: markdown }
-          - { label: 'Content', name: 'body', widget: 'markdown' }
           - {
               label: 'Key features title',
               name: 'keyfeaturestitle',
@@ -151,16 +154,23 @@ collections:
                   { label: 'Image', name: image, widget: image },
                 ],
             }
+          - { label: 'Content', name: 'body', widget: 'markdown' }
       - file: 'src/pages/grid-gurus/index.md'
         label: 'Grid Gurus'
         name: 'grid-gurus'
         fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
           - {
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
               default: 'grid-gurus-page',
             }
+          - { label: 'Call to action 1', name: 'cta1', widget: 'string' }
+          - { label: 'Call to action 2', name: 'cta2', widget: 'string' }
+          - { label: 'Headline', name: 'headline', widget: 'text' }
+          - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: 'Video', name: 'video', widget: 'text' }
           - {
               name: 'services',
               widget: list,
@@ -172,7 +182,7 @@ collections:
               fields:
                 [{ label: 'testimonial text', name: text, widget: string }],
             }
-          - { label: 'Title', name: 'title', widget: 'string' }
+
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/other-data-tools-partners/index.md'
         label: 'Other Data Tools (Partners)'

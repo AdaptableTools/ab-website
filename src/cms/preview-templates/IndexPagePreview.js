@@ -10,10 +10,13 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       <IndexPageTemplate
         image={data.image}
         title={data.title}
+        subtitle={data.subtitle}
         heading={data.heading}
         subheading={data.subheading}
         description={data.description}
-        intro={data.intro || { blurbs: [] }}
+        highlights={data.highlights || []}
+        awards={data.awards || []}
+        quotes={data.quotes || []}
         mainpitch={data.mainpitch || {}}
       />
     )
@@ -24,9 +27,9 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
 IndexPagePreview.propTypes = {
   entry: PropTypes.shape({
-    getIn: PropTypes.func,
+    getIn: PropTypes.func
   }),
-  getAsset: PropTypes.func,
+  getAsset: PropTypes.func
 }
 
 export default IndexPagePreview
