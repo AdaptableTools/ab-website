@@ -1,7 +1,6 @@
 ---
 templateKey: contact-page
-path: /contact
-title: Contact us
+title: Contact
 headerimage: /img/jumbotron.jpg
 ---
 
