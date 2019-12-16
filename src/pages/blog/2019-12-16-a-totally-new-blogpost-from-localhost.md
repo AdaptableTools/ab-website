@@ -10,8 +10,7 @@ tags:
   - my
   - org
 ---
-
-![test](/img/Carousel14.png)
+![](/img/Carousel14.png)
 
 Cillum Lorem voluptate qui dolor sit nisi. Minim ad Lorem pariatur culpa in excepteur. Duis id sint nulla anim id est aliquip ut consequat exercitation eiusmod. Duis pariatur nisi aliquip laborum. Lorem exercitation excepteur mollit consequat anim mollit deserunt.
 
