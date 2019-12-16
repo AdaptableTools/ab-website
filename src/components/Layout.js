@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 import Footer from './Footer'
-import Navbar from './Navbar'
 
 import './all.sass'
 import './index.scss'
@@ -18,8 +17,12 @@ const colors = Object.keys(theme.colors).reduce((acc, key) => {
   return acc
 }, {})
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+export const PreviewTemplateWrapper = ({
+  footer,
+  children,
+  title,
+  description
+}) => {
   return (
     <ThemeProvider theme={theme}>
       <div style={{ display: 'flex', flexFlow: 'column', flex: 1, ...colors }}>
@@ -63,13 +66,26 @@ const TemplateWrapper = ({ children }) => {
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
         <div style={{ flex: 1 }}>{children}</div>
-        <Footer />
+        {footer}
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         ></link>
       </div>
     </ThemeProvider>
+  )
+}
+
+const TemplateWrapper = ({ children }) => {
+  const { title, description } = useSiteMetadata()
+  return (
+    <PreviewTemplateWrapper
+      title={title}
+      description={description}
+      footer={<Footer />}
+    >
+      {children}
+    </PreviewTemplateWrapper>
   )
 }
 

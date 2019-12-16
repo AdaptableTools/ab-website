@@ -25,6 +25,8 @@ export default ({ title, className, style, animate = true, as = 'h1' }) => {
       {title}
     </AnimateWhenVisible>
   ) : (
-    <Cmp className={className} style={style}></Cmp>
+    <Cmp className={className} style={style}>
+      {title}
+    </Cmp>
   )
 }

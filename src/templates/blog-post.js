@@ -4,7 +4,10 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
+import AbsoluteNav from '../components/AbsoluteNav'
 import Content, { HTMLContent } from '../components/Content'
+
+import Headline from '../components/Headline'
 
 export const BlogPostTemplate = ({
   content,
@@ -17,35 +20,41 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section
-      className="section"
-      style={{
-        fontSize: 'var(--ab-font-size-4)'
-      }}
-    >
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="text-2xl font-light">{title}</h1>
-            <p className="text-base">{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <>
+      <AbsoluteNav inplace />
+
+      <section
+        className="section"
+        style={{
+          fontSize: 'var(--ab-font-size-4)'
+        }}
+      >
+        {helmet || ''}
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <Headline as="h1" className="text-blue-800 mb-10">
+                {title}
+              </Headline>
+              <p className=" mb-8">{description}</p>
+              <PostContent content={content} />
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

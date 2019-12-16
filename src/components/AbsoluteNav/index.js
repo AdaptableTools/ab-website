@@ -5,12 +5,16 @@ let initialBg = 'rgba(255, 255, 255, 0.91)'
 let scrolledBg = 'rgba(255, 255, 255, 0.95)'
 let maxScrolledBg = 'rgba(255, 255, 255, 1)'
 
-const AbsoluteNav = () => {
+const AbsoluteNav = ({ inplace }) => {
   const domRef = useRef()
   useLayoutEffect(() => {
+    if (inplace) {
+      return
+    }
     if (!domRef.current || !domRef.current.firstChild) {
       return
     }
+
     const navbar = domRef.current.firstChild
     if (!domRef.current.parentNode) {
       navbar.style.position = 'absolute'
@@ -69,10 +73,14 @@ const AbsoluteNav = () => {
     }
   })
   return (
-    <div style={{ width: '100%' }} className="mb-20" ref={domRef}>
+    <div
+      style={{ width: '100%' }}
+      className={inplace ? '' : 'mb-20'}
+      ref={domRef}
+    >
       <Navbar
         style={{
-          position: 'fixed',
+          position: inplace ? 'relative' : 'fixed',
           top: 0,
           width: '100%',
           zIndex: 1000,

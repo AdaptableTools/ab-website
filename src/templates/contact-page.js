@@ -119,16 +119,14 @@ export const ContactPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content
   return (
-    <Layout>
+    <>
       <BackgroundImage title={title} image={headerImage}>
         <AbsoluteNav />
       </BackgroundImage>
-
       <MaxWidth className="mt-16 pb-8">
         <PageContent className="content" content={content} />
-        {/*<ContactForm />*/}
       </MaxWidth>
-    </Layout>
+    </>
   )
 }
 
@@ -141,14 +139,18 @@ ContactPageTemplate.propTypes = {
 
 const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data
+  const title = post.frontmatter.title
+  const headerImage = post.frontmatter.headerimage
 
   return (
-    <ContactPageTemplate
-      contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      headerImage={post.frontmatter.headerimage}
-      content={post.html}
-    />
+    <Layout>
+      <ContactPageTemplate
+        contentComponent={HTMLContent}
+        title={post.frontmatter.title}
+        headerImage={post.frontmatter.headerimage}
+        content={post.html}
+      />
+    </Layout>
   )
 }
 
