@@ -16,6 +16,8 @@ function encode(data) {
     .join('&')
 }
 
+/*
+ // The `form-name` hidden field is required to support form submissions without JavaScript 
 export class ContactForm extends React.Component {
   constructor(props) {
     super(props)
@@ -51,7 +53,7 @@ export class ContactForm extends React.Component {
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
       >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        
         <input type="hidden" name="form-name" value="contact" />
         <div hidden>
           <label>
@@ -110,6 +112,7 @@ export class ContactForm extends React.Component {
     )
   }
 }
+*/
 
 export const ContactPageTemplate = ({
   title,
@@ -139,8 +142,6 @@ ContactPageTemplate.propTypes = {
 
 const ContactPage = ({ data }) => {
   const { markdownRemark: post } = data
-  const title = post.frontmatter.title
-  const headerImage = post.frontmatter.headerimage
 
   return (
     <Layout>

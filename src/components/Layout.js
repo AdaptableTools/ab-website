@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
+// import { ThemeProvider } from 'emotion-theming'
+
 import theme from './theme'
 import Footer from './Footer'
 
@@ -78,6 +80,7 @@ export const PreviewTemplateWrapper = ({
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <PreviewTemplateWrapper
       title={title}

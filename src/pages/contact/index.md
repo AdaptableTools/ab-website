@@ -1,8 +1,9 @@
 ---
 templateKey: contact-page
-title: Contact
+title: Contact us
 headerimage: /img/jumbotron.jpg
 ---
+
 To find out more about the Adaptable Blotter and the other services we offer:
 
 **Email us: sales@adaptabletools.com**

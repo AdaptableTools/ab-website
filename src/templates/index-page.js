@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import { Box } from 'rebass'
-
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 

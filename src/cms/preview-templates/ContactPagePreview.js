@@ -4,12 +4,11 @@ import { ContactPageTemplate } from '../../templates/contact-page'
 import PreviewLayout from './Preview'
 
 const ContactPagePreview = ({ entry, widgetFor }) => (
-  <PreviewLayout>
-    <ContactPageTemplate
-      title={entry.getIn(['data', 'title'])}
-      content={widgetFor('body')}
-    />
-  </PreviewLayout>
+  <ContactPageTemplate
+    title={entry.getIn(['data', 'title'])}
+    headerImage={entry.getIn(['data', 'headerimage'])}
+    content={widgetFor('body')}
+  />
 )
 
 ContactPagePreview.propTypes = {

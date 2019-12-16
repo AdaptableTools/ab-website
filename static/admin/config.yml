@@ -5,6 +5,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '_'
+
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -210,7 +215,7 @@ collections:
               default: 'contact-page',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Header image', name: 'header-image', widget: 'image' }
+          - { label: 'Header image', name: 'headerimage', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/support/index.md'
         label: 'Support'

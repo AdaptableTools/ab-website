@@ -1,7 +1,8 @@
 import CMS from 'netlify-cms-app'
+import React from 'react'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
-import { Control, Preview } from './widgets/youtube'
+import { Control, Preview as YoutubePreview } from './widgets/youtube'
 
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
@@ -11,19 +12,29 @@ import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
+import withStyles from './withStyles'
+
+const registerTemplateForPreview = (name, Cmp) =>
+  CMS.registerPreviewTemplate(name, withStyles(Cmp))
+
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('adaptable-blotter', AdaptableBlotterPagePreview)
-CMS.registerPreviewTemplate(
+registerTemplateForPreview('index', IndexPagePreview)
+registerTemplateForPreview('adaptable-blotter', AdaptableBlotterPagePreview)
+registerTemplateForPreview(
   'other-data-tools-partners',
   AdaptableBlotterPagePreview
 )
-CMS.registerPreviewTemplate('grid-gurus', GridGurusPagePreview)
-CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('contact', ContactPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+registerTemplateForPreview('grid-gurus', GridGurusPagePreview)
+registerTemplateForPreview('about', AboutPagePreview)
+registerTemplateForPreview('contact', ContactPagePreview)
 
-CMS.registerWidget('youtube', Control, Preview)
+registerTemplateForPreview('products', ProductPagePreview)
+registerTemplateForPreview('blog', BlogPostPreview)
+
+CMS.registerWidget('youtube', Control, YoutubePreview)
+
+// CMS.registerPreviewStyle(styles.toString(), { raw: true })
+
+// CMS.registerPreviewStyle('../components/index.scss')

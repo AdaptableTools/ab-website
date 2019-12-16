@@ -2,7 +2,16 @@ import React from 'react'
 
 import './index.scss'
 const AnimateWhenVisible = props => {
-  let { as, style, threshold, debug, ...domProps } = props
+  let {
+    as,
+    style,
+    threshold,
+    debug,
+    animationName: _,
+    animationDelay: __,
+    animationDuration: ___,
+    ...domProps
+  } = props
   const Cmp = as || 'div'
   threshold = threshold || 0.2
 
