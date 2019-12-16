@@ -3,7 +3,6 @@ templateKey: contact-page
 title: Contact
 headerimage: /img/jumbotron.jpg
 ---
-
 To find out more about the Adaptable Blotter and the other services we offer:
 
 **Email us: sales@adaptabletools.com**
@@ -24,5 +23,3 @@ https://twitter.com/AdaptableTools
 ## Development
 
 If you think you have what it takes to join our award winning Grid support and development teams, please send an introductory email and a CV or summary of your experience to jonny.wolfson@adaptabletools.com
-
-or fill the contact form below
