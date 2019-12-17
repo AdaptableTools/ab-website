@@ -1,29 +1,40 @@
 ---
+title: Getting Grids to Work for You
 templateKey: grid-gurus-page
-title: Grid Gurus
 cta1: Get in touch
-cta2: Find out more
-video: https://www.youtube.com/embed/-YsDeiDL9A4
-headline: Driving Forward the Data Management Revolution Together
-description: Ad ipsum ad adipisicing ad irure non. Sint officia quis quis pariatur nostrud ad ipsum. Voluptate sit id consequat eiusmod velit anim cillum esse Lorem ad incididunt. Nulla voluptate aliqua non irure eiusmod consectetur.
+cta2: DELETE THIS
+headline: >-
+  Controlling data properly requires a range of tools and specialist skills. 
+  The Adaptable Blotter [Link] is only one part of the jigsaw. 
+description: >
+  At Adaptable Tools we have built a team to help with every aspect of your data
+  project. 
 
+  Our Grid Gurus have a deep understanding of all the options available in the
+  market and provide objective input to help design your system and build it
+  quickly and cost-efficiently.  They can be fully integrated into a development
+  project, or come in for a few days to provide direction and specialist
+  configuration.  They can get a Proof of Concept up and running, or set up and
+  configure a grid for you, leaving the regular development team free to do
+  other things. 
+video: 'https://www.youtube.com/watch?v=qPxwsIs7JaI'
 services:
-  - name: Excepteur labore culpa commodo proident labore mollit sit.
-
-  - name: Sunt eiusmod aute laborum nulla aliquip anim cillum nulla nostrud.
-
-  - name: Nisi adipisicing sit dolore sit irure esse voluptate esse id magna velit.
-
-  - name: Exercitation enim eu ipsum irure velit dolore laboris sunt consequat.
-
+  - name: 'System architecture  '
+  - name: >-
+      Expertise in installing and configuring all major DataGrids including
+      DevExpress, Infragistics, Kendo and ag-Grid. 
+  - name: Data display modes
+  - name: Server/Client
 testimonials:
   - text: Hugely valuable input at a key point in my project.
-
-  - text: Worked well with my developers providing specialist know-how and training them
-
+  - text: >-
+      Worked well with my developers providing specialist know-how and training
+      them
   - text: I’m not sure I would ever have got a demo off the ground without them
-
-  - text: Very professional... really know what they are doing.
+  - text: >-
+      A big time and money saver – they knew exactly what to do and found lots
+      of shortcuts.
+  - text: Very professional… really know what they are doing.
 ---
 
 ### Getting Grids to Work for You
