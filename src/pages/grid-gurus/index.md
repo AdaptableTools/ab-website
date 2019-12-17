@@ -36,23 +36,6 @@ testimonials:
       of shortcuts.
   - text: Very professional… really know what they are doing.
 ---
+### How it Works
 
-### Getting Grids to Work for You
-
-3 sentences max .
-
-### Our Service
-
-Couple of sentences
-
-Bullet points
-
-### Grid Guru Clients
-
-Client quotes
-
-### Grid Gurus Blog
-
-Blog post stories
-
-###
+A member of our Grid Gurus’ team can come in for as little as one day to add value to your project.  They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.  We can also put together a number of individuals for more complex work.  We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need.  The service is priced on a time basis, with competitive rates available for longer projects.  Get in touch LINK TO SALES EMAIL to find out more.
