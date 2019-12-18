@@ -63,6 +63,7 @@ usecases:
       up to date Libor exposure
     where: Third party applications reading data
     who: Millions unstructured data records referencing Libor
+functionalitiestitle: Key functions
 functionalities:
   - description: See it in action
     icon: flash_on
