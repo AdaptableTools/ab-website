@@ -101,7 +101,7 @@ export const GridGurusPageTemplate = ({
 
       <AnimateWhenVisible>
         <MaxWidth>
-          <PageContent className="content mt-16" content={content} />
+          <PageContent className="mt-16 mb-16" content={content} />
         </MaxWidth>
       </AnimateWhenVisible>
     </>

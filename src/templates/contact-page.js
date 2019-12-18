@@ -126,8 +126,8 @@ export const ContactPageTemplate = ({
       <BackgroundImage title={title} image={image}>
         <AbsoluteNav />
       </BackgroundImage>
-      <MaxWidth className="mt-16 pb-8">
-        <PageContent className="content" content={content} />
+      <MaxWidth className="mt-16 pb-16">
+        <PageContent content={content} />
       </MaxWidth>
     </>
   )
@@ -135,7 +135,7 @@ export const ContactPageTemplate = ({
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  headerImage: PropTypes.string,
+  image: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 }

@@ -2,9 +2,18 @@
   h2 {
     font-size: var(--ab-font-size-8);
     font-weight: 200;
+    color: var(--ab-color-blue);
+
+    &:not(:first-child) {
+      margin-top: var(--ab-space-4);
+    }
   }
   h3 {
     font-size: var(--ab-font-size-7);
     font-weight: 200;
+    color: var(--ab-color-blue);
+    &:not(:first-child) {
+      margin-top: var(--ab-space-4);
+    }
   }
 }

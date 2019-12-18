@@ -4,7 +4,6 @@ import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { Control, Preview as YoutubePreview } from './widgets/youtube'
 
-import AboutPagePreview from './preview-templates/AboutPagePreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
 import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview'
 import GridGurusPagePreview from './preview-templates/GridGurusPagePreview'
@@ -27,7 +26,6 @@ registerTemplateForPreview(
   AdaptableBlotterPagePreview
 )
 registerTemplateForPreview('grid-gurus', GridGurusPagePreview)
-registerTemplateForPreview('about', AboutPagePreview)
 registerTemplateForPreview('contact', ContactPagePreview)
 
 registerTemplateForPreview('blog', BlogPostPreview)
