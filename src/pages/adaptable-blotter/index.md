@@ -1,5 +1,6 @@
 ---
 templateKey: adaptable-blotter-page
+backgroundimage: /img/Carousel7.png
 title: 'Adaptable Blotter: Transforming your relationship with Data'
 video: 'https://www.youtube.com/watch?v=l5F3ROZJu5k'
 headline: 'Experience the Power of the Adaptable Blotter Toolkit [Link to demo site]'

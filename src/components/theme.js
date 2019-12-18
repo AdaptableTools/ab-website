@@ -1,6 +1,7 @@
 export const colors = {
   blue: 'var(--ab-color-blue)',
   washedblue: 'var(--ab-color-washedblue)',
+  text: 'var(--ab-color-text)',
   red: 'red'
 }
 

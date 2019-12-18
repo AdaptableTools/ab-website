@@ -6,6 +6,7 @@ import Video from '../components/Video'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
+import Strip, { getClassNameForVariant } from '../components/Strip'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
@@ -23,6 +24,7 @@ export const AdaptableBlotterPageTemplate = ({
   cta,
   keyfeatures,
   functionalities,
+  image,
   functionalitiestitle,
   headline,
   usecases,
@@ -35,9 +37,32 @@ export const AdaptableBlotterPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content
 
+  const hasTestimonials = testimonials && testimonials.length
+  const hasKeyFeatures = keyfeatures && keyfeatures.length
+  const hasUseCases = usecases && usecases.length
+  const hasFunctionalities = functionalities && functionalities.length
+
+  const strips = [
+    hasKeyFeatures,
+    hasTestimonials,
+    hasUseCases,
+    hasFunctionalities
+  ]
+  let stripVariants = strips
+    .filter(s => s)
+    .map((_, i) => (i % 2 === 0 ? 'dark' : 'light'))
+
+  let currentVariant = 0
+  const getVariant = () => {
+    const result = stripVariants[currentVariant]
+    currentVariant++
+    return result
+  }
+
+  let useCasesVariant
   return (
     <>
-      <BackgroundImage src={'/img/Carousel7.png'} title={title}>
+      <BackgroundImage image={image} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
@@ -56,11 +81,10 @@ export const AdaptableBlotterPageTemplate = ({
           </p>
         </AnimateWhenVisible>
       </MaxWidth>
-
-      {keyfeatures && keyfeatures.length ? (
-        <div className="bg-blue-800">
+      {hasKeyFeatures ? (
+        <Strip variant={getVariant()}>
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible as={Headline} className="text-white pt-16">
+            <AnimateWhenVisible as={Headline} className=" pt-16">
               {keyfeaturestitle}
             </AnimateWhenVisible>
             <GridLayout>
@@ -88,34 +112,38 @@ export const AdaptableBlotterPageTemplate = ({
               })}
             </GridLayout>
           </MaxWidth>
-        </div>
+        </Strip>
       ) : null}
 
-      {testimonials && testimonials.length ? (
-        <MaxWidth className="mt-16 pb-8">
-          <AnimateWhenVisible as={Headline} className="text-blue-800 mb-5">
-            Here's what some of those using the Adaptable Blotter have to say
-          </AnimateWhenVisible>
-          <ClientQuotes quotes={testimonials} avatars={avatars} />
-        </MaxWidth>
+      {hasTestimonials ? (
+        <Strip variant={getVariant()}>
+          <MaxWidth className="mt-16 pb-8">
+            <AnimateWhenVisible as={Headline} className="text-blue-800 mb-5">
+              Here's what some of those using the Adaptable Blotter have to say
+            </AnimateWhenVisible>
+            <ClientQuotes quotes={testimonials} avatars={avatars} />
+          </MaxWidth>
+        </Strip>
       ) : null}
-
-      {usecases && usecases.length ? (
-        <div className="bg-blue-800">
+      {hasUseCases ? (
+        <Strip variant={(useCasesVariant = getVariant())}>
           <MaxWidth>
-            <AnimateWhenVisible as={Headline} className="pt-8 text-white">
+            <AnimateWhenVisible as={Headline} className="pt-8">
               {usecaseTitle}
             </AnimateWhenVisible>
           </MaxWidth>
 
           {usecases.map((usecase, i) => {
+            const variants = ['light', 'dark']
+            const variantStartIndex = variants.indexOf(useCasesVariant)
+            const variant = variants[(i + variantStartIndex) % 2]
             return (
               <AnimateWhenVisible
                 animationDelay={`${i * 200 + 200}ms`}
                 key={usecase.who}
-                className={` text-xl font-normal  ${
-                  i % 2 ? 'bg-white ' : 'text-white'
-                }`}
+                className={` text-xl font-normal  ${getClassNameForVariant(
+                  variant
+                )}`}
               >
                 <MaxWidth
                   className="mt-16 pb-8 pt-8"
@@ -163,7 +191,15 @@ export const AdaptableBlotterPageTemplate = ({
                     </div>
                     <Timeline
                       darkColor="rgb(44, 82, 130)"
-                      variant={i % 2 ? 'dark' : 'light'}
+                      variant={
+                        i % 2
+                          ? useCasesVariant == 'dark'
+                            ? 'dark'
+                            : 'light'
+                          : useCasesVariant == 'dark'
+                          ? 'light'
+                          : 'dark'
+                      }
                       stepStyle={{
                         maxWidth: 350
                       }}
@@ -196,46 +232,50 @@ export const AdaptableBlotterPageTemplate = ({
               </Button>
             </ExternalLink>
           </AnimateWhenVisible>
-        </div>
+        </Strip>
       ) : null}
-
-      {functionalities && functionalities.length ? (
-        <MaxWidth className="mt-16 pb-8">
-          <AnimateWhenVisible as={Headline} className="pt-16 mb-8">
-            {functionalitiestitle}
-          </AnimateWhenVisible>
-          <GridLayout style={{ padding: 0 }}>
-            {functionalities.map((functionality, i) => {
-              return (
-                <AnimateWhenVisible
-                  animationDelay={`${i * 100 +
-                    100 +
-                    Math.floor(Math.random() * 200)}ms`}
-                  key={functionality.name}
-                  className="p-3 bg-blue-800 text-white"
-                >
-                  <div
-                    className="p-8 text-2xl"
-                    style={{
-                      display: 'flex',
-                      flexFlow: 'row',
-                      alignItems: 'center'
-                    }}
+      {hasFunctionalities ? (
+        <Strip variant={getVariant()}>
+          <MaxWidth className="mt-16 pb-8">
+            <AnimateWhenVisible as={Headline} className="pt-16 mb-8">
+              {functionalitiestitle}
+            </AnimateWhenVisible>
+            <GridLayout style={{ padding: 0 }}>
+              {functionalities.map((functionality, i) => {
+                return (
+                  <AnimateWhenVisible
+                    animationDelay={`${i * 100 +
+                      100 +
+                      Math.floor(Math.random() * 200)}ms`}
+                    key={functionality.name}
+                    className="p-3 bg-blue-800 text-white"
                   >
-                    <i class="material-icons text-2xl">{functionality.icon}</i>
-                    <h4>{functionality.name}</h4>
-                  </div>
+                    <div
+                      className="p-8 text-2xl"
+                      style={{
+                        display: 'flex',
+                        flexFlow: 'row',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <i class="material-icons text-2xl">
+                        {functionality.icon}
+                      </i>
+                      <h4>{functionality.name}</h4>
+                    </div>
 
-                  <p className="text-center mt-4 text-xl pb-4 font-normal ">
-                    {functionality.description}
-                  </p>
-                </AnimateWhenVisible>
-              )
-            })}
-          </GridLayout>
-        </MaxWidth>
+                    {functionality.description ? (
+                      <p className="text-center mt-4 text-xl pb-4 font-normal ">
+                        {functionality.description}
+                      </p>
+                    ) : null}
+                  </AnimateWhenVisible>
+                )
+              })}
+            </GridLayout>
+          </MaxWidth>
+        </Strip>
       ) : null}
-
       <MaxWidth className="mt-16 pb-8">
         <PageContent className="content" content={content} />
       </MaxWidth>
@@ -261,6 +301,7 @@ const AdaptableBlotterPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}
+        image={post.frontmatter.image}
         keyfeaturestitle={post.frontmatter.keyfeaturestitle}
         functionalities={post.frontmatter.functionalities}
         functionalitiestitle={post.frontmatter.functionalitiestitle}
@@ -287,14 +328,6 @@ AdaptableBlotterPage.propTypes = {
 
 export default AdaptableBlotterPage
 
-// fields {
-//   frontmattermd {
-//     description {
-//       html
-//     }
-//   }
-// }
-
 export const adaptableBlotterPageQuery = graphql`
   query AdaptableBlotterPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -304,6 +337,13 @@ export const adaptableBlotterPageQuery = graphql`
         title
         video
         headline
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
 
         testimonials {
           text

@@ -22,6 +22,7 @@ export const GridGurusPageTemplate = ({
   title,
   content,
   testimonials,
+  image,
   services,
   headline,
   description,
@@ -34,7 +35,7 @@ export const GridGurusPageTemplate = ({
 
   return (
     <>
-      <BackgroundImage src={'/img/Carousel7.png'} title={title}>
+      <BackgroundImage image={image} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
@@ -86,11 +87,13 @@ export const GridGurusPageTemplate = ({
               })}
             </GridLayout>
 
-            <AnimateWhenVisible animationDelay="0.5s" className="text-center">
-              <Button tone="light" className="text-3xl">
-                {cta2}
-              </Button>
-            </AnimateWhenVisible>
+            {cta2 ? (
+              <AnimateWhenVisible animationDelay="0.5s" className="text-center">
+                <Button tone="light" className="text-3xl">
+                  {cta2}
+                </Button>
+              </AnimateWhenVisible>
+            ) : null}
           </MaxWidth>
         </div>
       ) : null}
@@ -128,6 +131,7 @@ const GridGurus = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}
+        image={post.frontmatter.image}
         headline={post.frontmatter.headline}
         cta1={post.frontmatter.cta1}
         cta2={post.frontmatter.cta2}
@@ -152,6 +156,13 @@ export const GridGurusQuery = graphql`
       html
       frontmatter {
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 80) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         video
         headline
         description

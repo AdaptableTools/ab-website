@@ -116,7 +116,7 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
+
   subtitle: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string
@@ -132,7 +132,6 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         subtitle={frontmatter.subtitle}
         highlights={frontmatter.highlights}
         quotes={frontmatter.quotes}
@@ -181,7 +180,7 @@ export const pageQuery = graphql`
         subtitle
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -189,7 +188,7 @@ export const pageQuery = graphql`
         mainpitch {
           title
         }
-        heading
+
         description
         highlights {
           image {

@@ -116,14 +116,14 @@ export class ContactForm extends React.Component {
 
 export const ContactPageTemplate = ({
   title,
-  headerImage,
+  image,
   content,
   contentComponent
 }) => {
   const PageContent = contentComponent || Content
   return (
     <>
-      <BackgroundImage title={title} image={headerImage}>
+      <BackgroundImage title={title} image={image}>
         <AbsoluteNav />
       </BackgroundImage>
       <MaxWidth className="mt-16 pb-8">
@@ -148,7 +148,7 @@ const ContactPage = ({ data }) => {
       <ContactPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        headerImage={post.frontmatter.headerimage}
+        image={post.frontmatter.image}
         content={post.html}
       />
     </Layout>
@@ -166,9 +166,9 @@ export const ContactPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        headerimage {
+        image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(maxWidth: 2048, quality: 80) {
               ...GatsbyImageSharpFluid
             }
           }

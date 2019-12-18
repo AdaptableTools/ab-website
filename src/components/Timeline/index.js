@@ -3,6 +3,9 @@ import AnimateWhenVisible from '../AnimateWhenVisible'
 
 const width = 5
 
+const darkTextColor = 'var(--ab-color-text)'
+const lightTextColor = 'white'
+
 export default ({
   steps,
   withAnimation = true,
@@ -20,6 +23,7 @@ export default ({
         display: 'inline-flex',
         flexFlow: 'column',
         alignItems: 'center',
+        color: variant == 'dark' ? darkTextColor : lightTextColor,
 
         ...domProps.style
       }}
@@ -34,7 +38,8 @@ export default ({
           top: 0,
           bottom: 0,
           width,
-          background: variant == 'dark' ? darkColor : 'white'
+          background: variant == 'dark' ? darkColor : lightTextColor,
+          color: variant == 'dark' ? lightTextColor : darkTextColor
         }}
         className=""
       ></div>
@@ -69,14 +74,17 @@ export default ({
         const dotStyle = {
           // [i % 2 ? 'margin-right' : 'margin-left']: 20,
           borderRadius: '50%',
-          border: `${width}px solid ${variant == 'dark' ? darkColor : 'white'}`,
+          border: `${width}px solid ${
+            variant == 'dark' ? darkColor : lightTextColor
+          }`,
           background: variant == 'dark' ? 'white' : darkColor,
+
           position: 'absolute',
           height: 30,
           width: 30,
           top: '50%',
           marginTop: -14,
-          [i % 2 ? 'left' : 'right']: i % 2 ? -38 : -33
+          [i % 2 ? 'left' : 'right']: i % 2 ? -37 : -33
         }
         if (i % 2) {
           dotStyle.marginLeft = 'calc(50% + 20px)'

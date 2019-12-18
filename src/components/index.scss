@@ -47,8 +47,13 @@
   --ab-font-size-7: 2.25rem; //36px for 1rem=16px
 
   --ab-color-blue: rgba(44, 82, 130, 0.95); //rgba(18, 127, 196, 0.97);
+  --ab-color-text: #333;
   --ab-color-washedblue: rgb(239, 239, 244);
 }
+.app-text-dark {
+  color: var(--ab-color-text);
+}
+
 html,
 body,
 #___gatsby,

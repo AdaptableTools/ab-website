@@ -56,6 +56,7 @@ collections:
               label: Main Pitch description,
               name: mainpitch_description,
               widgeth: markdown,
+              required: false,
             }
           - {
               label: Highlights,
@@ -97,10 +98,16 @@ collections:
               widget: 'hidden',
               default: 'adaptable-blotter-page',
             }
+          - { label: Image, name: image, widget: image }
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Video', name: 'video', widget: 'youtube' }
+          - { label: 'Video', name: 'video', widget: 'text', required: false }
           - { label: 'Headline', name: 'headline', widget: 'string' }
-          - { label: Description, name: description, widgeth: markdown }
+          - {
+              label: Description,
+              name: description,
+              widgeth: 'markdown',
+              required: false,
+            }
           - {
               label: 'Key features title',
               name: 'keyfeaturestitle',
@@ -116,9 +123,25 @@ collections:
                   {
                     label: 'Feature description',
                     name: description,
+                    required: false,
                     widget: text,
                   },
                   { label: 'Feature image', name: image, widget: image },
+                ],
+            }
+
+          - { label: 'Call to action text', name: 'cta', widget: string }
+          - { label: 'Usecases title', name: 'usecaseTitle', widget: string }
+          - {
+              label: 'Usecases',
+              name: usecases,
+              widget: list,
+              fields:
+                [
+                  { label: 'Who', name: who, widget: text },
+                  { label: 'Where', name: where, widget: text },
+                  { label: 'Result', name: result, widget: text },
+                  { label: 'Image', name: image, widget: image },
                 ],
             }
           - {
@@ -132,6 +155,7 @@ collections:
                     label: 'Functionality description',
                     name: description,
                     widget: text,
+                    required: false,
                   },
                   {
                     label: 'Functionality icon name (from material icons)',
@@ -140,20 +164,7 @@ collections:
                   },
                 ],
             }
-          - { label: 'Usecases title', name: 'usecaseTitle', widget: string }
-          - { label: 'Call to action text', name: 'cta', widget: string }
-          - {
-              label: 'Usecases',
-              name: usecases,
-              widget: list,
-              fields:
-                [
-                  { label: 'Who', name: who, widget: text },
-                  { label: 'Where', name: where, widget: text },
-                  { label: 'Result', name: result, widget: text },
-                  { label: 'Image', name: image, widget: image },
-                ],
-            }
+
           - { label: 'Content', name: 'body', widget: 'markdown' }
       - file: 'src/pages/grid-gurus/index.md'
         label: 'Grid Gurus'
@@ -166,11 +177,27 @@ collections:
               widget: 'hidden',
               default: 'grid-gurus-page',
             }
-          - { label: 'Video', name: 'video', widget: 'text' }
-          - { label: 'Call to action 1', name: 'cta1', widget: 'string' }
-          - { label: 'Call to action 2', name: 'cta2', widget: 'string' }
+          - { label: Image, name: image, widget: image }
+          - { label: 'Video', name: 'video', widget: 'text', required: false }
+          - {
+              label: 'Call to action 1',
+              name: 'cta1',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'Call to action 2',
+              name: 'cta2',
+              widget: 'string',
+              required: false,
+            }
           - { label: 'Headline', name: 'headline', widget: 'text' }
-          - { label: 'Description', name: 'description', widget: 'text' }
+          - {
+              label: 'Description',
+              name: 'description',
+              widget: 'text',
+              required: false,
+            }
           - {
               name: 'services',
               widget: list,
@@ -194,6 +221,7 @@ collections:
               widget: 'hidden',
               default: 'adaptable-blotter-page',
             }
+          - { label: Image, name: image, widget: image }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/about/index.md'
@@ -233,116 +261,5 @@ collections:
               default: 'contact-page',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Header image', name: 'header-image', widget: 'image' }
+          - { label: 'Image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      - file: 'src/pages/products/index.md'
-        label: 'Products Page'
-        name: 'products'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'product-page',
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Testimonials,
-              name: testimonials,
-              widget: list,
-              fields:
-                [
-                  { label: Quote, name: quote, widget: string },
-                  { label: Author, name: author, widget: string },
-                ],
-            }
-          - { label: Full_image, name: full_image, widget: image }
-          - {
-              label: Pricing,
-              name: pricing,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  {
-                    label: Plans,
-                    name: plans,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Plan, name: plan, widget: string },
-                        { label: Price, name: price, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: string,
-                        },
-                        { label: Items, name: items, widget: list },
-                      ],
-                  },
-                ],
-            }
