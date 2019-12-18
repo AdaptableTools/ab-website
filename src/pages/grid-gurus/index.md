@@ -1,6 +1,7 @@
 ---
 title: Getting Grids to Work for You
 templateKey: grid-gurus-page
+video: ''
 cta1: Get in touch
 cta2: DELETE THIS
 headline: >-
@@ -17,7 +18,6 @@ description: >
   configuration.  They can get a Proof of Concept up and running, or set up and
   configure a grid for you, leaving the regular development team free to do
   other things. 
-video: 'https://www.youtube.com/watch?v=qPxwsIs7JaI'
 services:
   - name: 'System architecture  '
   - name: >-
