@@ -9,7 +9,7 @@ import ContactPagePreview from './preview-templates/ContactPagePreview'
 import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview'
 import GridGurusPagePreview from './preview-templates/GridGurusPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
+
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 import withStyles from './withStyles'
@@ -30,7 +30,6 @@ registerTemplateForPreview('grid-gurus', GridGurusPagePreview)
 registerTemplateForPreview('about', AboutPagePreview)
 registerTemplateForPreview('contact', ContactPagePreview)
 
-registerTemplateForPreview('products', ProductPagePreview)
 registerTemplateForPreview('blog', BlogPostPreview)
 
 CMS.registerWidget('youtube', Control, YoutubePreview)

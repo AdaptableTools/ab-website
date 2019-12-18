@@ -4,6 +4,7 @@ image: /img/Carousel7.png
 title: >-
   Take control of your data universe with Adaptable Tools - we bring your data
   to life
+heading: Heading comes here
 subtitle: See for yourself
 mainpitch:
   title: Putting the power of data into your hands
@@ -71,4 +72,3 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
-

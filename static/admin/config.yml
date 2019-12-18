@@ -166,11 +166,11 @@ collections:
               widget: 'hidden',
               default: 'grid-gurus-page',
             }
+          - { label: 'Video', name: 'video', widget: 'text' }
           - { label: 'Call to action 1', name: 'cta1', widget: 'string' }
           - { label: 'Call to action 2', name: 'cta2', widget: 'string' }
           - { label: 'Headline', name: 'headline', widget: 'text' }
           - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Video', name: 'video', widget: 'text' }
           - {
               name: 'services',
               widget: list,

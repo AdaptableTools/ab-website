@@ -41,6 +41,7 @@ keyfeatures:
   - description: Ready for Immediate Use
     image: /img/safari-pinned-tab.svg
     name: Feature 10
+functionalitiestitle: Features
 functionalities:
   - description: See it in action
     icon: flash_on
@@ -101,10 +102,15 @@ usecases:
     where: Third party applications reading data
     who: Millions unstructured data records referencing Libor
 ---
-# How to let the Adaptable Blotter loose to transform your world
 
+# How to let the Adaptable Blotter loose to transform your world
 
+A licence for the Adaptable Blotter provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
 
-A licence for the Adaptable Blotter provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.Licences can be purchased individually, for a team (minimum 30 end-users), and for integration into software for onward sale. To try out the Adaptable Blotter, you can make use of our demonstrations LINK TO DEMO, or we can make a trial licence available for a short period of time. Get in touch LINK TO SALES EMAIL to identify the most practical and cost-effective solution for you.
+Licences can be purchased individually, for a team (minimum 30 end-users), and for integration into software for onward sale.
+
+To try out the Adaptable Blotter, you can make use of our demonstrations LINK TO DEMO, or we can make a trial licence available for a short period of time.
+
+Get in touch LINK TO SALES EMAIL to identify the most practical and cost-effective solution for you.
 
 ###
