@@ -237,9 +237,11 @@ export const AdaptableBlotterPageTemplate = ({
       {hasFunctionalities ? (
         <Strip variant={getVariant()}>
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible as={Headline} className="pt-16 mb-8">
-              {functionalitiestitle}
-            </AnimateWhenVisible>
+            {functionalitiestitle ? (
+              <AnimateWhenVisible as={Headline} className="pt-16 mb-8">
+                {functionalitiestitle}
+              </AnimateWhenVisible>
+            ) : null}
             <GridLayout style={{ padding: 0 }}>
               {functionalities.map((functionality, i) => {
                 return (

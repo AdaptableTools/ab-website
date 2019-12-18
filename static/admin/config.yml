@@ -145,6 +145,11 @@ collections:
                 ],
             }
           - {
+              label: 'Functionalities title',
+              name: functionalitiestitle,
+              widget: string,
+            }
+          - {
               label: 'Functionalities',
               name: functionalities,
               widget: list,
