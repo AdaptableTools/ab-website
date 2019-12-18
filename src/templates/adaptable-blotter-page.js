@@ -78,9 +78,11 @@ export const AdaptableBlotterPageTemplate = ({
                         }}
                       />
                     </div>
-                    <p className="text-center mt-4 text-xl font-normal text-white">
-                      {feature.description}
-                    </p>
+                    {feature.description ? (
+                      <p className="text-center mt-4 text-xl font-normal text-white">
+                        {feature.description}
+                      </p>
+                    ) : null}
                   </AnimateWhenVisible>
                 )
               })}
