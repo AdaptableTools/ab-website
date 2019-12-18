@@ -4,7 +4,6 @@ image: /img/Carousel7.png
 title: >-
   Take control of your data universe with Adaptable Tools - we bring your data
   to life
-heading: Heading comes here
 subtitle: See for yourself
 mainpitch:
   title: Putting the power of data into your hands
@@ -19,34 +18,34 @@ highlights:
     text: >-
       The largest suite of data controls [hotlink to functions] available in the
       market
-  - image: /img/infinite-applications.png
+  - image: /img/glyphicons-42-charts-3x.png
     text: 'Live data visualisation tools [hotlink to charts] to help patterns emerge '
-  - image: /img/user-support.png
+  - image: /img/glyphicons-153-check-3x.png
     text: 'Full audit functionality [hotlink] to help meet regulatory requirements'
 quotes:
-  - image: /img/user-support.png
+  - image: /img/glyphicons-36-woman-3x.png
     text: >-
       A clever piece of software that delivers powerful, advanced functionality
       to the end user.​
 
       ag-Grid
-  - image: /img/user-support.png
+  - image: /img/glyphicons-35-old-man-3x.png
     text: |-
       Wish I had this years ago! Quick to implement and easy to use.
       Group CIO, Investment House
-  - image: /img/user-support.png
+  - image: /img/glyphicons-36-woman-3x.png
     text: >-
       A great tool that is packed with cutting-edge functionality.  Adds real
       value to the software we deliver to our clients.
 
       CIO, Global Software House
-  - image: /img/user-support.png
+  - image: /img/glyphicons-35-old-man-3x.png
     text: >-
       Technology that enhances operational and developmental productivity
       through excellence in design and implementation.
 
       Industry Expert
-  - image: /img/user-support.png
+  - image: /img/glyphicons-36-woman-3x.png
     text: >-
       Incredibly useful and well overdue.  The Adaptable Blotter is likely to
       become standard on every trader’s desktop.
@@ -72,3 +71,4 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
+
