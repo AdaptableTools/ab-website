@@ -1,5 +1,6 @@
 ---
 templateKey: adaptable-blotter-page
+backgroundimage: /img/Carousel7.png
 title: 'Adaptable Blotter: Transforming your relationship with Data'
 video: 'https://www.youtube.com/watch?v=l5F3ROZJu5k'
 headline: 'Experience the Power of the Adaptable Blotter Toolkit [Link to demo site]'
@@ -41,7 +42,27 @@ keyfeatures:
   - description: Ready for Immediate Use
     image: /img/safari-pinned-tab.svg
     name: Feature 10
-functionalitiestitle: Features
+cta: See it in action
+usecaseTitle: The Adaptable Blotter can help to drive any area of business
+usecases:
+  - image: /img/full-picture.png
+    result: >-
+      System that allows data changes to be seen clearly with easy, accurate
+      editing
+    where: FX trade data
+    who: Traders in London and New York
+  - image: /img/user-support.png
+    result: >-
+      Allows rapid querying across millions of rows returning rapid results to
+      highlight relevant data
+    where: Cross-asset sales data
+    who: Front office sales teams in global bank
+  - image: /img/infinite-applications.png
+    result: >-
+      Searching and filtering unstructured data, with reports and views to show
+      up to date Libor exposure
+    where: Third party applications reading data
+    who: Millions unstructured data records referencing Libor
 functionalities:
   - description: See it in action
     icon: flash_on
@@ -80,27 +101,6 @@ functionalities:
   - description: See it in action
     icon: flash_on
     name: Sparklines
-usecaseTitle: The Adaptable Blotter can help to drive any area of business
-cta: See it in action
-usecases:
-  - image: /img/full-picture.png
-    result: >-
-      System that allows data changes to be seen clearly with easy, accurate
-      editing
-    where: FX trade data
-    who: Traders in London and New York
-  - image: /img/user-support.png
-    result: >-
-      Allows rapid querying across millions of rows returning rapid results to
-      highlight relevant data
-    where: Cross-asset sales data
-    who: Front office sales teams in global bank
-  - image: /img/infinite-applications.png
-    result: >-
-      Searching and filtering unstructured data, with reports and views to show
-      up to date Libor exposure
-    where: Third party applications reading data
-    who: Millions unstructured data records referencing Libor
 ---
 
 # How to let the Adaptable Blotter loose to transform your world
