@@ -15,6 +15,7 @@ import AnimateWhenVisible from '../components/AnimateWhenVisible'
 import Video from '../components/Video'
 import ClientQuotes from '../components/ClientQuotes'
 import avatars from '../components/avatars'
+import Headline from '../components/Headline'
 
 // get them from https://getavataaars.com
 
@@ -28,7 +29,7 @@ export const GridGurusPageTemplate = ({
   description,
   video,
   cta1,
-  cta2,
+
   contentComponent
 }) => {
   const PageContent = contentComponent || Content
@@ -41,17 +42,16 @@ export const GridGurusPageTemplate = ({
       <MaxWidth className="mt-16 pb-8">
         {video ? <Video src={video} className="mb-4" /> : null}
         {headline ? (
-          <AnimateWhenVisible
-            as="h2"
-            className="text-5xl font-thin  text-blue-800"
-          >
-            {headline}
+          <AnimateWhenVisible as={Headline} className="text-blue-800">
+            <HTMLContent>{headline}</HTMLContent>
           </AnimateWhenVisible>
         ) : null}
         {description ? (
           <AnimateWhenVisible animationDelay="0.35s">
             <p></p>
-            <p>{description}</p>
+            <p>
+              <HTMLContent>{description}</HTMLContent>
+            </p>
           </AnimateWhenVisible>
         ) : null}
 
@@ -86,14 +86,6 @@ export const GridGurusPageTemplate = ({
                 )
               })}
             </GridLayout>
-
-            {cta2 ? (
-              <AnimateWhenVisible animationDelay="0.5s" className="text-center">
-                <Button tone="light" className="text-3xl">
-                  {cta2}
-                </Button>
-              </AnimateWhenVisible>
-            ) : null}
           </MaxWidth>
         </div>
       ) : null}
@@ -134,7 +126,6 @@ const GridGurus = ({ data }) => {
         image={post.frontmatter.image}
         headline={post.frontmatter.headline}
         cta1={post.frontmatter.cta1}
-        cta2={post.frontmatter.cta2}
         description={post.frontmatter.description}
         services={post.frontmatter.services}
         testimonials={post.frontmatter.testimonials}
@@ -167,7 +158,6 @@ export const GridGurusQuery = graphql`
         headline
         description
         cta1
-        cta2
 
         services {
           name

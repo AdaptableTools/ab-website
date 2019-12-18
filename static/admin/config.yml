@@ -185,17 +185,11 @@ collections:
               widget: 'string',
               required: false,
             }
-          - {
-              label: 'Call to action 2',
-              name: 'cta2',
-              widget: 'string',
-              required: false,
-            }
-          - { label: 'Headline', name: 'headline', widget: 'text' }
+          - { label: 'Headline', name: 'headline', widget: 'markdown' }
           - {
               label: 'Description',
               name: 'description',
-              widget: 'text',
+              widget: 'markdown',
               required: false,
             }
           - {
