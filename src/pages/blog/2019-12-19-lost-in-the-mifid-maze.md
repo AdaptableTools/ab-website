@@ -7,6 +7,8 @@ description: >-
   regulatory challenges
 featuredpost: true
 featuredimage: /img/coffee-gear.png
+tags:
+  - gridgurus
 ---
 Compliance is right at the top of the financial services agenda. Whether its MiFID II, MiFIR, GDPR or Solvency2, regulatory requirements - and the associated ability to aggregate, analyse and report on multiple sources of dynamic data - are the main focus at present, with the relevant teams and budgets growing fast.
 
