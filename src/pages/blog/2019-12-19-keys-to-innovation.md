@@ -7,6 +7,8 @@ description: >-
   the Adaptable Blotter
 featuredpost: true
 featuredimage: /img/coffee-gear.png
+tags:
+  - news
 ---
 When we conceived the Adaptable Blotter, one of our key challenges was to ensure it delivered to our potential users. But as an entirely unique product, we had nothing to compare it to.  Of our hundreds of ideas about what users might find helpful, we had no real sense of what the killer features might turn out to be.
 
