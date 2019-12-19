@@ -5,6 +5,8 @@ date: 2019-01-10T09:37:00.000Z
 description: Lucy Watson at our partner Cyoda considers the true challenge of Big Data
 featuredpost: true
 featuredimage: /img/meeting-space.png
+tags:
+  - gridgurus
 ---
 In the world of medicine, the gut is BIG news. Over the last decade, our gut ‘biome’ (the 100 trillion or so bacteria populating the adult digestive tract) has been implicated in virtually every conceivable physical and mental health condition, including obesity, Alzheimers, heart disease and anxiety. Alongside those 100 trillion or so bacteria is a vast network of neurons, more extensive than the entire spinal cord, forming a delicate, inter-dependent ecosystem, which is now widely thought of as the body’s ‘second brain’.
 
