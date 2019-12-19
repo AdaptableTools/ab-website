@@ -7,6 +7,8 @@ description: >-
   Financial Services Desktop
 featuredpost: true
 featuredimage: /img/coffee-gear.png
+tags:
+  - gridgurus
 ---
 I'm slow on the uptake.
 
