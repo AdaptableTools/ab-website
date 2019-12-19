@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Lost in the MIFID Maze
-date: 2019-07-17T09:10:00.000Z
+date: 2017-07-17T09:10:00.000Z
 description: >-
   Adaptable Tools' CTO reflects on the role of data management in addressing
   regulatory challenges
