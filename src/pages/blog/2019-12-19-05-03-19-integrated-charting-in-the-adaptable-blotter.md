@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 05/03/19  Integrated Charting in the Adaptable Blotter
+title: Integrated Charting in the Adaptable Blotter
 date: 2019-03-05T12:13:00.000Z
 description: Adaptable Tools and US Infragistics team up for visual data
 featuredpost: true
