@@ -7,6 +7,8 @@ description: >
   make it easier to harness its power.
 featuredpost: false
 featuredimage: /img/meeting-space.png
+tags:
+  - gridgurus
 ---
 When it comes to words, those who read visually can manage almost three times as many per minute as regular readers. Under pressure of time to complete a task, that means that their ability to process visually allows them either to deliver in significantly less time – or to use that extra time to strategise towards a more thoughtful conclusion.
 
