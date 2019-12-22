@@ -6,7 +6,7 @@ description: >-
   Adaptable Tools' CEO Danielle Nagler shares insights into the development of
   the Adaptable Blotter
 featuredpost: true
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/successful-innovation-keys.jpeg
 tags:
   - news
 ---
