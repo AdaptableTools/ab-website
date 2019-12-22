@@ -1,6 +1,6 @@
 ---
 templateKey: adaptable-blotter-page
-backgroundimage: /img/Carousel7.png
+image: /img/Carousel14.png
 title: 'Adaptable Blotter: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 headline: 'Experience the Power of the Adaptable Blotter Toolkit [Link to demo site]'
@@ -12,35 +12,35 @@ description: >-
   otherwise require months of bespoke development.
 keyfeaturestitle: The Adaptable Blotter's Unique Offer
 keyfeatures:
-  - description: All the features for any system – in one place
-    image: /img/full-picture.png
+  - image: /img/safari-pinned-tab.svg
+    description: All the features for any system – in one place
     name: Feature 1
-  - description: Fast editing and data retrieval
-    image: /img/infinite-applications.png
+  - image: /img/safari-pinned-tab.svg
+    description: Fast editing and data retrieval
     name: Feature 2
-  - description: Integrates with all leading HTML5 DataGrids including ag-Grid
-    image: /img/user-support.png
+  - image: /img/safari-pinned-tab.svg
+    description: Integrates with all leading HTML5 DataGrids including ag-Grid
     name: Feature 3
-  - description: Styled to any corporate look and feel
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Styled to any corporate look and feel
     name: Feature 4
-  - description: Data-agnostic
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Data-agnostic
     name: Feature 5
-  - description: Full comprehensive audit log
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Full comprehensive audit log
     name: Feature 6
-  - description: Fully configurable to individual requirements
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Fully configurable to individual requirements
     name: Feature 7
-  - description: Compatible with all standard technology choices
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Compatible with all standard technology choices
     name: Feature 8
-  - description: A standardised interface across systems
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: A standardised interface across systems
     name: Feature 9
-  - description: Ready for Immediate Use
-    image: /img/safari-pinned-tab.svg
+  - image: /img/safari-pinned-tab.svg
+    description: Ready for Immediate Use
     name: Feature 10
 cta: See it in action
 usecaseTitle: The Adaptable Blotter can help to drive any area of business
