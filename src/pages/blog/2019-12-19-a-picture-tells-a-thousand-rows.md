@@ -6,7 +6,7 @@ description: >
   At Adaptable Tools we focus on what users need from their data and work to
   make it easier to harness its power.
 featuredpost: false
-featuredimage: /img/meeting-space.png
+featuredimage: /img/picture-tells-1000-rows.png
 tags:
   - gridgurus
 ---
