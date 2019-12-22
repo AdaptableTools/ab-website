@@ -4,7 +4,7 @@ title: 'FinTech Cracking Ice '
 date: 2016-09-05T11:51:00.000Z
 description: Adaptable Tools' CEO Danielle Nagler looks at the changing world of Fintech
 featuredpost: true
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/fintech-cracking-ice.jpeg
 tags:
   - news
 ---
