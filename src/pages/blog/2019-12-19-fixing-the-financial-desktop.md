@@ -6,7 +6,7 @@ description: >-
   Adaptable Tools' CTO Jonny Wolfson thinks through the challenges of the
   Financial Services Desktop
 featuredpost: true
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/fixing-the-financial-desktop.png
 tags:
   - gridgurus
 ---
