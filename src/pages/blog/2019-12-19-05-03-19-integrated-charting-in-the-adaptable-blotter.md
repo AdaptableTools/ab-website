@@ -4,7 +4,7 @@ title: Integrated Charting in the Adaptable Blotter
 date: 2019-03-05T12:13:00.000Z
 description: Adaptable Tools and US Infragistics team up for visual data
 featuredpost: true
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/Carousel13.png
 tags:
   - news
 ---
