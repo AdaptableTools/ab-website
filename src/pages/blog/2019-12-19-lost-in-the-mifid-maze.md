@@ -6,7 +6,7 @@ description: >-
   Adaptable Tools' CTO reflects on the role of data management in addressing
   regulatory challenges
 featuredpost: true
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/lost-in-the-mifid-maze.jpeg
 tags:
   - gridgurus
 ---
