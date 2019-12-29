@@ -1,15 +1,15 @@
 ---
 templateKey: adaptable-blotter-page
 image: /img/Carousel14.png
-title: 'Adaptable Blotter: Transforming your relationship with Data'
+title: 'The AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-headline: 'Experience the Power of the Adaptable Blotter Toolkit [Link to demo site]'
+headline: 'Experience the Power of the AdapTable Toolkit [Link to demo site]'
 description: >-
-  The Adaptable Blotter turbo-charges your data management, providing the
-  ultimate toolkit to drive your data needs.  A straightforward, but immensely
-  powerful, HTML5 DataGrid add-on, the Adaptable Blotter integrates with any
-  data system and any data set to provide cutting-edge user tools which
-  otherwise require months of bespoke development.
+  The AdapTable turbo-charges your data management, providing the ultimate
+  toolkit to drive your data needs.  A straightforward, but immensely powerful,
+  HTML5 DataGrid add-on, the Adaptable Blotter integrates with any data system
+  and any data set to provide cutting-edge user tools which otherwise require
+  months of bespoke development.
 keyfeaturestitle: The Adaptable Blotter's Unique Offer
 keyfeatures:
   - image: /img/safari-pinned-tab.svg
