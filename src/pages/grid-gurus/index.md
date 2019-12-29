@@ -1,12 +1,12 @@
 ---
 title: Getting Grids to Work for You
 templateKey: grid-gurus-page
+image: /img/blog-index.jpg
 video: ''
 cta1: Get in touch
-cta2: DELETE THIS
 headline: >-
   Controlling data properly requires a range of tools and specialist skills. 
-  The Adaptable Blotter [Link] is only one part of the jigsaw. 
+  The AdapTable  \[Link] is only one part of the jigsaw.
 description: >
   At Adaptable Tools we have built a team to help with every aspect of your data
   project. 
