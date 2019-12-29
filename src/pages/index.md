@@ -1,18 +1,18 @@
 ---
 templateKey: index-page
 image: /img/Carousel7.png
-title: >-
-  Take control of your data universe with Adaptable Tools - we bring your data
-  to life
+title: Let Adaptable Tools give you the power of your data
 subtitle: See for yourself
 mainpitch:
-  title: Putting the power of data into your hands
+  title: Data Tools to Take Control
 mainpitch_description: >-
-  The Adaptable Blotter [LINK] is used by some of the world's largest financial
-  services businesses to turbocharge data grids from the frontlines to the back
-  office.  The unique HTML5 toolbox makes working from large amounts of static
-  or dynamic data straightforward, helping users work with the information that
-  matters to them, to make the decisions that drive their business.
+  The AdapTable [LINK] offers a full set of tools to drive effective data use. 
+  Previously known as the Adaptable Blotter, is used by some of the world's
+  largest financial services businesses to turbocharge data grids from the
+  frontlines to the back office.  The unique HTML5 toolbox makes working from
+  large amounts of static or dynamic data straightforward, helping users work
+  with the information that matters to them, to make the decisions that drive
+  their business.
 highlights:
   - image: /img/full-picture.png
     text: >-
