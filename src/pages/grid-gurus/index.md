@@ -36,7 +36,6 @@ testimonials:
       A big time and money saver – they knew exactly what to do and found lots
       of shortcuts.
   - text: Very professional… really know what they are doing.
-blogtitle: Grid gurus news
 ---
 
 ### How it Works
