@@ -35,7 +35,10 @@ testimonials:
       A big time and money saver – they knew exactly what to do and found lots
       of shortcuts.
   - text: Very professional… really know what they are doing.
+blogtitle: Grid gurus news
 ---
-### How it Works
+## How it Works
 
-A member of our Grid Gurus’ team can come in for as little as one day to add value to your project.  They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.  We can also put together a number of individuals for more complex work.  We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need.  The service is priced on a time basis, with competitive rates available for longer projects.  Get in touch LINK TO SALES EMAIL to find out more.
+A member of our Grid Gurus’ team can come in for as little as one day to add value to your project.  They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.  
+
+We can also put together a number of individuals for more complex work.  We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need.  The service is priced on a time basis, with competitive rates available for longer projects.  Get in touch LINK TO SALES EMAIL to find out more.
