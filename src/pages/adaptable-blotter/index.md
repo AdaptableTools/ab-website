@@ -7,43 +7,36 @@ headline: 'Experience the Power of the AdapTable Toolkit [Link to demo site]'
 description: >-
   The AdapTable turbo-charges your data management, providing the ultimate
   toolkit to drive your data needs.  A straightforward, but immensely powerful,
-  HTML5 DataGrid add-on, the Adaptable Blotter integrates with any data system
-  and any data set to provide cutting-edge user tools which otherwise require
-  months of bespoke development.
-keyfeaturestitle: The Adaptable Blotter's Unique Offer
+  HTML5 DataGrid add-on, the AdapTable integrates with any data system and any
+  data set to provide cutting-edge user tools which otherwise require months of
+  bespoke development.
+keyfeaturestitle: The AdapTable's Unique Offer
 keyfeatures:
   - image: /img/safari-pinned-tab.svg
-    description: All the features for any system – in one place
+    description: Searching and Filtering
     name: Feature 1
   - image: /img/safari-pinned-tab.svg
-    description: Fast editing and data retrieval
+    description: Data Management
     name: Feature 2
   - image: /img/safari-pinned-tab.svg
-    description: Integrates with all leading HTML5 DataGrids including ag-Grid
+    description: Editing and Validating
     name: Feature 3
   - image: /img/safari-pinned-tab.svg
-    description: Styled to any corporate look and feel
+    description: Special Columns
     name: Feature 4
   - image: /img/safari-pinned-tab.svg
-    description: Data-agnostic
+    description: Styling and Theming
     name: Feature 5
   - image: /img/safari-pinned-tab.svg
-    description: Full comprehensive audit log
+    description: Admin
     name: Feature 6
   - image: /img/safari-pinned-tab.svg
-    description: Fully configurable to individual requirements
+    description: Notifications
     name: Feature 7
-  - image: /img/safari-pinned-tab.svg
-    description: Compatible with all standard technology choices
-    name: Feature 8
-  - image: /img/safari-pinned-tab.svg
-    description: A standardised interface across systems
-    name: Feature 9
-  - image: /img/safari-pinned-tab.svg
-    description: Ready for Immediate Use
-    name: Feature 10
 cta: See it in action
-usecaseTitle: The Adaptable Blotter can help to drive any area of business
+usecaseTitle: >-
+  The AdapTable can help to drive any area of business and solve any data-driven
+  challenge
 usecases:
   - image: /img/full-picture.png
     result: >-
@@ -65,55 +58,55 @@ usecases:
     who: Millions unstructured data records referencing Libor
 functionalitiestitle: Key functions
 functionalities:
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Flashing cells
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: alarm_on
     name: Live Charts
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: all_inbox
     name: Calculated Columns
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Alerts
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: User Filter
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: |
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: |
       See it in action
     icon: flash_on
     name: Bulk Update
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Percent Bar
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Advanced Search
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: see it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: see it in action
     icon: flash_on
     name: Custom Sort
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Scheduled reports
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: see it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: see it in action
     icon: flash_on
     name: Audit Log
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
-  - description: See it in action
+  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
+    description: See it in action
     icon: flash_on
     name: Sparklines
-    demourl: https://demo.adaptableblotter.com/config/aggridnoconfigdemo/
 ---
 
 # How to let the Adaptable Blotter loose to transform your world
