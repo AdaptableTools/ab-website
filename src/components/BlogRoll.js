@@ -19,12 +19,15 @@ export class BlogRoll extends React.Component {
               <article
                 className={`p-6 rounded`}
                 style={{
+                  height: '100%',
                   margin: 0,
                   boxShadow:
                     '0 0.5em 1em -0.125em rgba(101, 101, 101, 0.1), 0 0px 0 1px rgba(101, 101, 101, 0.02)',
                   backgroundColor: post.frontmatter.featuredpost
                     ? '#c5d6ff33'
-                    : '#f5f5f5'
+                    : '#f5f5f5',
+                  display: 'flex',
+                  flexFlow: 'column'
                 }}
               >
                 <header
@@ -53,14 +56,15 @@ export class BlogRoll extends React.Component {
                     <span className="text-base">{post.frontmatter.date}</span>
                   </p>
                 </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link to={post.fields.slug}>
-                    <Button>Keep Reading →</Button>
-                  </Link>
-                </p>
+
+                {post.excerpt}
+                <br />
+                <br />
+
+                <div style={{ flex: 1 }}></div>
+                <Link to={post.fields.slug}>
+                  <Button>Keep Reading →</Button>
+                </Link>
               </article>
             </AnimateWhenVisible>
           ))}

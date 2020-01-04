@@ -15,7 +15,6 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 - Create Blog posts from Netlify CMS
 - Tags: Separate page for posts under each tag
 - Basic directory organization
-- Uses Bulma for styling, but size is reduced by `purge-css-plugin`
 - Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
 - Uses `gatbsy-image` with Netlify-CMS preview support
 - Separate components for everything
@@ -58,22 +57,22 @@ $ npm run serve
 Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
 
 ```javascript
-import CMS from 'netlify-cms-app';
+import CMS from 'netlify-cms-app'
 // import uploadcare from 'netlify-cms-media-library-uploadcare'
 // import cloudinary from 'netlify-cms-media-library-cloudinary'
 
-import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview';
-import BlogPostPreview from './preview-templates/BlogPostPreview';
-import ProductPagePreview from './preview-templates/ProductPagePreview';
-import IndexPagePreview from './preview-templates/IndexPagePreview';
+import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview'
+import BlogPostPreview from './preview-templates/BlogPostPreview'
+import ProductPagePreview from './preview-templates/ProductPagePreview'
+import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 // CMS.registerMediaLibrary(uploadcare);
 // CMS.registerMediaLibrary(cloudinary);
 
-CMS.registerPreviewTemplate('index', IndexPagePreview);
-CMS.registerPreviewTemplate('adaptable-blotter', AdaptableBlotterPagePreview);
-CMS.registerPreviewTemplate('products', ProductPagePreview);
-CMS.registerPreviewTemplate('blog', BlogPostPreview);
+CMS.registerPreviewTemplate('index', IndexPagePreview)
+CMS.registerPreviewTemplate('adaptable-blotter', AdaptableBlotterPagePreview)
+CMS.registerPreviewTemplate('products', ProductPagePreview)
+CMS.registerPreviewTemplate('blog', BlogPostPreview)
 ```
 
 ## Getting Started (Without Netlify)
@@ -100,10 +99,6 @@ npm install --global --production windows-build-tools
 ```
 
 [Full details here](https://www.npmjs.com/package/node-gyp 'NPM node-gyp page')
-
-## Purgecss
-
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
 
 # CONTRIBUTING
 

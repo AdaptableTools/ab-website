@@ -6,7 +6,6 @@ import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 import Footer from './Footer'
 
-import './all.sass'
 import './index.scss'
 
 import useSiteMetadata from './SiteMetadata'

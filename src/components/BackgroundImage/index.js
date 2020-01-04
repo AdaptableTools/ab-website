@@ -2,11 +2,13 @@ import React from 'react'
 import join from '../join'
 import PageTitle from '../PageTitle'
 
+import './index.scss'
+
 const BackgroundImage = ({ src, image, title, ...props }) => (
   <>
     <div
       {...props}
-      className={join('full-width-image margin-top-0', props.className)}
+      className={join('BackgroundImage margin-top-0', props.className)}
       style={{
         height: 550,
         maxHeight: '55vh',

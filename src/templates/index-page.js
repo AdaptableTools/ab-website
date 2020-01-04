@@ -90,9 +90,8 @@ export const IndexPageTemplate = ({
 
     <MaxWidth className="mt-16">
       <Headline>{quotestitle}</Headline>
-      <p className="my-16 text-xl">
-        <HTMLContent>{quotestext}</HTMLContent>
-      </p>
+
+      <HTMLContent className="my-16 text-xl">{quotestext}</HTMLContent>
 
       <ClientQuotes quotes={quotes} />
     </MaxWidth>

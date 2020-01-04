@@ -75,7 +75,7 @@ const Footer = class extends React.Component {
               </ul>
             </section>
 
-            <section className="menu mt-2 p-3">
+            <section className="text-base mt-2 p-3">
               <p>About Adaptable Tools</p>
               <p>
                 Adaptable Tools is a startup focussed on transforming the user
@@ -86,7 +86,7 @@ const Footer = class extends React.Component {
                 London HQ.
               </p>
             </section>
-            <section className="menu mt-2 p-3">
+            <section className=" mt-2 p-3 text-base">
               <ul>
                 <li>
                   <Flex

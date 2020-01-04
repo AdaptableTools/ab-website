@@ -4,6 +4,8 @@
 
 @import 'tailwindcss/utilities';
 
+@import '~normalize.css/normalize.css';
+
 @mixin aspect-ratio($width, $height) {
   position: relative;
   &:before {
@@ -58,6 +60,19 @@
   color: var(--ab-color-blue);
 }
 
+html {
+  background-color: #fff;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,
 body,
 #___gatsby,
@@ -77,6 +92,10 @@ body {
 
 body {
   font-size: var(--ab-font-size-5);
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 *,
