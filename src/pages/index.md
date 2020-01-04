@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 image: /img/Carousel7.png
-title: Let Adaptable Tools give you the power of your data
+title: Let Adaptable Tools unleash the power of your data
 subtitle: See for yourself
 mainpitch:
   title: Data Tools to Take Control
@@ -16,15 +16,18 @@ mainpitch_description: >-
 highlights:
   - image: /img/full-picture.png
     text: >-
-      The largest suite of data controls [hotlink to functions] available in the
+      The largest data control toolbox [hotlink to functions] available in the
       market
   - image: /img/glyphicons-42-charts-3x.png
     text: 'Live data visualisation tools [hotlink to charts] to help patterns emerge '
   - image: /img/glyphicons-153-check-3x.png
     text: 'Full audit functionality [hotlink] to help meet regulatory requirements'
+  - image: /img/glyphicons-27-road-3x.png
+    text: Join up separate grids and Excel to create one integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
-  Elit duis ea nisi officia sint proident veniam officia pariatur minim aliqua ut sint enim.
+  Elit duis ea nisi officia sint proident veniam officia pariatur minim aliqua
+  ut sint enim.
 quotes:
   - image: /img/glyphicons-36-woman-3x.png
     text: >-
@@ -74,3 +77,4 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
+
