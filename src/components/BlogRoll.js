@@ -6,7 +6,7 @@ import GridLayout from './GridLayout'
 import Button from './Button'
 import AnimateWhenVisible from './AnimateWhenVisible'
 
-class BlogRoll extends React.Component {
+export class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -29,12 +29,11 @@ class BlogRoll extends React.Component {
               >
                 <header
                   style={{
-                    display: 'flex',
                     marginBottom: '1rem'
                   }}
                 >
                   {post.frontmatter.featuredimage ? (
-                    <div style={{ flexBasis: '45%' }} className="mr-4">
+                    <div className="mb-4">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -84,7 +83,12 @@ export default () => (
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "blog-post" }
+              tags: { nin: ["gridgurus"] }
+            }
+          }
         ) {
           edges {
             node {
@@ -100,7 +104,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 320, quality: 80) {
                       ...GatsbyImageSharpFluid
                     }
                   }

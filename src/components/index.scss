@@ -51,8 +51,11 @@
   --ab-color-text: #333;
   --ab-color-washedblue: rgb(239, 239, 244);
 }
-.app-text-dark {
+.ab-text-dark {
   color: var(--ab-color-text);
+}
+.ab-color_text-blue {
+  color: var(--ab-color-blue);
 }
 
 html,

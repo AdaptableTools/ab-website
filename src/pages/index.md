@@ -22,6 +22,9 @@ highlights:
     text: 'Live data visualisation tools [hotlink to charts] to help patterns emerge '
   - image: /img/glyphicons-153-check-3x.png
     text: 'Full audit functionality [hotlink] to help meet regulatory requirements'
+quotestitle: What some of our clients are saying
+quotestext: >-
+  Elit duis ea nisi officia sint proident veniam officia pariatur minim aliqua ut sint enim.
 quotes:
   - image: /img/glyphicons-36-woman-3x.png
     text: >-
@@ -71,4 +74,3 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
-

@@ -68,6 +68,8 @@ collections:
                   { label: Text, name: text, widget: text },
                 ],
             }
+          - { label: 'Quotes title', name: quotestitle, widget: string }
+          - { label: 'Quotes text', name: quotestext, widget: markdown }
           - {
               label: Quotes,
               name: quotes,
@@ -162,9 +164,17 @@ collections:
                     widget: text,
                     required: false,
                   },
+
+                  {
+                    label: 'Functionality demo page link',
+                    name: demourl,
+                    required: false,
+                    widget: string,
+                  },
                   {
                     label: 'Functionality icon name (from material icons)',
                     name: icon,
+                    required: false,
                     widget: string,
                   },
                 ],
@@ -210,6 +220,7 @@ collections:
             }
 
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Blog title', name: 'blogtitle', widget: 'string' }
       - file: 'src/pages/other-data-tools-partners/index.md'
         label: 'Other Data Tools (Partners)'
         name: 'other-data-tools-partners'

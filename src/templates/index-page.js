@@ -15,6 +15,7 @@ import AbsoluteNav from '../components/AbsoluteNav'
 import ExternalLink from '../components/ExternalLink'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
 import PageTitle from '../components/PageTitle'
+import Headline from '../components/Headline'
 
 export const IndexPageTemplate = ({
   image,
@@ -22,23 +23,25 @@ export const IndexPageTemplate = ({
   subtitle,
   highlights,
   quotes,
+  quotestitle,
+  quotestext,
   awards,
   mainpitch
 }) => (
   <div>
     <BackgroundImage image={image}>
       <AbsoluteNav />
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column'
-        }}
-      >
-        <PageTitle title={title} />
-      </div>
+    </BackgroundImage>
 
+    <PageTitle title={title} />
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'left',
+        flexDirection: 'column'
+      }}
+    >
       <AnimateWhenVisible
         as="h3"
         animationName="enter-from-right"
@@ -49,7 +52,7 @@ export const IndexPageTemplate = ({
           {subtitle}
         </ExternalLink>
       </AnimateWhenVisible>
-    </BackgroundImage>
+    </div>
 
     <MaxWidth className="mt-16">
       <h1 className="text-5xl font-thin  text-blue-800">{mainpitch.title}</h1>
@@ -86,15 +89,11 @@ export const IndexPageTemplate = ({
     </div>
 
     <MaxWidth className="mt-16">
-      <h1 className="text-5xl font-thin  text-blue-800">
-        What some of our partners are saying
-      </h1>
-      <p className="my-16">
-        Adaptable Tools works with global banks, software houses, cutting-edge
-        start-ups, and other Financial Services clients around the world. We aim
-        to exceed expectations every time and to partner with clients to help
-        them succeed.
+      <Headline>{quotestitle}</Headline>
+      <p className="my-16 text-xl">
+        <HTMLContent>{quotestext}</HTMLContent>
       </p>
+
       <ClientQuotes quotes={quotes} />
     </MaxWidth>
 
@@ -135,6 +134,12 @@ const IndexPage = ({ data }) => {
         subtitle={frontmatter.subtitle}
         highlights={frontmatter.highlights}
         quotes={frontmatter.quotes}
+        quotestitle={frontmatter.quotestitle}
+        quotestext={
+          fields.frontmattermd.quotestext
+            ? fields.frontmattermd.quotestext.html
+            : ''
+        }
         awards={frontmatter.awards || []}
         mainpitch={{
           ...frontmatter.mainpitch,
@@ -173,6 +178,9 @@ export const pageQuery = graphql`
           mainpitch_description {
             html
           }
+          quotestext {
+            html
+          }
         }
       }
       frontmatter {
@@ -200,6 +208,7 @@ export const pageQuery = graphql`
           }
           text
         }
+        quotestitle
         quotes {
           image {
             childImageSharp {

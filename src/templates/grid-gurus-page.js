@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import GridGurusBlogRoll from '../components/GridGurusBlogRoll'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
 import Nav from '../components/Navbar'
@@ -28,6 +29,7 @@ export const GridGurusPageTemplate = ({
   headline,
   description,
   video,
+  blogtitle,
   cta1,
 
   contentComponent
@@ -42,7 +44,7 @@ export const GridGurusPageTemplate = ({
       <MaxWidth className="mt-16 pb-8">
         {video ? <Video src={video} className="mb-4" /> : null}
         {headline ? (
-          <AnimateWhenVisible as={Headline} className="text-blue-800">
+          <AnimateWhenVisible as={Headline} className="app-color_text-blue">
             <HTMLContent>{headline}</HTMLContent>
           </AnimateWhenVisible>
         ) : null}
@@ -102,6 +104,9 @@ export const GridGurusPageTemplate = ({
       <AnimateWhenVisible>
         <MaxWidth>
           <PageContent className="mt-16 mb-16" content={content} />
+
+          <Headline as="h3">{blogtitle}</Headline>
+          <GridGurusBlogRoll />
         </MaxWidth>
       </AnimateWhenVisible>
     </>
@@ -123,6 +128,7 @@ const GridGurus = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}
+        blogtitle={post.frontmatter.blogtitle}
         image={post.frontmatter.image}
         headline={post.frontmatter.headline}
         cta1={post.frontmatter.cta1}
@@ -158,6 +164,7 @@ export const GridGurusQuery = graphql`
         headline
         description
         cta1
+        blogtitle
 
         services {
           name

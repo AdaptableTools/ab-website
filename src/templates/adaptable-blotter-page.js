@@ -245,33 +245,46 @@ export const AdaptableBlotterPageTemplate = ({
             <GridLayout style={{ padding: 0 }}>
               {functionalities.map((functionality, i) => {
                 return (
-                  <AnimateWhenVisible
-                    animationDelay={`${i * 100 +
-                      100 +
-                      Math.floor(Math.random() * 200)}ms`}
-                    key={functionality.name}
-                    className="p-3 bg-blue-800 text-white"
-                  >
-                    <div
-                      className="p-8 text-2xl"
+                  <ExternalLink href={functionality.demourl}>
+                    <AnimateWhenVisible
                       style={{
+                        height: '100%',
                         display: 'flex',
-                        flexFlow: 'row',
-                        alignItems: 'center'
+                        flexFlow: 'column'
                       }}
+                      animationDelay={`${i * 100 +
+                        100 +
+                        Math.floor(Math.random() * 200)}ms`}
+                      key={functionality.name}
+                      className="p-3 bg-blue-800 text-white text-center"
                     >
-                      <i class="material-icons text-2xl">
-                        {functionality.icon}
-                      </i>
-                      <h4>{functionality.name}</h4>
-                    </div>
+                      <div
+                        className="p-8 text-2xl"
+                        style={{
+                          display: 'flex',
+                          flexFlow: 'column',
+                          alignItems: 'center',
+                          flex: 1
+                        }}
+                      >
+                        <i
+                          className="material-icons mb-4"
+                          style={{
+                            fontSize: 'var(--ab-font-size-8)'
+                          }}
+                        >
+                          {functionality.icon}
+                        </i>
+                        <h4>{functionality.name}</h4>
+                      </div>
 
-                    {functionality.description ? (
-                      <p className="text-center mt-4 text-xl pb-4 font-normal ">
-                        {functionality.description}
-                      </p>
-                    ) : null}
-                  </AnimateWhenVisible>
+                      {functionality.description ? (
+                        <p className="text-center mt-4 text-xl pb-4 font-normal ">
+                          {functionality.description}
+                        </p>
+                      ) : null}
+                    </AnimateWhenVisible>
+                  </ExternalLink>
                 )
               })}
             </GridLayout>
@@ -366,9 +379,11 @@ export const adaptableBlotterPageQuery = graphql`
         }
 
         functionalitiestitle
+
         functionalities {
           name
           description
+          demourl
           icon
         }
 

@@ -9,24 +9,20 @@ export default ({ title, className, style, animate = true, as = 'h1' }) => {
   )
   style = {
     ...style,
+    position: 'sticky',
+    top: 0,
+    zIndex: 100,
     background: 'var(--ab-color-blue)'
   }
 
-  const Cmp = as
-
-  return animate ? (
-    <AnimateWhenVisible
-      animationName="enter-from-left"
-      animationDuration="0.7s"
-      className={className}
-      style={style}
-      as={Cmp}
-    >
-      {title}
-    </AnimateWhenVisible>
-  ) : (
-    <Cmp className={className} style={style}>
-      {title}
-    </Cmp>
+  return (
+    <div className={className} style={style}>
+      <AnimateWhenVisible
+        animationName="enter-from-left"
+        animationDuration="0.7s"
+      >
+        {title}
+      </AnimateWhenVisible>
+    </div>
   )
 }

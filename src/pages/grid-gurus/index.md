@@ -4,6 +4,7 @@ templateKey: grid-gurus-page
 image: /img/blog-index.jpg
 video: ''
 cta1: Get in touch
+blogtitle: Grid Gurus News
 headline: >-
   Controlling data properly requires a range of tools and specialist skills. 
   The AdapTable  \[Link] is only one part of the jigsaw.
@@ -17,12 +18,12 @@ description: >
   project, or come in for a few days to provide direction and specialist
   configuration.  They can get a Proof of Concept up and running, or set up and
   configure a grid for you, leaving the regular development team free to do
-  other things. 
+  other things.
 services:
   - name: 'System architecture  '
   - name: >-
       Expertise in installing and configuring all major DataGrids including
-      DevExpress, Infragistics, Kendo and ag-Grid. 
+      DevExpress, Infragistics, Kendo and ag-Grid.
   - name: Data display modes
   - name: Server/Client
 testimonials:
@@ -36,6 +37,9 @@ testimonials:
       of shortcuts.
   - text: Very professional… really know what they are doing.
 ---
+
 ### How it Works
 
-A member of our Grid Gurus’ team can come in for as little as one day to add value to your project.  They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.  We can also put together a number of individuals for more complex work.  We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need.  The service is priced on a time basis, with competitive rates available for longer projects.  Get in touch LINK TO SALES EMAIL to find out more.
+A member of our Grid Gurus’ team can come in for as little as one day to add value to your project. They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.
+
+We can also put together a number of individuals for more complex work. We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need. The service is priced on a time basis, with competitive rates available for longer projects. Get in touch LINK TO SALES EMAIL to find out more.
