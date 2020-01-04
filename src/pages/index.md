@@ -26,23 +26,28 @@ highlights:
     text: Join up separate grids and Excel to create one integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
-  Elit duis ea nisi officia sint proident veniam officia pariatur minim aliqua
-  ut sint enim.
+  Adaptable Tools already works with some of the world's leading banks and
+  financial institutions, as well as global software houses and innovative start
+  ups.  What they share is a desire to find smart ways to manage the data that
+  drives their business:  That's what Adaptable Tools helps them to achieve.
 quotes:
   - image: /img/glyphicons-36-woman-3x.png
     text: >-
       A clever piece of software that delivers powerful, advanced functionality
       to the end user.​
 
+
       ag-Grid
   - image: /img/glyphicons-35-old-man-3x.png
     text: |-
       Wish I had this years ago! Quick to implement and easy to use.
+
       Group CIO, Investment House
   - image: /img/glyphicons-36-woman-3x.png
     text: >-
       A great tool that is packed with cutting-edge functionality.  Adds real
       value to the software we deliver to our clients.
+
 
       CIO, Global Software House
   - image: /img/glyphicons-35-old-man-3x.png
@@ -50,11 +55,13 @@ quotes:
       Technology that enhances operational and developmental productivity
       through excellence in design and implementation.
 
+
       Industry Expert
   - image: /img/glyphicons-36-woman-3x.png
     text: >-
       Incredibly useful and well overdue.  The Adaptable Blotter is likely to
       become standard on every trader’s desktop.
+
 
       CTO, Global Finance Group
 awards:
