@@ -76,6 +76,6 @@ Licences can be purchased individually, for a team (minimum 30 end-users), and f
 
 To try out AdapTable, you can make use of our [demonstrations](https://demo.adaptableblotter.com/), or we can make a trial licence available for a short period of time.
 
-Get in touch LINK TO SALES EMAIL to identify the most practical and cost-effective solution for you.
+[Get in touch](mailto:sales@adaptabletools.com) LINK TO SALES EMAIL to identify the most practical and cost-effective solution for you.
 
 ###
