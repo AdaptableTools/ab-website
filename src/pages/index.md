@@ -2,7 +2,7 @@
 templateKey: index-page
 image: /img/Carousel7.png
 title: Let Adaptable Tools unleash the power of your data
-subtitle: See for yourself
+subtitle: Try it yourself
 mainpitch:
   title: Data Tools to Take Control
 mainpitch_description: >-
@@ -36,6 +36,7 @@ quotes:
       A clever piece of software that delivers powerful, advanced functionality
       to the end user.​
 
+      <br/>
 
       ag-Grid
   - image: /img/glyphicons-35-old-man-3x.png
