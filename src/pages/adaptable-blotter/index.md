@@ -29,13 +29,14 @@ keyfeatures:
       management and other out-of-the-box needs
     name: Feature 4
   - image: /img/safari-pinned-tab.svg
-    description: Styling and Theming
+    description: >-
+      Multiple visualisation and styling options to deliver to every user
+      requirement
     name: Feature 5
   - image: /img/safari-pinned-tab.svg
-    description: Admin
-    name: Feature 6
-  - image: /img/safari-pinned-tab.svg
-    description: Notifications
+    description: >-
+      Customisable notifications and alerts together with full audit
+      functionality to support compliance and user management
     name: Feature 7
 cta: Try for yourself
 usecaseTitle: >-
