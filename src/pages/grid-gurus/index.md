@@ -3,8 +3,7 @@ title: Getting Grids to Work for You
 templateKey: grid-gurus-page
 image: /img/blog-index.jpg
 video: ''
-cta1: Get in touch
-blogtitle: Grid Gurus News
+cta1: Get in touch LINK
 headline: >-
   Controlling data properly requires a range of tools and specialist skills. 
   The AdapTable  \[Link] is only one part of the jigsaw.
@@ -36,6 +35,7 @@ testimonials:
       A big time and money saver – they knew exactly what to do and found lots
       of shortcuts.
   - text: Very professional… really know what they are doing.
+blogtitle: Grid Gurus' Blog
 ---
 
 ### How it Works
