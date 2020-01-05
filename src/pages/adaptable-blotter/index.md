@@ -66,56 +66,7 @@ usecases:
     where: somewhere
     who: NON FINANCE USERS
 functionalitiestitle: Key functions
-functionalities:
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Flashing cells
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: alarm_on
-    name: Live Charts
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: all_inbox
-    name: Calculated Columns
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Alerts
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: User Filter
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: |
-      See it in action
-    icon: flash_on
-    name: Bulk Update
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Percent Bar
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Advanced Search
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: see it in action
-    icon: flash_on
-    name: Custom Sort
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Scheduled reports
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: see it in action
-    icon: flash_on
-    name: Audit Log
-  - demourl: 'https://demo.adaptableblotter.com/config/aggridnoconfigdemo/'
-    description: See it in action
-    icon: flash_on
-    name: Sparklines
+functionalities: []
 ---
 # How to let the Adaptable Blotter loose to transform your world
 
