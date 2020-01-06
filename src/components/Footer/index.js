@@ -55,9 +55,7 @@ const Footer = class extends React.Component {
                   <FooterMenuLink to="/">Home</FooterMenuLink>
                 </li>
                 <li>
-                  <FooterMenuLink to="/adaptable-blotter">
-                    Adaptable Blotter
-                  </FooterMenuLink>
+                  <FooterMenuLink to="/adaptable">Adaptable</FooterMenuLink>
                 </li>
                 <li>
                   <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
@@ -75,8 +73,12 @@ const Footer = class extends React.Component {
               </ul>
             </section>
 
-            <section className="text-base mt-2 p-3">
-              <p>About Adaptable Tools</p>
+            <section
+              className="text-base mt-2 p-3"
+              style={{
+                '--ab-space-4': 'var(--ab-space-3)'
+              }}
+            >
               <p>
                 Adaptable Tools is a startup focussed on transforming the user
                 interface in data systems.
@@ -84,6 +86,49 @@ const Footer = class extends React.Component {
               <p>
                 It currently works with clients in Financial Services from its
                 London HQ.
+              </p>
+
+              <p>
+                <a href="tel:+4402070784141" style={{ color: 'inherit' }}>
+                  <i
+                    className="material-icons"
+                    style={{ verticalAlign: 'middle' }}
+                  >
+                    phone
+                  </i>
+                  +44 (0)20 7078 4141
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:sales@adaptabletools.com"
+                  style={{ color: 'inherit' }}
+                >
+                  <i
+                    className="material-icons"
+                    style={{ verticalAlign: 'middle' }}
+                  >
+                    email
+                  </i>
+                  sales@adaptabletools.com
+                </a>
+              </p>
+
+              <p>
+                <ExternalLink href="https://www.linkedin.com/company/adaptable-tools/">
+                  <img
+                    src="/img/linkedin.svg"
+                    style={{
+                      height: 20,
+                      width: 20,
+                      display: 'inline-block',
+                      position: 'relative',
+                      top: -4,
+                      marginRight: 5
+                    }}
+                  />
+                  Linkedin page
+                </ExternalLink>
               </p>
             </section>
             <section className=" mt-2 p-3 text-base">

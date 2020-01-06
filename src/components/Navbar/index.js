@@ -87,7 +87,6 @@ const Navbar = class extends React.Component {
                   marginBottom={3}
                   flexDirection={['column', 'column', 'row']}
                 >
-                  <NavItem to="/contact">Contact</NavItem>
                   <NavText>
                     <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
                       Technical Support
@@ -99,7 +98,7 @@ const Navbar = class extends React.Component {
                   alignItems={['flex-start']}
                   flexDirection={['column', 'column', 'row']}
                 >
-                  <NavItem to="/adaptable-blotter">Adaptable Blotter</NavItem>
+                  <NavItem to="/adaptable">Adaptable</NavItem>
                   <NavItem to="/grid-gurus">Grid Gurus</NavItem>
                   <NavItem to="/other-data-tools-partners">
                     Other Data Tools

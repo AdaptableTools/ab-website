@@ -23,9 +23,7 @@ export class BlogRoll extends React.Component {
                   margin: 0,
                   boxShadow:
                     '0 0.5em 1em -0.125em rgba(101, 101, 101, 0.1), 0 0px 0 1px rgba(101, 101, 101, 0.02)',
-                  backgroundColor: post.frontmatter.featuredpost
-                    ? '#c5d6ff33'
-                    : '#f5f5f5',
+                  backgroundColor: '#c5d6ff33',
                   display: 'flex',
                   flexFlow: 'column'
                 }}
@@ -105,7 +103,6 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 320, quality: 80) {

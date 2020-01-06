@@ -1,6 +1,7 @@
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import GridLayout from '../GridLayout'
+import { HTMLContent } from '../Content'
 
 import Quote from '../../img/quote.inline.svg'
 
@@ -17,8 +18,8 @@ export default ({ quotes, avatars }) => (
         <Quote
           style={{
             fill: 'currentColor',
-            height: '4rem',
-            width: '4rem',
+            height: '2rem',
+            width: '2rem',
             position: 'absolute',
             top: 0,
             [i % 2 == 0 ? 'left' : 'right']: 0
@@ -48,7 +49,7 @@ export default ({ quotes, avatars }) => (
             }}
           >
             {quoteImage}
-            {quote.text}
+            <HTMLContent>{quote.text}</HTMLContent>
           </p>
           {avatars ? (
             <AnimateWhenVisible animationDelay={`0.${((i * 2) % 8) + 2}s`}>

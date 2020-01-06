@@ -9,9 +9,9 @@ class TailwindExtractor {
 
 module.exports = {
   siteMetadata: {
-    title: 'AdaptableTools - we build AdaptableBlotter',
+    title: 'AdaptableTools - we build Adaptable',
     description:
-      'The Adaptable Blotter is the most advanced and powerful HTML5 DataGrid Solution on the market today.'
+      'Adaptable is the most advanced and powerful HTML5 DataGrid Solution on the market today.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

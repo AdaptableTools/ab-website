@@ -1,13 +1,13 @@
 import CMS from 'netlify-cms-app'
-import React from 'react'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { Control, Preview as YoutubePreview } from './widgets/youtube'
 
-import ContactPagePreview from './preview-templates/ContactPagePreview'
-import AdaptableBlotterPagePreview from './preview-templates/AdaptableBlotterPagePreview'
+import AdaptablePagePreview from './preview-templates/AdaptablePagePreview'
+import XAdaptablePagePreview from './preview-templates/XAdaptablePagePreview'
 import GridGurusPagePreview from './preview-templates/GridGurusPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
+import TestPagePreview from './preview-templates/TestPagePreview'
 
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
@@ -20,13 +20,11 @@ CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
 registerTemplateForPreview('index', IndexPagePreview)
-registerTemplateForPreview('adaptable-blotter', AdaptableBlotterPagePreview)
-registerTemplateForPreview(
-  'other-data-tools-partners',
-  AdaptableBlotterPagePreview
-)
+registerTemplateForPreview('adaptable', AdaptablePagePreview)
+registerTemplateForPreview('test', TestPagePreview)
+registerTemplateForPreview('xadaptable', XAdaptablePagePreview)
+// registerTemplateForPreview('other-data-tools-partners', AdaptablePagePreview)
 registerTemplateForPreview('grid-gurus', GridGurusPagePreview)
-registerTemplateForPreview('contact', ContactPagePreview)
 
 registerTemplateForPreview('blog', BlogPostPreview)
 

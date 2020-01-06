@@ -18,7 +18,7 @@ import ExternalLink from '../components/ExternalLink'
 import Timeline from '../components/Timeline'
 import Headline from '../components/Headline'
 
-export const AdaptableBlotterPageTemplate = ({
+export const AdaptablePageTemplate = ({
   title,
   content,
   cta,
@@ -74,7 +74,7 @@ export const AdaptableBlotterPageTemplate = ({
         <br />
         <AnimateWhenVisible>
           <Headline as="h2" className="text-blue-800 mb-5">
-            {headline}
+            <HTMLContent>{headline}</HTMLContent>
           </Headline>
           <p className="mt-10 text-xl">
             <HTMLContent>{description}</HTMLContent>
@@ -87,21 +87,16 @@ export const AdaptableBlotterPageTemplate = ({
             <AnimateWhenVisible as={Headline} className=" pt-16">
               {keyfeaturestitle}
             </AnimateWhenVisible>
-            <GridLayout>
+            <GridLayout minBoxWidth={350}>
               {keyfeatures.map((feature, i) => {
                 return (
                   <AnimateWhenVisible
                     animationDelay={`${i * 300 + 200}ms`}
-                    key={feature.name}
+                    key={feature.description}
                     className="p-4  "
                   >
-                    <div className="p-16">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: feature.image
-                        }}
-                      />
-                    </div>
+                    <Video src={feature.video} />
+
                     {feature.description ? (
                       <p className="text-center mt-4 text-xl font-normal text-white">
                         {feature.description}
@@ -211,9 +206,7 @@ export const AdaptableBlotterPageTemplate = ({
                       steps={[
                         usecase.who,
                         usecase.where,
-                        <b style={{ whiteSpace: 'nowrap' }}>
-                          + AdaptableBlotter
-                        </b>
+                        <b style={{ whiteSpace: 'nowrap' }}>+ Adaptable</b>
                       ]}
                     />
                   </div>
@@ -298,7 +291,7 @@ export const AdaptableBlotterPageTemplate = ({
   )
 }
 
-AdaptableBlotterPageTemplate.propTypes = {
+AdaptablePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   keyfeaturestitle: PropTypes.string,
@@ -312,14 +305,12 @@ const AdaptableBlotterPage = ({ data }) => {
 
   return (
     <Layout>
-      <AdaptableBlotterPageTemplate
+      <AdaptablePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         video={post.frontmatter.video}
         image={post.frontmatter.image}
         keyfeaturestitle={post.frontmatter.keyfeaturestitle}
-        functionalities={post.frontmatter.functionalities}
-        functionalitiestitle={post.frontmatter.functionalitiestitle}
         testimonials={post.frontmatter.testimonials}
         usecases={post.frontmatter.usecases}
         cta={post.frontmatter.cta}
@@ -367,24 +358,8 @@ export const adaptableBlotterPageQuery = graphql`
         keyfeaturestitle
 
         keyfeatures {
-          name
+          video
           description
-          image {
-            childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-
-        functionalitiestitle
-
-        functionalities {
-          name
-          description
-          demourl
-          icon
         }
 
         cta

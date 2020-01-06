@@ -6,13 +6,13 @@ import { BlogRoll } from './BlogRoll'
 export default () => (
   <StaticQuery
     query={graphql`
-      query GridGurusBlogRollQuery {
+      query FeaturedBlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: {
             frontmatter: {
               templateKey: { eq: "blog-post" }
-              tags: { in: ["gridgurus"] }
+              featuredpost: { eq: true }
             }
           }
         ) {
@@ -27,6 +27,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {

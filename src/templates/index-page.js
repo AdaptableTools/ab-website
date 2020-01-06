@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
-import BlogRoll from '../components/BlogRoll'
+import FeaturedBlogRoll from '../components/FeaturedBlogRoll'
 import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
 import ClientQuotes from '../components/ClientQuotes'
@@ -78,9 +78,10 @@ export const IndexPageTemplate = ({
                     }}
                   />
                 </div>
-                <p className="text-center mt-4 text-xl font-normal text-white">
+
+                <HTMLContent className="text-center mt-4 text-xl font-normal text-white">
                   {highlight.text}
-                </p>
+                </HTMLContent>
               </AnimateWhenVisible>
             )
           })}
@@ -98,7 +99,7 @@ export const IndexPageTemplate = ({
 
     <div className="bg-blue-800">
       <MaxWidth className="mt-16 pt-16">
-        <h1 className="text-5xl font-thin  text-white">Awards</h1>
+        <h1 className="text-5xl font-thin text-white">Awards</h1>
         <Awards awards={awards} />
       </MaxWidth>
     </div>
@@ -106,7 +107,7 @@ export const IndexPageTemplate = ({
     <MaxWidth className="mt-16">
       <h1 className="text-5xl font-thin  text-blue-800">Latest stories</h1>
 
-      <BlogRoll />
+      <FeaturedBlogRoll />
     </MaxWidth>
   </div>
 )
@@ -209,13 +210,6 @@ export const pageQuery = graphql`
         }
         quotestitle
         quotes {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 440, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
           text
         }
         awards {

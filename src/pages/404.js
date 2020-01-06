@@ -1,12 +1,18 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import BackgroundImage from '../components/BackgroundImage'
+import AbsoluteNav from '../components/AbsoluteNav'
+import MaxWidth from '../components/MaxWidth'
 
 const NotFoundPage = () => (
   <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
+    <BackgroundImage image={'/img/blog-index.jpg'} title={'Adaptable Tools'}>
+      <AbsoluteNav />
+    </BackgroundImage>
+
+    <MaxWidth>
+      <p>Page not found, sorry.</p>
+    </MaxWidth>
   </Layout>
 )
 

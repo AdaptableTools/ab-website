@@ -65,7 +65,7 @@ collections:
               fields:
                 [
                   { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
+                  { label: Text, name: text, widget: markdown },
                 ],
             }
           - { label: 'Quotes title', name: quotestitle, widget: string }
@@ -74,11 +74,7 @@ collections:
               label: Quotes,
               name: quotes,
               widget: list,
-              fields:
-                [
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
-                ],
+              fields: [{ label: Text, name: text, widget: markdown }],
             }
           - {
               label: Awards,
@@ -90,20 +86,45 @@ collections:
                   { label: Text, name: text, widget: text },
                 ],
             }
-      - file: 'src/pages/adaptable-blotter/index.md'
-        label: 'Adaptable Blotter'
-        name: 'adaptable-blotter'
+      - file: 'src/pages/xadaptable/index.md'
+        label: 'XAdaptable'
+        name: 'xadaptable'
         fields:
           - {
               label: 'Template Key',
               name: 'templateKey',
               widget: 'hidden',
-              default: 'adaptable-blotter-page',
+              default: 'xadaptable-page',
+            }
+          - { label: Image, name: image, widget: image }
+          - { label: 'Title', name: 'title', widget: 'string' }
+
+      - file: 'src/pages/test/index.md'
+        name: 'test'
+        label: 'Tests page'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'test-page',
+            }
+          - { label: 'Title', name: 'title', widget: 'string' }
+
+      - file: 'src/pages/adaptable/index.md'
+        label: 'Adaptable Page'
+        name: 'adaptable'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'adaptable-page',
             }
           - { label: Image, name: image, widget: image }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Video', name: 'video', widget: 'text', required: false }
-          - { label: 'Headline', name: 'headline', widget: 'string' }
+          - { label: 'Headline', name: 'headline', widget: 'markdown' }
           - {
               label: Description,
               name: description,
@@ -121,17 +142,15 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: 'Feature name', name: name, widget: string },
                   {
                     label: 'Feature description',
                     name: description,
                     required: false,
                     widget: text,
                   },
-                  { label: 'Feature image', name: image, widget: image },
+                  { label: 'Feature video', name: video, widget: text },
                 ],
             }
-
           - { label: 'Call to action text', name: 'cta', widget: string }
           - { label: 'Usecases title', name: 'usecaseTitle', widget: string }
           - {
@@ -146,40 +165,6 @@ collections:
                   { label: 'Image', name: image, widget: image },
                 ],
             }
-          - {
-              label: 'Functionalities title',
-              name: functionalitiestitle,
-              widget: string,
-            }
-          - {
-              label: 'Functionalities',
-              name: functionalities,
-              widget: list,
-              fields:
-                [
-                  { label: 'Functionality name', name: name, widget: string },
-                  {
-                    label: 'Functionality description',
-                    name: description,
-                    widget: text,
-                    required: false,
-                  },
-
-                  {
-                    label: 'Functionality demo page link',
-                    name: demourl,
-                    required: false,
-                    widget: string,
-                  },
-                  {
-                    label: 'Functionality icon name (from material icons)',
-                    name: icon,
-                    required: false,
-                    widget: string,
-                  },
-                ],
-            }
-
           - { label: 'Content', name: 'body', widget: 'markdown' }
       - file: 'src/pages/grid-gurus/index.md'
         label: 'Grid Gurus'
@@ -221,19 +206,19 @@ collections:
 
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Blog title', name: 'blogtitle', widget: 'string' }
-      - file: 'src/pages/other-data-tools-partners/index.md'
-        label: 'Other Data Tools (Partners)'
-        name: 'other-data-tools-partners'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'adaptable-blotter-page',
-            }
-          - { label: Image, name: image, widget: image }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+      # - file: 'src/pages/other-data-tools-partners/index.md'
+      #   label: 'Other Data Tools (Partners)'
+      #   name: 'other-data-tools-partners'
+      #   fields:
+      #     - {
+      #         label: 'Template Key',
+      #         name: 'templateKey',
+      #         widget: 'hidden',
+      #         default: 'adaptable-page',
+      #       }
+      #     - { label: Image, name: image, widget: image }
+      #     - { label: 'Title', name: 'title', widget: 'string' }
+      #     - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
@@ -247,19 +232,19 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
 
-      - file: 'src/pages/contact/index.md'
-        label: 'Contact'
-        name: 'contact'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'contact-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Image', name: 'image', widget: 'image' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+      # - file: 'src/pages/contact/index.md'
+      #   label: 'Contact'
+      #   name: 'contact'
+      #   fields:
+      #     - {
+      #         label: 'Template Key',
+      #         name: 'templateKey',
+      #         widget: 'hidden',
+      #         default: 'contact-page',
+      #       }
+      #     - { label: 'Title', name: 'title', widget: 'string' }
+      #     - { label: 'Image', name: 'image', widget: 'image' }
+      #     - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/support/index.md'
         label: 'Support'
         name: 'support'
