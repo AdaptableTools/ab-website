@@ -3,7 +3,8 @@ templateKey: adaptable-page
 image: /img/Carousel14.png
 title: 'AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-headline: Experience the Power of the [AdapTable Toolkit](http://demo.adaptableblotter.com/)
+headline: >-
+  Experience the Power of the [Adaptable Toolkit](http://demo.adaptableblotter.com/)
 description: >-
   AdapTable turbo-charges your data management, providing the ultimate toolkit
   to drive your data needs.  A straightforward, but immensely powerful, HTML5
@@ -73,7 +74,6 @@ usecases:
     who: NON FINANCE USERS
 functionalitiestitle: Key functions
 functionalities: []
-
 ---
 
 # How to let AdapTable loose to transform your world

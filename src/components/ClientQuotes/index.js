@@ -49,7 +49,7 @@ export default ({ quotes, avatars }) => (
             }}
           >
             {quoteImage}
-            <HTMLContent>{quote.text}</HTMLContent>
+            <HTMLContent as="p">{quote.text}</HTMLContent>
           </p>
           {avatars ? (
             <AnimateWhenVisible animationDelay={`0.${((i * 2) % 8) + 2}s`}>

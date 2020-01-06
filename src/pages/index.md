@@ -32,7 +32,7 @@ quotestext: >-
   drives their business:  That's what Adaptable Tools helps them to achieve.
 quotes:
   - text: >-
-      A clever piece of software that delivers powerful, advanced functionality
+      A **clever** piece of software that delivers powerful, advanced functionality
       to the end user.​
 
       ag-Grid
