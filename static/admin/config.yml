@@ -86,33 +86,8 @@ collections:
                   { label: Text, name: text, widget: text },
                 ],
             }
-      - file: 'src/pages/xadaptable/index.md'
-        label: 'XAdaptable'
-        name: 'xadaptable'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'xadaptable-page',
-            }
-          - { label: Image, name: image, widget: image }
-          - { label: 'Title', name: 'title', widget: 'string' }
-
-      - file: 'src/pages/test/index.md'
-        name: 'test'
-        label: 'Tests page'
-        fields:
-          - {
-              label: 'Template Key',
-              name: 'templateKey',
-              widget: 'hidden',
-              default: 'test-page',
-            }
-          - { label: 'Title', name: 'title', widget: 'string' }
-
       - file: 'src/pages/adaptable/index.md'
-        label: 'Adaptable Page'
+        label: 'Adaptable'
         name: 'adaptable'
         fields:
           - {
