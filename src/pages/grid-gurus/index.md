@@ -6,7 +6,7 @@ video: ''
 cta1: Get in touch LINK
 headline: >-
   Controlling data properly requires a range of tools and specialist skills. 
-  The AdapTable  \[Link] is only one part of the jigsaw.
+  The AdapTable  is only one part of the jigsaw.
 description: >
   At Adaptable Tools we have built a team to help with every aspect of your data
   project. 
