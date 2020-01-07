@@ -7,8 +7,8 @@ mainpitch:
   title: Data Tools to Take Control
 mainpitch_description: >-
   Adaptable Tools provides market-leading products to drive effective data use. 
-  Previously known as the Adaptable Blotter, the award-winning [Adaptable
-  Blotter](http://demo.adaptableblotter.com/) is used by some of the world's
+  Previously known as the Adaptable Blotter, the award-winning,
+  [Adaptable](http://demo.adaptableblotter.com/), is used by some of the world's
   largest financial services businesses to turbocharge data grids from the
   frontlines to the back office.  The unique HTML5 toolbox makes working from
   large amounts of static or dynamic data straightforward, helping users work
@@ -41,8 +41,11 @@ quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
   financial institutions, as well as global software houses and innovative start
-  ups.  What they share is a desire to find smart ways to manage the data that
-  drives their business:  That's what Adaptable Tools helps them to achieve.
+  ups.  
+
+
+  What they share is a desire to find smart ways to manage the data that drives
+  their business:  That's what Adaptable Tools helps them to achieve.
 quotes:
   - text: >-
       A **clever** piece of software that delivers powerful, advanced
