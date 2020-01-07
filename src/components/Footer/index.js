@@ -174,6 +174,8 @@ const Footer = class extends React.Component {
                       Keep up with news at Adaptable Tools
                     </Box>
 
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <Box
                       as="input"
                       width={1}
