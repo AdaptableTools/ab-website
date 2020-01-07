@@ -48,6 +48,7 @@ quotes:
       A **clever** piece of software that delivers powerful, advanced
       functionality to the end user.​
 
+
       ag-Grid
   - text: |-
       Wish I had this years ago! Quick to implement and easy to use.
@@ -72,14 +73,9 @@ quotes:
 
       CTO, Global Finance Group
   - text: |-
-      > Well on its way to becoming the Excel of front-office tools. 
-      >
-      > \
-      >
-      >
-      > Senior Quant Dev, global asset manager
-      >
-      >
+      Well on its way to becoming the Excel of front-office tools
+
+      Senior Quant Dev, global Asset Manager
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
