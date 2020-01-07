@@ -17,7 +17,7 @@ mainpitch_description: >-
 highlights:
   - image: /img/full-picture.png
     text: >-
-      The largest data control [toolbox
+      The largest and most powerful data control [toolbox
       ](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/)available in
       the market
   - image: /img/glyphicons-42-charts-3x.png
