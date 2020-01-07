@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Adaptable Tools wins top FinTech prize
 date: 2018-11-11T12:45:00.000Z
 description: External recognition as leading Financial Services' innovator
-featuredpost: false
+featuredpost: true
 featuredimage: /img/dragons-den-win-2018.jpg
 tags:
   - news
