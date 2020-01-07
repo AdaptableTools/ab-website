@@ -55,7 +55,7 @@ const Footer = class extends React.Component {
                   <FooterMenuLink to="/">Home</FooterMenuLink>
                 </li>
                 <li>
-                  <FooterMenuLink to="/adaptable">Adaptable</FooterMenuLink>
+                  <FooterMenuLink to="/adaptable">AdapTable</FooterMenuLink>
                 </li>
                 <li>
                   <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
@@ -66,9 +66,6 @@ const Footer = class extends React.Component {
                       Demo
                     </ExternalLink>
                   </FooterMenuLink>
-                </li>
-                <li>
-                  <FooterMenuLink to="/contact">Contact</FooterMenuLink>
                 </li>
               </ul>
             </section>

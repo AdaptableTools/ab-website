@@ -98,7 +98,7 @@ const Navbar = class extends React.Component {
                   alignItems={['flex-start']}
                   flexDirection={['column', 'column', 'row']}
                 >
-                  <NavItem to="/adaptable">Adaptable</NavItem>
+                  <NavItem to="/adaptable">AdapTable</NavItem>
                   <NavItem to="/grid-gurus">Grid Gurus</NavItem>
                   <NavItem to="/other-data-tools-partners">
                     Other Data Tools
