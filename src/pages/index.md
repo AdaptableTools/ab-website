@@ -31,12 +31,9 @@ highlights:
       regulatory requirements
   - image: /img/glyphicons-27-road-3x.png
     text: >-
-      Join up separate grids and Excel to create one integrated data universe,
-      working with
-      [iPushPull,](https://demo.adaptableblotter.com/partners/ipushpulldemo/)
-      [Finsemble,
-      ](https://demo.adaptableblotter.com/partners/finsembledemo/)[OpenFin](https://demo.adaptableblotter.com/partners/openfindemo/)
-      and Glue42 LINK
+      Work with our [FinTech
+      partners](https://demo.adaptableblotter.com/partners/) to create one
+      integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
