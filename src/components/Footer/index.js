@@ -24,7 +24,29 @@ const FooterMenuLink = ({ children, to, as }) => {
   )
 }
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
+
 const preventDefault = e => e.preventDefault()
+
+const handleSubmit = e => {
+  e.preventDefault()
+  const form = e.target
+  const email = form.querySelector('input').value
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: encode({
+      'form-name': form.getAttribute('name'),
+      email
+    })
+  })
+  // .then(() => navigate(form.getAttribute('action')))
+  // .catch(error => alert(error))
+}
 
 const Footer = class extends React.Component {
   render() {
@@ -135,7 +157,11 @@ const Footer = class extends React.Component {
                     flexDirection="column"
                     alignItems="flex-end"
                     as="form"
-                    onSubmit={preventDefault}
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    name="contact"
+                    method="post"
+                    onSubmit={handleSubmit}
                   >
                     <Box style={{ textAlign: 'right' }} marginBottom={3}>
                       Keep up with news at Adaptable Tools
