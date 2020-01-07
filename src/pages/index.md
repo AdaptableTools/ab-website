@@ -16,14 +16,26 @@ mainpitch_description: >-
 highlights:
   - image: /img/full-picture.png
     text: >-
-      The largest data control toolbox [hotlink to functions] available in the
-      market
+      The largest data control [toolbox
+      ](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/)available in
+      the market
   - image: /img/glyphicons-42-charts-3x.png
-    text: 'Live data visualisation tools [hotlink to charts] to help patterns emerge '
+    text: >-
+      Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
+      to help patterns emerge
   - image: /img/glyphicons-153-check-3x.png
-    text: 'Full audit functionality [hotlink] to help meet regulatory requirements'
+    text: >-
+      Full [audit functionality
+      ](https://demo.adaptableblotter.com/admin/aggridauditdemo/)to help meet
+      regulatory requirements
   - image: /img/glyphicons-27-road-3x.png
-    text: Join up separate grids and Excel to create one integrated data universe
+    text: >-
+      Join up separate grids and Excel to create one integrated data universe,
+      working with
+      [iPushPull,](https://demo.adaptableblotter.com/partners/ipushpulldemo/)
+      [Finsemble,
+      ](https://demo.adaptableblotter.com/partners/finsembledemo/)[OpenFin](https://demo.adaptableblotter.com/partners/openfindemo/)
+      and Glue42 LINK
 quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
@@ -32,8 +44,8 @@ quotestext: >-
   drives their business:  That's what Adaptable Tools helps them to achieve.
 quotes:
   - text: >-
-      A **clever** piece of software that delivers powerful, advanced functionality
-      to the end user.​
+      A **clever** piece of software that delivers powerful, advanced
+      functionality to the end user.​
 
       ag-Grid
   - text: |-
@@ -58,6 +70,15 @@ quotes:
 
 
       CTO, Global Finance Group
+  - text: |-
+      > Well on its way to becoming the Excel of front-office tools. 
+      >
+      > \
+      >
+      >
+      > Senior Quant Dev, global asset manager
+      >
+      >
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
@@ -78,3 +99,4 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
+
