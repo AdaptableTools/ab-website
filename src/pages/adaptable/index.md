@@ -34,7 +34,7 @@ keyfeatures:
     description: >-
       Customisable notifications and alerts together with full audit
       functionality to support compliance and user management
-cta: Try for yourself
+cta: Try AdapTable for yourself
 usecaseTitle: >-
   AdapTable can help to drive any area of business and solve any data-driven
   challenge
@@ -58,9 +58,9 @@ usecases:
     where: Third party applications reading data
     who: Millions unstructured data records referencing Libor
   - image: /img/safari-pinned-tab.svg
-    result: something
-    where: somewhere
-    who: NON FINANCE USERS
+    result: Able to reduce time to market and increase length of time holding patent.
+    where: Need to exploit patents lifetime
+    who: Global Pharmaceutical Company
 ---
 
 # How to let AdapTable loose to transform your world
