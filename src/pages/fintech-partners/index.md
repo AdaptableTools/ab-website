@@ -3,14 +3,14 @@ templateKey: adaptable-page
 image: /img/products-grid1.jpg
 title: Driving Forward the Data Management Revolution Together
 ---
+At Adaptable Tools we focus on solving the challenges presented by the current unsuitable, duplicated DataGrid offerings within desktop data systems. 
 
-At Adaptable Tools we focus on solving the challenges presented by the current unsuitable, duplicated DataGrid offerings within desktop data systems. Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
+Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
 
 ### [Finsemble](https://www.chartiq.com/finsemble/)
 
 Finsemble provides a state of the art window management system for HTML apps.
-Working together, we can deliver multiple Adaptable Blotters in the same workspace which share data and events with each other and with third party widgets.
-[See it here](https://demo.adaptableblotter.com/partners/finsembledemo/).
+Working together, we can deliver [multiple AdapTable instances](https://demo.adaptableblotter.com/partners/finsembledemo/) in the same workspace which share data and events with each other and with third party widgets.
 
 ### [OpenFin](https://openfin.co/)
 
@@ -35,6 +35,6 @@ Glue42 facilitates communication between legacy and new apps.
 When used in the Adaptable Blotter, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid.
 **NEED a link when ready**
 
-\***\*[**Infragistics**](https://www.infragistics.com/)\*\***
+### [Infragistics](https://infragistics.com/)
 
 AdapTable users benefit from access to Infragistics' cutting-edge charting library, allowing them to choose how best to visualise dynamic data in ways not previously possible. [Read more here](https://www.infragistics.com/about-us/in-the-news/infragistics-plus-adaptable-tools-bringing-unprecedented-power-to-the-desktop)
