@@ -1,7 +1,7 @@
 ---
 title: Getting Grids to Work for You
 templateKey: grid-gurus-page
-image: /img/blog-index.jpg
+image: /img/test.jpg
 video: ''
 ctalink: 'mailto:sales@adaptabletools.com'
 cta1: '[Get In Touch](mailto:sales@adaptabletools.com)'
