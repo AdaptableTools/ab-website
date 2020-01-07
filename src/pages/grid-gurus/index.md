@@ -28,11 +28,9 @@ description: >
   team free to do other things.
 services:
   - name: 'System architecture  '
-  - name: >-
-      Expertise in installing and configuring all major DataGrids including
-      DevExpress, Infragistics, Kendo and ag-Grid.
-  - name: Data display modes
-  - name: Server/Client
+  - name: DataGrid Installation
+  - name: User Experience
+  - name: Big Data Management
 testimonials:
   - text: Hugely valuable input at a key point in my project.
   - text: >-
