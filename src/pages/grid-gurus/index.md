@@ -16,16 +16,16 @@ description: >
   your data project. 
 
 
-  Our Grid Gurus have a deep understanding of all the options available in the
-  market and provide objective input to help design your system and build it
-  quickly and cost-efficiently.  
+  Nicknamed the Grid Gurus, our consultants have a deep understanding of all the
+  options available in the market and provide objective input to help design
+  your system and build it quickly and cost-efficiently.  
 
 
-  The Grid Guru consultants can be fully integrated into a development project,
-  or come in for a few days to provide direction and specialist configuration. 
-  They can get a Proof of Concept up and running, or set up and configure your
-  DataGrids to suit your precise requirements, leaving the regular development
-  team free to do other things.
+  Grid Gurus can be fully integrated into a development project, or come in for
+  a few days to provide direction and specialist configuration.  They can get a
+  Proof of Concept up and running, or set up and configure your DataGrids to
+  suit your precise requirements, leaving the regular development team free to
+  do other things.
 services:
   - name: 'System architecture  '
   - name: DataGrid Installation
