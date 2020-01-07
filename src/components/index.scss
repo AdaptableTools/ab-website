@@ -29,6 +29,8 @@
   --ab-breakpoint-2: 64rem;
 
   --ab-max-content-size: 70rem;
+  --ab-link_color: rgb(18, 127, 196);
+  --ab-link_text-decoration: none;
 
   --ab-space-0: 0px;
   --ab-space-1: 0.25rem;
@@ -111,8 +113,16 @@ body {
 .navbar-menu.navbar-menu {
   background: transparent;
 }
-a {
-  color: rgb(18, 127, 196);
+
+a,
+.link {
+  text-decoration: var(--ab-link_text-decoration);
+  text-underline-position: under;
+  text-decoration-style: dotted;
+}
+.link:hover,
+a:hover {
+  text-decoration-style: solid;
 }
 
 p + p {

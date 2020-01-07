@@ -33,6 +33,7 @@ function encode(data) {
 const Footer = class extends React.Component {
   state = {
     email: '',
+    loading: false,
     feedback: '',
     error: ''
   }
@@ -43,14 +44,17 @@ const Footer = class extends React.Component {
 
     const body = {
       'form-name': form.getAttribute('name'),
-      email: this.state.email,
-      inputemail: this.state.email,
-      test: 'a test'
+      email: this.state.email
+    }
+
+    if (!this.state.email) {
+      return
     }
 
     this.setState({
       feedback: 'Thank you for subscribing!',
       error: null,
+      loading: true,
       email: ''
     })
 
@@ -62,6 +66,7 @@ const Footer = class extends React.Component {
       .then(() => () => {
         setTimeout(() => {
           this.setState({
+            loading: false,
             feedback: null,
             error: null
           })
@@ -74,7 +79,8 @@ const Footer = class extends React.Component {
         setTimeout(() => {
           this.setState({
             feedback: null,
-            error: null
+            error: null,
+            loading: false
           })
         }, 2000)
       })
@@ -231,7 +237,16 @@ const Footer = class extends React.Component {
                     {feedback}
                     {error}
 
-                    <Button className="mt-3 self-end ">Send</Button>
+                    <Button
+                      disabled={this.state.loading || !this.state.email}
+                      style={{
+                        opacity:
+                          this.state.loading || !this.state.email ? 0.5 : 1
+                      }}
+                      className="mt-3 self-end "
+                    >
+                      Send
+                    </Button>
                   </Flex>
                 </li>
               </ul>

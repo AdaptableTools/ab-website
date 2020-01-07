@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import {  graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
@@ -9,6 +9,7 @@ import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
 import ClientQuotes from '../components/ClientQuotes'
 import Awards from '../components/Awards'
+import Strip from '../components/Strip'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
@@ -61,7 +62,7 @@ export const IndexPageTemplate = ({
       </p>
     </MaxWidth>
 
-    <div className="bg-blue-800">
+    <Strip variant="dark">
       <MaxWidth className="mt-16 pb-8">
         <GridLayout>
           {highlights.map((highlight, i) => {
@@ -87,7 +88,7 @@ export const IndexPageTemplate = ({
           })}
         </GridLayout>
       </MaxWidth>
-    </div>
+    </Strip>
 
     <MaxWidth className="mt-16">
       <Headline>{quotestitle}</Headline>
@@ -97,12 +98,12 @@ export const IndexPageTemplate = ({
       <ClientQuotes quotes={quotes} />
     </MaxWidth>
 
-    <div className="bg-blue-800">
+    <Strip variant="dark">
       <MaxWidth className="mt-16 pt-16">
         <h1 className="text-5xl font-thin text-white">Awards</h1>
         <Awards awards={awards} />
       </MaxWidth>
-    </div>
+    </Strip>
 
     <MaxWidth className="mt-16">
       <h1 className="text-5xl font-thin  text-blue-800">Latest stories</h1>

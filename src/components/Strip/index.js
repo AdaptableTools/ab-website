@@ -7,6 +7,8 @@ const Strip = ({ variant = 'dark', ...props }) => {
   }
   if (variant === 'dark') {
     style['--ab-color_text-headline'] = 'white'
+    style['--ab-link_text-decoration'] = 'underline'
+    style['--ab-link_color'] = 'white'
   }
   return (
     <div

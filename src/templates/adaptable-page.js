@@ -286,9 +286,13 @@ export const AdaptablePageTemplate = ({
           </MaxWidth>
         </Strip>
       ) : null}
-      <MaxWidth className="mt-16 pb-8">
-        <PageContent className="content" content={content} />
-      </MaxWidth>
+      <AnimateWhenVisible>
+      <Strip variant="light">
+        <MaxWidth className="mt-16 pb-8">
+          <PageContent className="content" content={content} />
+        </MaxWidth>
+        </Strip>
+      </AnimateWhenVisible>
     </>
   )
 }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Strip from '../components/Strip'
 import GridGurusBlogRoll from '../components/GridGurusBlogRoll'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
@@ -78,7 +79,7 @@ export const GridGurusPageTemplate = ({
       </MaxWidth>
 
       {services && services.length ? (
-        <div className="bg-blue-800">
+        <Strip variant="dark">
           <MaxWidth className="mt-16 pb-8">
             <AnimateWhenVisible
               as="h2"
@@ -102,25 +103,29 @@ export const GridGurusPageTemplate = ({
               })}
             </GridLayout>
           </MaxWidth>
-        </div>
+        </Strip>
       ) : null}
 
       {testimonials && testimonials.length ? (
-        <MaxWidth className="mt-16 pb-8">
-          <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
-            <h3>What clients are saying</h3>
-          </AnimateWhenVisible>
-          <ClientQuotes quotes={testimonials} />
-        </MaxWidth>
+        <Strip variant="light">
+          <MaxWidth className="mt-16 pb-8">
+            <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
+              <h3>What clients are saying</h3>
+            </AnimateWhenVisible>
+            <ClientQuotes quotes={testimonials} />
+          </MaxWidth>
+        </Strip>
       ) : null}
 
       <AnimateWhenVisible>
-        <MaxWidth>
-          <PageContent className="mt-16 mb-16" content={content} />
+        <Strip variant="light">
+          <MaxWidth>
+            <PageContent className="mt-16 mb-16" content={content} />
 
-          <Headline as="h3">{blogtitle}</Headline>
-          <GridGurusBlogRoll />
-        </MaxWidth>
+            <Headline as="h3">{blogtitle}</Headline>
+            <GridGurusBlogRoll />
+          </MaxWidth>
+        </Strip>
       </AnimateWhenVisible>
     </>
   )
