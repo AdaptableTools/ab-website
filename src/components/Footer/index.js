@@ -30,33 +30,56 @@ function encode(data) {
     .join('&')
 }
 
-const preventDefault = e => e.preventDefault()
-
-const handleSubmit = e => {
-  e.preventDefault()
-  const form = e.target
-  const emailInput = form.querySelector('input')
-  const email = emailInput.value
-
-  emailInput.value = ''
-
-  const body = {
-    'form-name': form.getAttribute('name'),
-    email
+const Footer = class extends React.Component {
+  state = {
+    email: '',
+    feedback: 'Thank you for subscribing',
+    error: 'Thank you for subscribing'
   }
 
-  console.log({ body })
-  fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: encode(body)
-  })
-  // .then(() => navigate(form.getAttribute('action')))
-  // .catch(error => alert(error))
-}
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
 
-const Footer = class extends React.Component {
+    const body = {
+      'form-name': form.getAttribute('name'),
+      email: this.state.email,
+      inputemail: this.state.email,
+      test: 'a test'
+    }
+
+    this.setState({
+      feedback: 'Thank you for subscribing!'
+    })
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode(body)
+    })
+      .then(() => () => {
+        setTimeout(() => {
+          this.setState({
+            feedback: null
+          })
+        }, 2000)
+      })
+      .catch(error => {
+        this.setState({
+          error: 'Oups ... there was an error! Try again later'
+        })
+      })
+  }
+
   render() {
+    const feedback = this.state.feedback ? (
+      <Box my={2}>{this.state.feedback}</Box>
+    ) : null
+    const error = this.state.error ? (
+      <Box my={2} style={{ color: 'red' }}>
+        {this.state.error}
+      </Box>
+    ) : null
     return (
       <Flex
         alignItems="center"
@@ -153,7 +176,7 @@ const Footer = class extends React.Component {
                       marginRight: 5
                     }}
                   />
-                  Linkedin page
+                  LinkedIn
                 </ExternalLink>
               </p>
             </section>
@@ -168,7 +191,7 @@ const Footer = class extends React.Component {
                     data-netlify-honeypot="bot-field"
                     name="contact"
                     method="post"
-                    onSubmit={handleSubmit}
+                    onSubmit={this.handleSubmit}
                   >
                     <Box style={{ textAlign: 'right' }} marginBottom={3}>
                       Keep up with news at Adaptable Tools
@@ -182,9 +205,18 @@ const Footer = class extends React.Component {
                       fontSize={3}
                       type="email"
                       name="email"
+                      value={this.state.email}
+                      onChange={e => {
+                        this.setState({
+                          email: e.target.value
+                        })
+                      }}
                       className="text-blue-800 rounded-sm p-3"
                       placeholder="Your email"
                     />
+
+                    {feedback}
+                    {error}
 
                     <Button className="mt-3 self-end ">Send</Button>
                   </Flex>

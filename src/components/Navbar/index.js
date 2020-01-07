@@ -100,9 +100,7 @@ const Navbar = class extends React.Component {
                 >
                   <NavItem to="/adaptable">AdapTable</NavItem>
                   <NavItem to="/grid-gurus">Grid Gurus</NavItem>
-                  <NavItem to="/other-data-tools-partners">
-                    Other Data Tools
-                  </NavItem>
+                  <NavItem to="/fintech-partners">Fintech Partners</NavItem>
                   <NavItem to="/blog">News</NavItem>
 
                   <NavText>

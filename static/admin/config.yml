@@ -181,19 +181,19 @@ collections:
 
           - { label: 'Body', name: 'body', widget: 'markdown' }
           - { label: 'Blog title', name: 'blogtitle', widget: 'string' }
-      # - file: 'src/pages/other-data-tools-partners/index.md'
-      #   label: 'Other Data Tools (Partners)'
-      #   name: 'other-data-tools-partners'
-      #   fields:
-      #     - {
-      #         label: 'Template Key',
-      #         name: 'templateKey',
-      #         widget: 'hidden',
-      #         default: 'adaptable-page',
-      #       }
-      #     - { label: Image, name: image, widget: image }
-      #     - { label: 'Title', name: 'title', widget: 'string' }
-      #     - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/fintech-partners/index.md'
+        label: 'FinTech Partners'
+        name: 'fintech-partners'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'adaptable-page',
+            }
+          - { label: Image, name: image, widget: image }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
       - file: 'src/pages/about/index.md'
         label: 'About'
         name: 'about'
