@@ -4,26 +4,27 @@ templateKey: grid-gurus-page
 image: /img/blog-index.jpg
 video: ''
 ctalink: 'mailto:sales@adaptabletools.com'
-cta1: Get in **touch** LINK
-headline: >-
-  # Controlling data properly requires a range of tools and specialist skills.  
+cta1: '[Get In Touch](mailto:sales@adaptabletools.com)'
+headline: |-
+  #Controlling data properly requires a range of tools and specialist skills.  
 
 
 
-
-  ## The AdapTable is one part of the jigsaw; Grid Gurus provide the missing
-  pieces.
+  ##AdapTable is one part of the jigsaw; Grid Gurus provide the missing pieces.
 description: >
-  At Adaptable Tools we have built a team to help with every aspect of your data
-  project. 
+  At Adaptable Tools we have built a team that can help you with every aspect of
+  your data project. 
+
 
   Our Grid Gurus have a deep understanding of all the options available in the
   market and provide objective input to help design your system and build it
-  quickly and cost-efficiently.  They can be fully integrated into a development
-  project, or come in for a few days to provide direction and specialist
-  configuration.  They can get a Proof of Concept up and running, or set up and
-  configure a grid for you, leaving the regular development team free to do
-  other things.
+  quickly and cost-efficiently.  
+
+
+  They can be fully integrated into a development project, or come in for a few
+  days to provide direction and specialist configuration.  They can get a Proof
+  of Concept up and running, or set up and configure a grid for you, leaving the
+  regular development team free to do other things.
 services:
   - name: 'System architecture  '
   - name: >-
