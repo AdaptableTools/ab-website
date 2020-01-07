@@ -65,22 +65,24 @@ export const AdaptablePageTemplate = ({
       <BackgroundImage image={image} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
-      <MaxWidth className="mt-16 pb-8">
-        {video ? (
+      {video || headline || description ? (
+        <MaxWidth className="mt-16 pb-8">
+          {video ? (
+            <AnimateWhenVisible>
+              <Video src={video} />
+            </AnimateWhenVisible>
+          ) : null}
+          <br />
           <AnimateWhenVisible>
-            <Video src={video} />
+            <Headline as="h2" className="text-blue-800 mb-5">
+              <HTMLContent>{headline}</HTMLContent>
+            </Headline>
+            <p className="mt-10 text-xl">
+              <HTMLContent>{description}</HTMLContent>
+            </p>
           </AnimateWhenVisible>
-        ) : null}
-        <br />
-        <AnimateWhenVisible>
-          <Headline as="h2" className="text-blue-800 mb-5">
-            <HTMLContent>{headline}</HTMLContent>
-          </Headline>
-          <p className="mt-10 text-xl">
-            <HTMLContent>{description}</HTMLContent>
-          </p>
-        </AnimateWhenVisible>
-      </MaxWidth>
+        </MaxWidth>
+      ) : null}
       {hasKeyFeatures ? (
         <Strip variant={getVariant()}>
           <MaxWidth className="mt-16 pb-8">

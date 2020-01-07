@@ -38,5 +38,3 @@ When used in the Adaptable Blotter, Glue42 users are able to export data to Exce
 \***\*[**Infragistics**](https://www.infragistics.com/)\*\***
 
 AdapTable users benefit from access to Infragistics' cutting-edge charting library, allowing them to choose how best to visualise dynamic data in ways not previously possible. [Read more here](https://www.infragistics.com/about-us/in-the-news/infragistics-plus-adaptable-tools-bringing-unprecedented-power-to-the-desktop)
-
----

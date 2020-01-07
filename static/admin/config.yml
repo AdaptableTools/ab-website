@@ -176,7 +176,7 @@ collections:
               name: 'testimonials',
               widget: list,
               fields:
-                [{ label: 'testimonial text', name: text, widget: string }],
+                [{ label: 'testimonial text', name: text, widget: markdown }],
             }
 
           - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -33,8 +33,8 @@ function encode(data) {
 const Footer = class extends React.Component {
   state = {
     email: '',
-    feedback: 'Thank you for subscribing',
-    error: 'Thank you for subscribing'
+    feedback: '',
+    error: ''
   }
 
   handleSubmit = e => {
@@ -49,7 +49,9 @@ const Footer = class extends React.Component {
     }
 
     this.setState({
-      feedback: 'Thank you for subscribing!'
+      feedback: 'Thank you for subscribing!',
+      error: null,
+      email: ''
     })
 
     fetch('/', {
@@ -60,7 +62,8 @@ const Footer = class extends React.Component {
       .then(() => () => {
         setTimeout(() => {
           this.setState({
-            feedback: null
+            feedback: null,
+            error: null
           })
         }, 2000)
       })
@@ -68,15 +71,21 @@ const Footer = class extends React.Component {
         this.setState({
           error: 'Oups ... there was an error! Try again later'
         })
+        setTimeout(() => {
+          this.setState({
+            feedback: null,
+            error: null
+          })
+        }, 2000)
       })
   }
 
   render() {
     const feedback = this.state.feedback ? (
-      <Box my={2}>{this.state.feedback}</Box>
+      <Box py={2}>{this.state.feedback}</Box>
     ) : null
     const error = this.state.error ? (
-      <Box my={2} style={{ color: 'red' }}>
+      <Box py={2} style={{ color: 'red' }}>
         {this.state.error}
       </Box>
     ) : null
@@ -139,12 +148,14 @@ const Footer = class extends React.Component {
 
               <p>
                 <a href="tel:+4402070784141" style={{ color: 'inherit' }}>
-                  <i
+                  <Box
+                    as="i"
+                    mr={1}
                     className="material-icons"
                     style={{ verticalAlign: 'middle' }}
                   >
                     phone
-                  </i>
+                  </Box>
                   +44 (0)20 7078 4141
                 </a>
               </p>
@@ -153,12 +164,14 @@ const Footer = class extends React.Component {
                   href="mailto:sales@adaptabletools.com"
                   style={{ color: 'inherit' }}
                 >
-                  <i
-                    className="material-icons"
+                  <Box
+                    as="i"
+                    mr={1}
+                    className="material-icons "
                     style={{ verticalAlign: 'middle' }}
                   >
                     email
-                  </i>
+                  </Box>
                   sales@adaptabletools.com
                 </a>
               </p>

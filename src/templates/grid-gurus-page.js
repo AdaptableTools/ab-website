@@ -97,7 +97,7 @@ export const GridGurusPageTemplate = ({
           <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
             <h3>What clients are saying</h3>
           </AnimateWhenVisible>
-          <ClientQuotes quotes={testimonials} avatars={avatars} />
+          <ClientQuotes quotes={testimonials} />
         </MaxWidth>
       ) : null}
 

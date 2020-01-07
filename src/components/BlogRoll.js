@@ -50,8 +50,8 @@ export class BlogRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="text-base">{post.frontmatter.date}</span>
+
+                    <div className="text-base">{post.frontmatter.date}</div>
                   </p>
                 </header>
 
