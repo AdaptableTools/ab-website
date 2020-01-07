@@ -14,13 +14,11 @@ Working together, we can deliver [multiple AdapTable instances](https://demo.ada
 
 ### [OpenFin](https://openfin.co/)
 
-OpenFin is the browser-based Operating System for Finance.
-The Adaptable Blotter is compatible with the OpenFin container and brings to it additional functionality such as live Excel updates and system tray. [See it here](https://demo.adaptableblotter.com/partners/openfindemo/).
+OpenFin is the browser-based Operating System for Finance.  When working in the OpenFin container AdapTable offers [exciting additional functionality](https://demo.adaptableblotter.com/partners/openfindemo/) such as live Excel updates and access to the system tray. [See it here](https://demo.adaptableblotter.com/partners/openfindemo/).
 
 ### [ag-Grid](https://www.ag-grid.com/)
 
-ag-Grid is the market leading HTML5 DataGrid providing a wealth of powerful features.
-The Adaptable Blotter integrates seamlessly with ag-Grid to provide the most powerful and advanced DataGrid solution available.
+ag-Grid is the market leading HTML5 DataGrid providing a wealth of powerful features.  Adaptable Blotter integrates seamlessly with ag-Grid to provide the most powerful and advanced DataGrid solution available.
 [Read more here](https://medium.com/ag-grid/getting-more-from-your-datagrid-introducing-adaptable-blotter-2be5debd7e46).
 
 ### [iPushPull](https://www.ipushpull.com/)
