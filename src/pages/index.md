@@ -17,9 +17,9 @@ mainpitch_description: >-
 highlights:
   - image: /img/full-picture.png
     text: >-
-      The largest and most powerful data control [toolbox
-      ](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/)available in
-      the market
+      Largest and most powerful data control [toolbox
+      ](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/) in the
+      market
   - image: /img/glyphicons-42-charts-3x.png
     text: >-
       Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
@@ -31,9 +31,8 @@ highlights:
       regulatory requirements
   - image: /img/glyphicons-27-road-3x.png
     text: >-
-      Work with our [FinTech
-      partners](https://demo.adaptableblotter.com/partners/) to create one
-      integrated data universe
+      Work with our [partners](https://demo.adaptableblotter.com/partners/) to
+      create one integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
