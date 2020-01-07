@@ -15,7 +15,7 @@ export const HTMLContent = ({
   className = `${className || ''} ContentCmp ContentCmp--html`
 
   content = content || children
-  if (markdown) {
+  if (markdown && content && typeof content === 'string') {
     content = marked(content)
   }
   const Cmp = as || 'div'
@@ -28,7 +28,9 @@ const Content = ({ as = 'div', content, className, markdown = true }) => {
   const Cmp = as || 'div'
   return (
     <Cmp className={`${className || ''} ContentCmp`}>
-      {markdown ? marked(content) : content}
+      {markdown && content && typeof content === 'string'
+        ? marked(content)
+        : content}
     </Cmp>
   )
 }
