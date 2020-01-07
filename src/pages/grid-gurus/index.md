@@ -3,11 +3,16 @@ title: Getting Grids to Work for You
 templateKey: grid-gurus-page
 image: /img/blog-index.jpg
 video: ''
+ctalink: 'mailto:sales@adaptabletools.com'
 cta1: Get in **touch** LINK
-ctalink: mailto:sales@adaptabletools.com
 headline: >-
-  Controlling data properly requires a range of tools and specialist skills. 
-  The AdapTable  is only one part of the jigsaw.
+  # Controlling data properly requires a range of tools and specialist skills.  
+
+
+
+
+  ## The AdapTable is one part of the jigsaw; Grid Gurus provide the missing
+  pieces.
 description: >
   At Adaptable Tools we have built a team to help with every aspect of your data
   project. 
