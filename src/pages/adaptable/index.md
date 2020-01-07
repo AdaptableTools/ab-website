@@ -4,7 +4,8 @@ image: /img/Carousel14.png
 title: 'AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 headline: >-
-  Experience the Power of the [Adaptable Toolkit](http://demo.adaptableblotter.com/)
+  Experience the Power of the [Adaptable
+  Toolkit](http://demo.adaptableblotter.com/)
 description: >-
   AdapTable turbo-charges your data management, providing the ultimate toolkit
   to drive your data needs.  A straightforward, but immensely powerful, HTML5
@@ -13,56 +14,44 @@ description: >-
   bespoke development.
 keyfeaturestitle: AdapTable's Unique Offer
 keyfeatures:
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: Smart searching and filtering to add speed and eliminate errors
-    name: Feature 1
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
       Dynamic data management and export fully customisable to individual
       requirements
-    name: Feature 2
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: Editing and shortcuts to manage views and calculations effectively
-    name: Feature 3
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
       Powerful special columns support complex run-time scenario analysis, user
       management and other out-of-the-box needs
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-    name: Feature 4
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
       Multiple visualisation and styling options to deliver to every user
       requirement
-    name: Feature 5
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-  - image: /img/safari-pinned-tab.svg
+  - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
       Customisable notifications and alerts together with full audit
       functionality to support compliance and user management
-    name: Feature 7
-    video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 cta: Try for yourself
 usecaseTitle: >-
-  The AdapTable can help to drive any area of business and solve any data-driven
+  AdapTable can help to drive any area of business and solve any data-driven
   challenge
 usecases:
-  - image: /img/full-picture.png
+  - image: /img/safari-pinned-tab.svg
     result: >-
       System that allows data changes to be seen clearly with easy, accurate
       editing
     where: FX trade data
     who: Traders in London and New York
-  - image: /img/user-support.png
+  - image: /img/safari-pinned-tab.svg
     result: >-
       Allows rapid querying across millions of rows returning rapid results to
       highlight relevant data
     where: Cross-asset sales data
     who: Front office sales teams in global bank
-  - image: /img/infinite-applications.png
+  - image: /img/safari-pinned-tab.svg
     result: >-
       Searching and filtering unstructured data, with reports and views to show
       up to date Libor exposure
@@ -72,8 +61,6 @@ usecases:
     result: something
     where: somewhere
     who: NON FINANCE USERS
-functionalitiestitle: Key functions
-functionalities: []
 ---
 
 # How to let AdapTable loose to transform your world
