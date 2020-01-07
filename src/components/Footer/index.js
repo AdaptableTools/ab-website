@@ -35,14 +35,21 @@ const preventDefault = e => e.preventDefault()
 const handleSubmit = e => {
   e.preventDefault()
   const form = e.target
-  const email = form.querySelector('input').value
+  const emailInput = form.querySelector('input')
+  const email = emailInput.value
+
+  emailInput.value = ''
+
+  const body = {
+    'form-name': form.getAttribute('name'),
+    email
+  }
+
+  console.log({ body })
   fetch('/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: encode({
-      'form-name': form.getAttribute('name'),
-      email
-    })
+    body: encode(body)
   })
   // .then(() => navigate(form.getAttribute('action')))
   // .catch(error => alert(error))
@@ -172,6 +179,7 @@ const Footer = class extends React.Component {
                       width={1}
                       fontSize={3}
                       type="email"
+                      name="email"
                       className="text-blue-800 rounded-sm p-3"
                       placeholder="Your email"
                     />
