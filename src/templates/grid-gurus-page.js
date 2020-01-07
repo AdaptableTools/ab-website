@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 import GridGurusBlogRoll from '../components/GridGurusBlogRoll'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
-import Nav from '../components/Navbar'
+
 import GridLayout from '../components/GridLayout'
 
 import BackgroundImage from '../components/BackgroundImage'
@@ -15,10 +15,8 @@ import Button from '../components/Button'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
 import Video from '../components/Video'
 import ClientQuotes from '../components/ClientQuotes'
-import avatars from '../components/avatars'
-import Headline from '../components/Headline'
 
-// get them from https://getavataaars.com
+import Headline from '../components/Headline'
 
 export const GridGurusPageTemplate = ({
   title,
@@ -29,6 +27,7 @@ export const GridGurusPageTemplate = ({
   headline,
   description,
   video,
+  ctalink,
   blogtitle,
   cta1,
 
@@ -36,12 +35,17 @@ export const GridGurusPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content
 
+  const ctaButton = (
+    <HTMLContent className="mt-6 text-3xl" as={Button}>
+      {cta1}
+    </HTMLContent>
+  )
   return (
     <>
       <BackgroundImage image={image} title={title}>
         <AbsoluteNav />
       </BackgroundImage>
-      <MaxWidth className="mt-16 pb-8">
+      <MaxWidth className="mt-16">
         {video ? <Video src={video} className="mb-4" /> : null}
         {headline ? (
           <AnimateWhenVisible as={Headline} className="app-color_text-blue">
@@ -58,8 +62,17 @@ export const GridGurusPageTemplate = ({
         ) : null}
 
         {cta1 ? (
-          <AnimateWhenVisible animationDelay="0.5s">
-            <Button className="mt-6 text-3xl">{cta1}</Button>
+          <AnimateWhenVisible
+            animationDelay="0.5s"
+            style={{ textAlign: 'center' }}
+          >
+            {ctalink ? (
+              <a href={ctalink} style={{ color: 'inherit' }}>
+                {ctaButton}
+              </a>
+            ) : (
+              ctaButton
+            )}
           </AnimateWhenVisible>
         ) : null}
       </MaxWidth>
@@ -132,6 +145,7 @@ const GridGurus = ({ data }) => {
         image={post.frontmatter.image}
         headline={post.frontmatter.headline}
         cta1={post.frontmatter.cta1}
+        ctalink={post.frontmatter.ctalink}
         description={post.frontmatter.description}
         services={post.frontmatter.services}
         testimonials={post.frontmatter.testimonials}
@@ -164,6 +178,7 @@ export const GridGurusQuery = graphql`
         headline
         description
         cta1
+        ctalink
         blogtitle
 
         services {

@@ -155,9 +155,15 @@ collections:
           - { label: Image, name: image, widget: image }
           - { label: 'Video', name: 'video', widget: 'text', required: false }
           - {
+              label: 'Call to action link',
+              name: 'ctalink',
+              widget: 'text',
+              required: false,
+            }
+          - {
               label: 'Call to action 1',
               name: 'cta1',
-              widget: 'string',
+              widget: 'markdown',
               required: false,
             }
           - { label: 'Headline', name: 'headline', widget: 'markdown' }

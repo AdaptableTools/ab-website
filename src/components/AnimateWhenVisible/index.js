@@ -10,6 +10,7 @@ const AnimateWhenVisible = props => {
     animationName: _,
     animationDelay: __,
     animationDuration: ___,
+    className,
     ...domProps
   } = props
   const Cmp = as || 'div'
@@ -46,6 +47,7 @@ const AnimateWhenVisible = props => {
   return (
     <Cmp
       ref={domRef}
+      className={`${className || ''} AnimateCmp`}
       {...domProps}
       style={{ ...style, animationDelay, animationName }}
     />
