@@ -4,7 +4,7 @@ image: /img/Carousel14.png
 title: 'AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 headline: >-
-  Experience the Power of the [Adaptable
+  Experience the Power of the [AdapTable
   Toolkit](http://demo.adaptableblotter.com/)
 description: >-
   AdapTable turbo-charges your data management, providing the ultimate toolkit
