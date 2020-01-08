@@ -24,33 +24,33 @@ const AbsoluteNav = ({ inplace }) => {
     const getHeights = () => {
       let height = navbar.offsetHeight
 
-      let parentHeight =
-        domRef.current && domRef.current.parentNode
-          ? domRef.current.parentNode.offsetHeight
+      let backgroundImageHeight =
+        domRef.current && domRef.current.nextSibling
+          ? domRef.current.nextSibling.offsetHeight
           : 0
 
-      return { height, parentHeight }
+      return { height, backgroundImageHeight: backgroundImageHeight + height }
     }
 
-    let { height, parentHeight } = getHeights()
+    let { height, backgroundImageHeight } = getHeights()
 
-    // domRef.current.style.height = `${height}px`
+    domRef.current.style.height = `${height}px`
 
     let currentScrollTop = 0
 
     window.addEventListener('resize', () => {
-      const { height: h, parentHeight: ph } = getHeights()
+      const { height: h, backgroundImageHeight: ph } = getHeights()
 
       height = h
       // domRef.current.style.height = `${height}px`
       if (ph) {
-        parentHeight = ph
+        backgroundImageHeight = ph
       }
     })
 
     const onScroll = () => {
       const scrollTop = window.scrollY
-      const maxAllowed = parentHeight - height
+      const maxAllowed = backgroundImageHeight - height
 
       const visible = scrollTop < maxAllowed
 

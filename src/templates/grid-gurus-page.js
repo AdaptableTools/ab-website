@@ -41,9 +41,8 @@ export const GridGurusPageTemplate = ({
   const ctaButton = <CTAButton href={ctalink}>{cta1}</CTAButton>
   return (
     <>
-      <BackgroundImage image={image} title={title}>
-        <AbsoluteNav />
-      </BackgroundImage>
+      <AbsoluteNav />
+      <BackgroundImage image={image} title={title}></BackgroundImage>
       <MaxWidth className="mt-16">
         {video ? <Video src={video} className="mb-4" /> : null}
         {headline ? (

@@ -6,9 +6,11 @@ import MaxWidth from '../components/MaxWidth'
 
 const NotFoundPage = () => (
   <Layout>
-    <BackgroundImage image={'/img/blog-index.jpg'} title={'Adaptable Tools'}>
-      <AbsoluteNav />
-    </BackgroundImage>
+    <AbsoluteNav />
+    <BackgroundImage
+      image={'/img/blog-index.jpg'}
+      title={'Adaptable Tools'}
+    ></BackgroundImage>
 
     <MaxWidth>
       <p>Page not found, sorry.</p>

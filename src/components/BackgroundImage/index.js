@@ -23,7 +23,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
         backgroundPosition: `top left`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundAttachment: `fixed`,
+        backgroundAttachment: `initial`,
         ...props.style
       }}
     >

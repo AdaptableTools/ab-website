@@ -10,12 +10,11 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
+        <AbsoluteNav />
         <BackgroundImage
           src={'/img/blog-index.jpg'}
           title="Latest updates from Adaptable Tools"
-        >
-          <AbsoluteNav />
-        </BackgroundImage>
+        ></BackgroundImage>
 
         <MaxWidth className="mt-16 pb-8">
           <BlogRoll />

@@ -63,9 +63,8 @@ export const AdaptablePageTemplate = ({
   let useCasesVariant
   return (
     <>
-      <BackgroundImage image={image} title={title}>
-        <AbsoluteNav />
-      </BackgroundImage>
+      <AbsoluteNav />
+      <BackgroundImage image={image} title={title}></BackgroundImage>
       {video || headline || description ? (
         <MaxWidth className="mt-16 pb-8">
           {video ? (
