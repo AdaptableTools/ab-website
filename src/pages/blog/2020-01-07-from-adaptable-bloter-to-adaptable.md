@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-title: From Adaptable Bloter to AdapTable
+title: From Adaptable Blotter to AdapTable
 date: 2020-01-07T08:05:15.869Z
 description: |+
-  (or, you admit to the world you only got it half right)
+  (Or, you admit to the world you only got it half right...)
 
 featuredpost: true
 featuredimage: /img/coffee-gear.png
