@@ -35,6 +35,7 @@ const AbsoluteNav = ({ inplace }) => {
     let { height, backgroundImageHeight } = getHeights()
 
     domRef.current.style.height = `${height}px`
+    domRef.current.firstChild.style.position = 'fixed'
 
     let currentScrollTop = 0
 
@@ -42,7 +43,8 @@ const AbsoluteNav = ({ inplace }) => {
       const { height: h, backgroundImageHeight: ph } = getHeights()
 
       height = h
-      // domRef.current.style.height = `${height}px`
+      domRef.current.style.height = `${height}px`
+      domRef.current.firstChild.style.position = 'fixed'
       if (ph) {
         backgroundImageHeight = ph
       }
@@ -76,7 +78,7 @@ const AbsoluteNav = ({ inplace }) => {
     <div style={{ width: '100%' }} className={inplace ? '' : ''} ref={domRef}>
       <Navbar
         style={{
-          position: inplace ? 'relative' : 'fixed',
+          position: 'relative',
           top: 0,
           width: '100%',
           zIndex: 1000,
