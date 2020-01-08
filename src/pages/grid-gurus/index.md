@@ -5,12 +5,9 @@ image: /img/test.jpg
 video: ''
 ctalink: 'mailto:sales@adaptabletools.com'
 cta1: '[Get In Touch](mailto:sales@adaptabletools.com)'
-headline: |-
-  # Controlling data properly requires a range of tools and specialist skills.  
-
-
-
-  ## AdapTable is one part of the jigsaw; Grid Gurus provide the missing pieces.
+headline: >-
+  # Controlling data properly requires a range of tools and specialist skills: 
+  AdapTable is one part of the jigsaw, Grid Gurus provide the missing pieces.
 description: >
   At Adaptable Tools we have built a team that can help you with every aspect of
   your data project. 
