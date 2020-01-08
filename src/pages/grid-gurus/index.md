@@ -24,7 +24,7 @@ description: >
   suit your precise requirements, leaving the regular development team free to
   do other things.
 services:
-  - name: 'System architecture  '
+  - name: 'System Architecture  '
   - name: DataGrid Installation
   - name: User Experience
   - name: Big Data Management
