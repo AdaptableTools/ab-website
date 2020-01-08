@@ -29,16 +29,16 @@ services:
   - name: User Experience
   - name: Big Data Management
 testimonials:
-  - text: Hugely valuable input at a key point in my project.
+  - text: Hugely valuable input at a key point in my project
   - text: >-
       Worked well with my developers providing specialist know-how and training
       them
   - text: I’m not sure I would ever have got a demo off the ground without them
   - text: >-
       A big time and money saver – they knew exactly what to do and found lots
-      of shortcuts.
-  - text: Very professional… really know what they are doing.
-  - text: Danielle placeholder
+      of shortcuts
+  - text: Very professional… really know what they are doing
+  - text: Contributed new ways of thinking which really strengthened our approach
 blogtitle: Grid Gurus' Blog
 ---
 
