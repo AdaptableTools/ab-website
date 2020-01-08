@@ -74,7 +74,7 @@ quotes:
   - text: |-
       Well on its way to becoming the Excel of front-office tools
 
-      Senior Quant Dev, global Asset Manager
+      Senior Quant Developer,  Global Asset Manager
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
