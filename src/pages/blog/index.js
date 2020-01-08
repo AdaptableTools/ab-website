@@ -12,7 +12,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
         <AbsoluteNav />
         <BackgroundImage
-          src={'/img/blog-index.jpg'}
+          src={'/img/blog-index.png'}
           title="Latest updates from Adaptable Tools"
         ></BackgroundImage>
 
