@@ -5,10 +5,12 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Strip from '../components/Strip'
 import GridGurusBlogRoll from '../components/GridGurusBlogRoll'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
 
 import GridLayout from '../components/GridLayout'
+import CTAButton from '../components/CTAButton'
 
 import BackgroundImage from '../components/BackgroundImage'
 import AbsoluteNav from '../components/AbsoluteNav'
@@ -36,11 +38,7 @@ export const GridGurusPageTemplate = ({
 }) => {
   const PageContent = contentComponent || Content
 
-  const ctaButton = (
-    <HTMLContent className="mt-6 text-3xl" as={Button}>
-      {cta1}
-    </HTMLContent>
-  )
+  const ctaButton = <CTAButton href={ctalink}>{cta1}</CTAButton>
   return (
     <>
       <BackgroundImage image={image} title={title}>
@@ -67,13 +65,7 @@ export const GridGurusPageTemplate = ({
             animationDelay="0.5s"
             style={{ textAlign: 'center' }}
           >
-            {ctalink ? (
-              <a href={ctalink} style={{ color: 'inherit' }}>
-                {ctaButton}
-              </a>
-            ) : (
-              ctaButton
-            )}
+            {ctaButton}
           </AnimateWhenVisible>
         ) : null}
       </MaxWidth>
@@ -95,6 +87,10 @@ export const GridGurusPageTemplate = ({
                     key={service.name}
                     className="p-4  "
                   >
+                    <PreviewCompatibleImage
+                      imageStyle={{ maxHeight: '20rem', maxWidth: '50vw' }}
+                      imageInfo={service.image || {}}
+                    />
                     <p className="text-center mt-4 text-xl font-normal text-white">
                       {service.name}
                     </p>
@@ -188,6 +184,9 @@ export const GridGurusQuery = graphql`
 
         services {
           name
+          image {
+            publicURL
+          }
         }
 
         testimonials {

@@ -77,6 +77,18 @@ collections:
               fields: [{ label: Text, name: text, widget: markdown }],
             }
           - {
+              label: 'Call to action',
+              name: ctatext,
+              widget: markdown,
+              required: false,
+            }
+          - {
+              label: 'Call to action link',
+              name: ctalink,
+              widget: text,
+              required: false,
+            }
+          - {
               label: Awards,
               name: awards,
               widget: list,
@@ -103,7 +115,7 @@ collections:
           - {
               label: Description,
               name: description,
-              widgeth: 'markdown',
+              widget: 'markdown',
               required: false,
             }
           - {
@@ -176,7 +188,16 @@ collections:
           - {
               name: 'services',
               widget: list,
-              fields: [{ label: 'service name', name: name, widget: string }],
+              fields:
+                [
+                  { label: 'service name', name: name, widget: string },
+                  {
+                    label: 'service image',
+                    name: image,
+                    widget: image,
+                    required: false,
+                  },
+                ],
             }
           - {
               name: 'testimonials',

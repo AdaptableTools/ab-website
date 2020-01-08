@@ -17,7 +17,7 @@ const AbsoluteNav = ({ inplace }) => {
 
     const navbar = domRef.current.firstChild
     if (!domRef.current.parentNode) {
-      navbar.style.position = 'absolute'
+      // navbar.style.position = 'absolute'
       return
     }
 
@@ -73,11 +73,7 @@ const AbsoluteNav = ({ inplace }) => {
     }
   })
   return (
-    <div
-      style={{ width: '100%' }}
-      className={inplace ? '' : 'mb-20'}
-      ref={domRef}
-    >
+    <div style={{ width: '100%' }} className={inplace ? '' : ''} ref={domRef}>
       <Navbar
         style={{
           position: inplace ? 'relative' : 'fixed',

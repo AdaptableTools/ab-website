@@ -30,7 +30,7 @@
 
   --ab-max-content-size: 70rem;
   --ab-link_color: rgb(18, 127, 196);
-  --ab-link_text-decoration: none;
+  --ab-link_text-decoration: underline;
 
   --ab-space-0: 0px;
   --ab-space-1: 0.25rem;
@@ -122,7 +122,7 @@ a,
 }
 .link:hover,
 a:hover {
-  text-decoration-style: solid;
+  text-decoration-style: dashed;
 }
 
 p + p {

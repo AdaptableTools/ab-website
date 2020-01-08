@@ -24,10 +24,14 @@ description: >
   suit your precise requirements, leaving the regular development team free to
   do other things.
 services:
-  - name: 'System Architecture  '
+  - name: System Architecture
+    image: /img/system-architecture.svg
   - name: DataGrid Installation
+    image: /img/datagrid-installation.svg
   - name: User Experience
+    image: /img/user-experience.svg
   - name: Big Data Management
+    image: /img/big-data-management.svg
 testimonials:
   - text: Hugely valuable input at a key point in my project
   - text: >-

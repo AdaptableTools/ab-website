@@ -15,7 +15,7 @@ const NavText = props => {
       style={{ cursor: 'pointer' }}
       fontSize={3}
       fontWeight={400}
-      className="ml-3 p-3 border-solid border-b-4 border-transparent hover:border-blue-800 text-blue-800 hover:text-blue-800 NavItem"
+      className="ml-3 p-3 pb-1 border-solid border-b-4 border-transparent hover:border-blue-800 text-blue-800 hover:text-blue-800 NavItem"
     >
       {props.children}
     </Text>
@@ -54,12 +54,16 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
       >
         <Flex width="100%" backgroundColor="washedblue" justifyContent="center">
-          <Flex py={[2, 2, 3]} as={MaxWidth} width="100%">
+          <Flex py={[1, 1, 2]} as={MaxWidth} width="100%">
             <div className="Navbar-brand" style={{ flex: 1 }}>
               <NavItem to="/" title="Logo">
-                <Image src={logo} alt="AdaptableTools" maxHeight={[80, 100]} />
+                <Image src={logo} alt="AdaptableTools" maxHeight={[60, 80]} />
               </NavItem>
 
+              <Box
+                display={['block', 'block', 'none']}
+                style={{ flex: 1 }}
+              ></Box>
               <Box
                 display={['block', 'block', 'none']}
                 className={`Navbar-burger burger ${
@@ -84,7 +88,7 @@ const Navbar = class extends React.Component {
               <Flex flexDirection="column" justifyContent="center">
                 <Flex
                   justifyContent={'flex-end'}
-                  marginBottom={3}
+                  marginBottom={2}
                   flexDirection={['column', 'column', 'row']}
                 >
                   <NavText>

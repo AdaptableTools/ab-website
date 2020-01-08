@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Video from '../components/Video'
 import Content, { HTMLContent } from '../components/Content'
 import MaxWidth from '../components/MaxWidth'
+import CTAButton from '../components/CTAButton'
 import GridLayout from '../components/GridLayout'
 import Strip, { getClassNameForVariant } from '../components/Strip'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -86,7 +87,7 @@ export const AdaptablePageTemplate = ({
       {hasKeyFeatures ? (
         <Strip variant={getVariant()}>
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible as={Headline} className=" pt-16">
+            <AnimateWhenVisible as={Headline} className=" pt-16 text-center">
               {keyfeaturestitle}
             </AnimateWhenVisible>
             <GridLayout minBoxWidth={350}>
@@ -95,7 +96,7 @@ export const AdaptablePageTemplate = ({
                   <AnimateWhenVisible
                     animationDelay={`${i * 300 + 200}ms`}
                     key={feature.description}
-                    className="p-4  "
+                    className="p-4  mb-4"
                   >
                     <Video src={feature.video} />
 
@@ -208,7 +209,7 @@ export const AdaptablePageTemplate = ({
                       steps={[
                         usecase.who,
                         usecase.where,
-                        <b style={{ whiteSpace: 'nowrap' }}>+ Adaptable</b>
+                        <b style={{ whiteSpace: 'nowrap' }}>+ AdapTable</b>
                       ]}
                     />
                   </div>
@@ -221,11 +222,9 @@ export const AdaptablePageTemplate = ({
             animationDelay="0.5s"
             className="text-center pb-10"
           >
-            <ExternalLink href="https://demo.adaptableblotter.com">
-              <Button tone="light" className="text-3xl">
-                {cta}
-              </Button>
-            </ExternalLink>
+            <CTAButton href="https://demo.adaptableblotter.com">
+              {cta}
+            </CTAButton>
           </AnimateWhenVisible>
         </Strip>
       ) : null}
@@ -287,10 +286,10 @@ export const AdaptablePageTemplate = ({
         </Strip>
       ) : null}
       <AnimateWhenVisible>
-      <Strip variant="light">
-        <MaxWidth className="mt-16 pb-8">
-          <PageContent className="content" content={content} />
-        </MaxWidth>
+        <Strip variant="light">
+          <MaxWidth className="mt-16 pb-8">
+            <PageContent className="content" content={content} />
+          </MaxWidth>
         </Strip>
       </AnimateWhenVisible>
     </>
@@ -321,11 +320,7 @@ const AdaptableBlotterPage = ({ data }) => {
         usecases={post.frontmatter.usecases}
         cta={post.frontmatter.cta}
         usecaseTitle={post.frontmatter.usecaseTitle}
-        description={
-          fields && fields.frontmattermd && fields.frontmattermd.description
-            ? fields.frontmattermd.description.html
-            : ''
-        }
+        description={post.frontmatter.description}
         headline={post.frontmatter.headline}
         keyfeatures={post.frontmatter.keyfeatures}
         content={post.html}
@@ -349,6 +344,7 @@ export const adaptableBlotterPageQuery = graphql`
         title
         video
         headline
+        description
         image {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 80) {

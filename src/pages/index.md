@@ -15,21 +15,21 @@ mainpitch_description: >-
   with the information that matters to them, to make the decisions that drive
   their business.
 highlights:
-  - image: /img/full-picture.png
+  - image: /img/charts.svg
     text: >-
       Largest and most powerful data control
       [toolbox](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/) in
       the market
-  - image: /img/glyphicons-42-charts-3x.png
+  - image: /img/pie-chart.svg
     text: >-
       Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
       to help patterns emerge
-  - image: /img/glyphicons-153-check-3x.png
+  - image: /img/checkbox.svg
     text: >-
       Full [audit functionality
       ](https://demo.adaptableblotter.com/admin/aggridauditdemo/)to help meet
       regulatory requirements
-  - image: /img/glyphicons-27-road-3x.png
+  - image: /img/road.svg
     text: >-
       Work with our [partners](https://demo.adaptableblotter.com/partners/) to
       create one integrated data universe
@@ -75,6 +75,8 @@ quotes:
       Well on its way to becoming the Excel of front-office tools
 
       Senior Quant Developer,  Global Asset Manager
+ctatext: Check out the demos
+ctalink: https://demo.adaptabletools.com
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
@@ -95,4 +97,3 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
-

@@ -10,7 +10,10 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <BackgroundImage src={'/img/blog-index.jpg'} title="Latest stories">
+        <BackgroundImage
+          src={'/img/blog-index.jpg'}
+          title="Latest updates from Adaptable Tools"
+        >
           <AbsoluteNav />
         </BackgroundImage>
 

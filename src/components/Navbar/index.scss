@@ -12,6 +12,10 @@
   transition-timing-function: ease-out;
 
   will-change: transform;
+
+  a {
+    text-decoration: none;
+  }
 }
 .NavItem {
   transition: border-color 0.35s;

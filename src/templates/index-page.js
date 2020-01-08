@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {  graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import { HTMLContent } from '../components/Content'
 
@@ -9,6 +9,7 @@ import MaxWidth from '../components/MaxWidth'
 import GridLayout from '../components/GridLayout'
 import ClientQuotes from '../components/ClientQuotes'
 import Awards from '../components/Awards'
+import CTAButton from '../components/CTAButton'
 import Strip from '../components/Strip'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BackgroundImage from '../components/BackgroundImage'
@@ -24,15 +25,16 @@ export const IndexPageTemplate = ({
   subtitle,
   highlights,
   quotes,
+  ctalink,
+  ctatext,
   quotestitle,
   quotestext,
   awards,
   mainpitch
 }) => (
   <div>
-    <BackgroundImage image={image}>
-      <AbsoluteNav />
-    </BackgroundImage>
+    <AbsoluteNav />
+    <BackgroundImage image={image}></BackgroundImage>
 
     <PageTitle title={title} />
     <div
@@ -44,14 +46,12 @@ export const IndexPageTemplate = ({
       }}
     >
       <AnimateWhenVisible
-        as="h3"
         animationName="enter-from-right"
-        style={{ margin: '20px auto', background: 'var(--ab-color-blue)' }}
-        className=" font-bold inline-block self-end text-right text-xl md:text-3xl p-4 text-white rounded-br rounded-bl bg-blue-800 shadow-lg"
+        style={{ margin: '20px auto' }}
       >
-        <ExternalLink href="http://demo.adaptableblotter.com/">
+        <CTAButton href="https://demo.adaptableblotter.com/">
           {subtitle}
-        </ExternalLink>
+        </CTAButton>
       </AnimateWhenVisible>
     </div>
 
@@ -72,13 +72,7 @@ export const IndexPageTemplate = ({
                 key={highlight.text}
                 className="p-4  "
               >
-                <div className="p-16">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: highlight.image
-                    }}
-                  />
-                </div>
+                <PreviewCompatibleImage imageInfo={highlight.image || {}} />
 
                 <HTMLContent className="text-center mt-4 text-xl font-normal text-white">
                   {highlight.text}
@@ -96,6 +90,12 @@ export const IndexPageTemplate = ({
       <HTMLContent className="my-16 text-xl">{quotestext}</HTMLContent>
 
       <ClientQuotes quotes={quotes} />
+
+      <AnimateWhenVisible style={{ textAlign: 'center' }}>
+        <CTAButton style={{ margin: '20px auto' }} href={ctalink}>
+          {ctatext}
+        </CTAButton>
+      </AnimateWhenVisible>
     </MaxWidth>
 
     <Strip variant="dark">
@@ -133,6 +133,8 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
+        ctatext={frontmatter.ctatext}
+        ctalink={frontmatter.ctalink}
         highlights={frontmatter.highlights}
         quotes={frontmatter.quotes}
         quotestitle={frontmatter.quotestitle}
@@ -198,14 +200,13 @@ export const pageQuery = graphql`
           title
         }
 
+        ctatext
+        ctalink
+
         description
         highlights {
           image {
-            childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
-            }
+            publicURL
           }
           text
         }

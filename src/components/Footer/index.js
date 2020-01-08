@@ -102,21 +102,12 @@ const Footer = class extends React.Component {
         as="footer"
         flexDirection="column"
         className="Footer bg-blue-900"
-        paddingTop={4}
-        paddingBottom={5}
+        paddingTop={5}
+        paddingBottom={3}
       >
         <MaxWidth className="text-white">
-          <Flex
-            marginTop={4}
-            marginBottom={4}
-            alignItems="center"
-            flexDirection="column"
-          >
-            <img src={logo} style={{ width: '10em' }} />
-          </Flex>
-
           <GridLayout style={{ padding: 0 }} gridGap={'5rem'}>
-            <section className="xl:-m-5">
+            <section className="">
               <ul>
                 <li>
                   <FooterMenuLink to="/">Home</FooterMenuLink>
@@ -134,23 +125,90 @@ const Footer = class extends React.Component {
                     </ExternalLink>
                   </FooterMenuLink>
                 </li>
+                <li>
+                  <FooterMenuLink as="div">
+                    <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
+                      Technical Support
+                    </ExternalLink>
+                  </FooterMenuLink>
+                </li>
               </ul>
             </section>
 
             <section
-              className="text-base mt-2 p-3"
+              className="text-base p-3"
               style={{
+                paddingTop: 0,
                 '--ab-space-4': 'var(--ab-space-3)'
               }}
             >
+              <Flex marginBottom={4} alignItems="center" flexDirection="column">
+                <img src={logo} style={{ width: '10em' }} />
+              </Flex>
               <p>
                 Adaptable Tools is a startup focussed on transforming the user
                 interface in data systems.
               </p>
               <p>
-                It currently works with clients in Financial Services from its
-                London HQ.
+                Adaptable Tools currently works with clients in Financial
+                Services and other sectors from its London HQ.
               </p>
+            </section>
+            <section className=" p-3 pt-0 text-base">
+              <ul>
+                <li>
+                  <Flex
+                    flexDirection="column"
+                    as="form"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field"
+                    name="contact"
+                    method="post"
+                    mb={4}
+                    onSubmit={this.handleSubmit}
+                  >
+                    <Box marginBottom={3}>
+                      Keep up with news at Adaptable Tools
+                    </Box>
+
+                    <input type="hidden" name="form-name" value="contact" />
+
+                    <Flex flexFlow={'row'}>
+                      <Box
+                        as="input"
+                        width={1}
+                        fontSize={3}
+                        mr={2}
+                        type="email"
+                        name="email"
+                        value={this.state.email}
+                        onChange={e => {
+                          this.setState({
+                            email: e.target.value
+                          })
+                        }}
+                        p={3}
+                        style={{ paddingTop: 0, paddingBottom: 0 }}
+                        className="text-blue-800 rounded-sm "
+                        placeholder="Your email"
+                      />
+                      <Button
+                        disabled={this.state.loading || !this.state.email}
+                        style={{
+                          marginTop: 0,
+                          opacity:
+                            this.state.loading || !this.state.email ? 0.5 : 1
+                        }}
+                      >
+                        Send
+                      </Button>
+                    </Flex>
+
+                    {feedback}
+                    {error}
+                  </Flex>
+                </li>
+              </ul>
 
               <p>
                 <a href="tel:+4402070784141" style={{ color: 'inherit' }}>
@@ -198,58 +256,6 @@ const Footer = class extends React.Component {
                   LinkedIn
                 </ExternalLink>
               </p>
-            </section>
-            <section className=" mt-2 p-3 text-base">
-              <ul>
-                <li>
-                  <Flex
-                    flexDirection="column"
-                    alignItems="flex-end"
-                    as="form"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    name="contact"
-                    method="post"
-                    onSubmit={this.handleSubmit}
-                  >
-                    <Box style={{ textAlign: 'right' }} marginBottom={3}>
-                      Keep up with news at Adaptable Tools
-                    </Box>
-
-                    <input type="hidden" name="form-name" value="contact" />
-
-                    <Box
-                      as="input"
-                      width={1}
-                      fontSize={3}
-                      type="email"
-                      name="email"
-                      value={this.state.email}
-                      onChange={e => {
-                        this.setState({
-                          email: e.target.value
-                        })
-                      }}
-                      className="text-blue-800 rounded-sm p-3"
-                      placeholder="Your email"
-                    />
-
-                    {feedback}
-                    {error}
-
-                    <Button
-                      disabled={this.state.loading || !this.state.email}
-                      style={{
-                        opacity:
-                          this.state.loading || !this.state.email ? 0.5 : 1
-                      }}
-                      className="mt-3 self-end "
-                    >
-                      Send
-                    </Button>
-                  </Flex>
-                </li>
-              </ul>
               {/*
                   <a title="facebook" href="https://facebook.com">
                     <img
