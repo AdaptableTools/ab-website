@@ -1,6 +1,8 @@
 import React from 'react'
 
 import './index.scss'
+
+const THRESHOLD = 500
 const AnimateWhenVisible = props => {
   let {
     as,
@@ -20,7 +22,7 @@ const AnimateWhenVisible = props => {
 
   React.useLayoutEffect(() => {
     let observer
-    if (window.IntersectionObserver) {
+    if (window.IntersectionObserver && window.innerWidth > THRESHOLD) {
       domRef.current.classList.add('AnimateWhenVisible')
 
       observer = new IntersectionObserver(
