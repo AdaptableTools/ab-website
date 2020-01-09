@@ -7,8 +7,8 @@ headline: >-
   Experience the Power of the [AdapTable
   Toolkit](http://demo.adaptableblotter.com/)
 description: >-
-  AdapTable **turbo-charges** your data management, providing the ultimate toolkit
-  to drive your data needs.  A straightforward, but immensely powerful, HTML5
+  AdapTable turbo-charges your data store, providing the ultimate toolkit to
+  drive your data needs.  A straightforward, but immensely powerful, HTML5
   DataGrid add-on, AdapTable integrates with any data system and any data set to
   provide cutting-edge user tools which otherwise require months of bespoke
   development.
@@ -23,23 +23,23 @@ keyfeatures:
   - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: Editing and shortcuts to manage views and calculations effectively
   - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
-    description: >-
-      Powerful special columns support complex run-time scenario analysis, user
-      management and other out-of-the-box needs
+    description: >
+      Powerful special columns support complex run-time scenario analysis, and
+      user management
   - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
       Multiple visualisation and styling options to deliver to every user
       requirement
   - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
     description: >-
-      Customisable notifications and alerts together with full audit
-      functionality to support compliance and user management
+      Customisable notifications and alerts with full audit functionality
+      deliver compliance and user management
 cta: Try AdapTable for yourself
 usecaseTitle: >-
   AdapTable can help to drive any area of business and solve any data-driven
   challenge
 usecases:
-  - image: /img/safari-pinned-tab.svg
+  - image: /img/glyphicons-617-fees-payments.svg
     result: >-
       System that allows data changes to be seen clearly with easy, accurate
       editing
