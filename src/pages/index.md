@@ -75,7 +75,7 @@ quotes:
       Well on its way to becoming the Excel of front-office tools
 
       Senior Quant Developer,  Global Asset Manager
-ctatext: Check out the demos
+ctatext: See it in action
 ctalink: 'https://demo.adaptabletools.com'
 awards:
   - image: /img/new-international-finance-awards-logo.png
