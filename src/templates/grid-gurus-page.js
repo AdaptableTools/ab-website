@@ -72,10 +72,7 @@ export const GridGurusPageTemplate = ({
       {services && services.length ? (
         <Strip variant="dark">
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible
-              as="h2"
-              className="pt-8 text-5xl font-thin text-white"
-            >
+            <AnimateWhenVisible as={Headline} className="pt-8 text-white">
               Our services
             </AnimateWhenVisible>
             <GridLayout>
@@ -104,8 +101,8 @@ export const GridGurusPageTemplate = ({
       {testimonials && testimonials.length ? (
         <Strip variant="light">
           <MaxWidth className="mt-16 pb-8">
-            <AnimateWhenVisible className="text-5xl font-thin text-blue-800 mb-5">
-              <h3>What clients are saying</h3>
+            <AnimateWhenVisible as={Headline} className="text-blue-800 mb-5">
+              What clients are saying
             </AnimateWhenVisible>
             <ClientQuotes quotes={testimonials} />
           </MaxWidth>

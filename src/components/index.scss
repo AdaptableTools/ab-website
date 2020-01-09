@@ -23,10 +23,11 @@
   }
 }
 
+@import './variables.scss';
 :root {
-  --ab-breakpoint-0: 40rem;
-  --ab-breakpoint-1: 52rem;
-  --ab-breakpoint-2: 64rem;
+  --ab-breakpoint-0: #{$bp0};
+  --ab-breakpoint-1: #{$bp1};
+  --ab-breakpoint-2: #{$bp2};
 
   --ab-max-content-size: 70rem;
   --ab-link_color: rgb(18, 127, 196);
@@ -38,6 +39,7 @@
   --ab-space-3: 1rem;
   --ab-space-4: 2rem;
   --ab-space-5: 4rem;
+  --ab-space-55: 6rem;
   --ab-space-6: 8rem;
   --ab-space-7: 16rem;
 

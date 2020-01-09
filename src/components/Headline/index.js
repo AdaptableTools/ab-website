@@ -11,7 +11,7 @@ export default React.forwardRef(({ as, ...domProps }, ref) => {
       ref={ref}
       className={join(
         domProps.className,
-        'text-2xl md:text-5xl font-thin Headline'
+        'text-3xl  md:text-5xl font-thin Headline'
       )}
     />
   )
