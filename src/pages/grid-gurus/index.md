@@ -1,7 +1,7 @@
 ---
 title: Getting Grids to Work for You
 templateKey: grid-gurus-page
-image: /img/test.jpg
+image: /img/gridgurs-reduced.jpg
 video: ''
 ctalink: 'mailto:sales@adaptabletools.com'
 cta1: '[Get In Touch](mailto:sales@adaptabletools.com)'
@@ -24,14 +24,14 @@ description: >
   suit your precise requirements, leaving the regular development team free to
   do other things.
 services:
-  - name: System Architecture
-    image: /img/system-architecture.svg
-  - name: DataGrid Installation
-    image: /img/datagrid-installation.svg
-  - name: User Experience
-    image: /img/user-experience.svg
-  - name: Big Data Management
-    image: /img/big-data-management.svg
+  - image: /img/system-architecture.svg
+    name: System Architecture
+  - image: /img/datagrid-installation.svg
+    name: DataGrid Installation
+  - image: /img/user-experience.svg
+    name: User Experience
+  - image: /img/big-data-management.svg
+    name: Big Data Management
 testimonials:
   - text: Hugely valuable input at a key point in my project
   - text: >-
