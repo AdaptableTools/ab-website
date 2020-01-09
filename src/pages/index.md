@@ -31,8 +31,8 @@ highlights:
       regulatory requirements
   - image: /img/road.svg
     text: >-
-      Work with our [partners](https://demo.adaptableblotter.com/partners/) to
-      create one integrated data universe
+      Working with our [partners](https://demo.adaptableblotter.com/partners/)
+      to create one integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
@@ -45,29 +45,29 @@ quotestext: >-
 quotes:
   - text: >-
       A **clever** piece of software that delivers powerful, advanced
-      functionality to the end user.​
+      functionality to the end user
 
 
       ag-Grid
   - text: |-
-      Wish I had this years ago! Quick to implement and easy to use.
+      Wish I had this years ago! Quick to implement and easy to use
 
       Group CIO, Investment House
   - text: >-
-      A great tool that is packed with cutting-edge functionality.  Adds real
-      value to the software we deliver to our clients.
+      A great tool that is packed with cutting-edge functionality:  Adds real
+      value to the software we deliver to our clients
 
 
       CIO, Global Software House
   - text: >-
       Technology that enhances operational and developmental productivity
-      through excellence in design and implementation.
+      through excellence in design and implementation
 
 
-      Industry Expert
+      Financial Services Sector Expert
   - text: >-
       Incredibly useful and well overdue.  The Adaptable Blotter is likely to
-      become standard on every trader’s desktop.
+      become standard on every trader’s desktop
 
 
       CTO, Global Finance Group
@@ -76,7 +76,7 @@ quotes:
 
       Senior Quant Developer,  Global Asset Manager
 ctatext: Check out the demos
-ctalink: https://demo.adaptabletools.com
+ctalink: 'https://demo.adaptabletools.com'
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
@@ -97,3 +97,4 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
+
