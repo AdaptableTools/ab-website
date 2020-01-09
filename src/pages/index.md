@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: /img/updated-white-view-jan-20.png
+image: /img/blog-index.png
 title: Let Adaptable Tools unleash the power of your data
 subtitle: Try it yourself
 mainpitch:
