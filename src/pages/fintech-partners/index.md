@@ -1,6 +1,6 @@
 ---
 templateKey: adaptable-page
-image: /img/lyra.jpg
+image: /img/lyra-partners.jpg
 title: Driving Forward the Data Management Revolution Together
 ---
 At Adaptable Tools we focus on solving the challenges presented by the current unsuitable, duplicated DataGrid offerings within desktop data systems. 
