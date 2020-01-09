@@ -1,6 +1,6 @@
 ---
 templateKey: adaptable-page
-image: /img/screenshot-2020-01-08-at-10.47.56.png
+image: /img/updated-white-view-jan-20.png
 title: 'AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 headline: >-
