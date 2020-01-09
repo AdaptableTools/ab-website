@@ -3,15 +3,18 @@ import React from 'react'
 import join from '../join'
 
 export default props => {
+  let { pxMobile, ...domProps } = props
+
+  pxMobile = pxMobile || 3
   return (
     <div
-      {...props}
+      {...domProps}
       className={join(
-        props.className,
-        'w-full px-2 md:px-5 mx-auto max-w-2xl md:max-w-6xl'
+        domProps.className,
+        `w-full px-${pxMobile} md:px-5 mx-auto max-w-2xl md:max-w-6xl`
       )}
     >
-      {props.children}
+      {domProps.children}
     </div>
   )
 }

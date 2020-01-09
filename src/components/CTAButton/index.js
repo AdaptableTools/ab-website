@@ -12,7 +12,7 @@ export default ({ children, href, style, ...props }) => {
     <HTMLContent
       {...props}
       style={hasLink ? null : style}
-      className={`${props.className || ''} CTAButton mt-6 text-3xl`}
+      className={`${props.className || ''} CTAButton mt-6 text-2xl md:text-3xl`}
       as={Button}
     >
       {children}

@@ -10,6 +10,7 @@ export const HTMLContent = ({
   content,
   children,
   className,
+  style,
   markdown = true
 }) => {
   className = `${className || ''} ContentCmp ContentCmp--html`
@@ -20,14 +21,20 @@ export const HTMLContent = ({
   }
   const Cmp = as || 'div'
   return (
-    <Cmp className={className} dangerouslySetInnerHTML={{ __html: content }} />
+    <Cmp style={style} className={className} dangerouslySetInnerHTML={{ __html: content }} />
   )
 }
 
-const Content = ({ as = 'div', content, className, markdown = true }) => {
+const Content = ({
+  as = 'div',
+  content,
+  className,
+  markdown = true,
+  style
+}) => {
   const Cmp = as || 'div'
   return (
-    <Cmp className={`${className || ''} ContentCmp`}>
+    <Cmp className={`${className || ''} ContentCmp`} style={style}>
       {markdown && content && typeof content === 'string'
         ? marked(content)
         : content}

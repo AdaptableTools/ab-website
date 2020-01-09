@@ -14,6 +14,7 @@ import AbsoluteNav from '../components/AbsoluteNav'
 import AnimateWhenVisible from '../components/AnimateWhenVisible'
 import ClientQuotes from '../components/ClientQuotes'
 import Button from '../components/Button'
+import { Box, Flex } from 'rebass'
 import avatars from '../components/avatars'
 import ExternalLink from '../components/ExternalLink'
 import Timeline from '../components/Timeline'
@@ -89,7 +90,10 @@ export const AdaptablePageTemplate = ({
             <AnimateWhenVisible as={Headline} className=" pt-16 text-center">
               {keyfeaturestitle}
             </AnimateWhenVisible>
-            <GridLayout minBoxWidth={350}>
+            <GridLayout
+              minBoxWidth={300}
+              style={{ paddingLeft: 0, paddingRight: 0 }}
+            >
               {keyfeatures.map((feature, i) => {
                 return (
                   <AnimateWhenVisible
@@ -143,26 +147,27 @@ export const AdaptablePageTemplate = ({
                 )}`}
               >
                 <MaxWidth
+                  pxMobile={1}
                   className="mt-16 pb-8 pt-8"
                   style={{
                     textAlign: i % 2 ? 'right' : 'left'
                   }}
                 >
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexDirection: i % 2 ? 'row' : 'row-reverse',
-                      alignItems: 'center'
-                    }}
+                  <Flex
+                    alignItems={'center'}
+                    flexDirection={['column', i % 2 ? 'row' : 'row-reverse']}
                   >
-                    <div
+                    <Box
                       style={{
                         flex: 4,
-                        textAlign: i % 2 ? 'right' : 'left',
-                        [`margin${i % 2 ? 'Right' : 'Left'}`]: 50
+                        textAlign: i % 2 ? 'right' : 'left'
                       }}
+                      paddingLeft={[2, 0]}
+                      paddingRight={[2, 0]}
+                      marginLeft={i % 2 ? 0 : ['10px', '50px']}
+                      marginRight={!i % 2 ? 0 : ['10px', '50px']}
                     >
-                      <div className="text-3xl font-thin">
+                      <div className="text-xl md:text-3xl font-thin">
                         <b style={{ letterSpacing: '0.1rem' }}>RESULT:</b>{' '}
                         {usecase.result}
                         <div
@@ -185,33 +190,33 @@ export const AdaptablePageTemplate = ({
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <Timeline
-                      darkColor="rgb(44, 82, 130)"
-                      variant={
-                        i % 2
-                          ? useCasesVariant == 'dark'
-                            ? 'dark'
-                            : 'light'
-                          : useCasesVariant == 'dark'
-                          ? 'light'
-                          : 'dark'
-                      }
-                      stepStyle={{
-                        maxWidth: 350
-                      }}
+                    </Box>
+
+                    <Box
+                      flex={[4, 2]}
                       style={{
-                        flex: 2,
                         paddingTop: 30,
                         paddingBottom: 30
                       }}
-                      steps={[
-                        usecase.who,
-                        usecase.where,
-                        <b style={{ whiteSpace: 'nowrap' }}>+ AdapTable</b>
-                      ]}
-                    />
-                  </div>
+                    >
+                      <Timeline
+                        darkColor="rgb(44, 82, 130)"
+                        variant={
+                          i % 2
+                            ? useCasesVariant == 'dark'
+                              ? 'dark'
+                              : 'light'
+                            : useCasesVariant == 'dark'
+                            ? 'light'
+                            : 'dark'
+                        }
+                        stepStyle={{
+                          maxWidth: 350
+                        }}
+                        steps={[usecase.who, usecase.where, <b>+ AdapTable</b>]}
+                      />
+                    </Box>
+                  </Flex>
                 </MaxWidth>
               </AnimateWhenVisible>
             )

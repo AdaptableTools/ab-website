@@ -12,7 +12,7 @@ import AnimateWhenVisible from '../AnimateWhenVisible'
 // const quoteSrc = ''
 
 export default ({ quotes, avatars }) => (
-  <GridLayout minBoxWidth={380} style={{ padding: 0 }}>
+  <GridLayout minBoxWidth={300} style={{ padding: 0 }}>
     {quotes.map((quote, i) => {
       const quoteImage = (
         <Quote

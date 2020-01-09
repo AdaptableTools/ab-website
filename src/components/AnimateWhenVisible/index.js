@@ -37,6 +37,9 @@ const AnimateWhenVisible = props => {
       )
 
       observer.observe(domRef.current)
+    } else {
+      domRef.current.classList.remove('AnimateCmpOpacity0')
+      domRef.current.style.opacity = 1
     }
 
     return () => {}
@@ -47,7 +50,7 @@ const AnimateWhenVisible = props => {
   return (
     <Cmp
       ref={domRef}
-      className={`${className || ''} AnimateCmp`}
+      className={`${className || ''} AnimateCmpOpacity0`}
       {...domProps}
       style={{ ...style, animationDelay, animationName }}
     />

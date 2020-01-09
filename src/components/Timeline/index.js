@@ -23,6 +23,7 @@ export default ({
         display: 'inline-flex',
         flexFlow: 'column',
         alignItems: 'center',
+        overflow: 'hidden',
         color: variant == 'dark' ? darkTextColor : lightTextColor,
 
         ...domProps.style

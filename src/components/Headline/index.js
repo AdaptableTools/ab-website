@@ -9,7 +9,10 @@ export default React.forwardRef(({ as, ...domProps }, ref) => {
     <Cmp
       {...domProps}
       ref={ref}
-      className={join(domProps.className, 'text-5xl font-thin Headline')}
+      className={join(
+        domProps.className,
+        'text-2xl md:text-5xl font-thin Headline'
+      )}
     />
   )
 })

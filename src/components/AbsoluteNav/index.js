@@ -15,11 +15,11 @@ const AbsoluteNav = ({ inplace }) => {
       return
     }
 
-    const navbar = domRef.current.firstChild
     if (!domRef.current.parentNode) {
       // navbar.style.position = 'absolute'
       return
     }
+    const navbar = domRef.current.firstChild
 
     const getHeights = () => {
       let height = navbar.offsetHeight
@@ -34,12 +34,16 @@ const AbsoluteNav = ({ inplace }) => {
 
     let { height, backgroundImageHeight } = getHeights()
 
+    if (!domRef.current || !domRef.current.style) {
+      return
+    }
+
     domRef.current.style.height = `${height}px`
-    domRef.current.firstChild.style.position = 'fixed'
+    navbar.style.position = 'fixed'
 
     let currentScrollTop = 0
 
-    window.addEventListener('resize', () => {
+    const onResize = () => {
       const { height: h, backgroundImageHeight: ph } = getHeights()
 
       height = h
@@ -48,7 +52,8 @@ const AbsoluteNav = ({ inplace }) => {
       if (ph) {
         backgroundImageHeight = ph
       }
-    })
+    }
+    window.addEventListener('resize', onResize)
 
     const onScroll = () => {
       const scrollTop = window.scrollY
@@ -72,6 +77,7 @@ const AbsoluteNav = ({ inplace }) => {
 
     return () => {
       window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onResize)
     }
   })
   return (

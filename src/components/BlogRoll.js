@@ -12,7 +12,7 @@ export class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <GridLayout minBoxWidth="20rem">
+      <GridLayout minBoxWidth="16rem">
         {posts &&
           posts.map(({ node: post }, i) => (
             <AnimateWhenVisible key={post.id} animationDelay={`0.${i}s`}>

@@ -11,7 +11,7 @@ import AnimateWhenVisible from '../AnimateWhenVisible'
 // const awardsrc = ''
 
 export default ({ awards }) => (
-  <GridLayout minBoxWidth={320}>
+  <GridLayout style={{ paddingLeft: 0, paddingRight: 0 }} minBoxWidth={300}>
     {awards.map((award, i) => {
       return (
         <AnimateWhenVisible
@@ -19,10 +19,10 @@ export default ({ awards }) => (
           key={award.text}
           className="relative italic Award text-xl md:text-2xl overflow-hidden rounded flex flex-col items-center"
         >
-          <p className={join('AwardText', 'px-5')}>{award.text}</p>
+          <p className={join('AwardText', 'px-3 md:px-5')}>{award.text}</p>
           <div
-            style={{ xmaxHeight: '20rem', width: '100%' }}
-            className="p-6 flex flex-col flex-1 justify-center"
+            style={{ width: '100%' }}
+            className="p-3 md:p-6 flex flex-col flex-1 justify-center"
           >
             <div style={{ width: '100%' }}>
               {/*<Img fixed={award.image.childImageSharp.fixed} />*/}

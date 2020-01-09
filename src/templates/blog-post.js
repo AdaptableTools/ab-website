@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import AbsoluteNav from '../components/AbsoluteNav'
+import MaxWidth from '../components/MaxWidth'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Content, { HTMLContent } from '../components/Content'
 
 import Headline from '../components/Headline'
@@ -14,6 +16,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   tags,
+  featuredimage,
   title,
   helmet
 }) => {
@@ -23,37 +26,39 @@ export const BlogPostTemplate = ({
     <>
       <AbsoluteNav inplace />
 
-      <section
-        className="section"
-        style={{
-          fontSize: 'var(--ab-font-size-4)'
-        }}
-      >
-        {helmet || ''}
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <Headline as="h1" className="text-blue-800 mb-10">
-                {title}
-              </Headline>
-              <p className=" mb-8">{description}</p>
-              <PostContent content={content} />
-              {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Tags</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+      <MaxWidth>
+        <section>
+          {helmet || ''}
+          <div className="container">
+            <div className="columns">
+              <div className="">
+                <Headline as="h1" className="text-blue-800 mb-10">
+                  {title}
+                </Headline>
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: featuredimage
+                  }}
+                />
+                <p className=" mt-5 mb-8 text-base">{description}</p>
+                <PostContent content={content} className="my-12" />
+                {tags && tags.length ? (
+                  <div style={{ marginTop: `4rem` }}>
+                    <h4>Tags</h4>
+                    <ul className="taglist">
+                      {tags.map(tag => (
+                        <li key={tag + `tag`}>
+                          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </MaxWidth>
     </>
   )
 }
@@ -75,6 +80,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        featuredimage={post.frontmatter.featuredimage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -107,6 +113,13 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 70) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
         tags
       }
