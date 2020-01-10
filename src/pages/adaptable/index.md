@@ -8,10 +8,12 @@ headline: >-
   Toolkit](http://demo.adaptableblotter.com/)
 description: >-
   AdapTable turbo-charges your data store, providing the ultimate toolkit to
-  drive your data needs.  A straightforward, but immensely powerful, HTML5
-  DataGrid add-on, AdapTable integrates with any data system and any data set to
-  provide cutting-edge user tools which otherwise require months of bespoke
-  development.
+  drive your data needs.  
+
+
+  A straightforward, but immensely powerful, HTML5 DataGrid add-on, AdapTable
+  integrates with any data system and any data set to provide cutting-edge user
+  tools which otherwise require months of bespoke development.
 keyfeaturestitle: AdapTable's Unique Offer
 keyfeatures:
   - video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
