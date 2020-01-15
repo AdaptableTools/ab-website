@@ -200,7 +200,7 @@ export const AdaptablePageTemplate = ({
                       }}
                     >
                       <Timeline
-                        darkColor="rgb(44, 82, 130)"
+                        darkColor="var(--ab-color-blue-opaque)"
                         variant={
                           i % 2
                             ? useCasesVariant == 'dark'

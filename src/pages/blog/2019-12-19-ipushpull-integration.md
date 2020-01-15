@@ -6,7 +6,7 @@ description: >-
   Adaptable Tools partners with leading industry innovator on behalf of data
   users
 featuredpost: false
-featuredimage: /img/ipushpull logo.png
+featuredimage: /img/ipushpull-logo.png
 tags:
   - news
 ---

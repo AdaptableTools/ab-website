@@ -2,8 +2,6 @@ import React from 'react'
 import { Text, Image, Flex, Box } from 'rebass'
 import { Link } from 'gatsby'
 
-import logo from '../../img/logo.png'
-
 import './index.scss'
 import MaxWidth from '../MaxWidth'
 import join from '../join'
@@ -57,7 +55,11 @@ const Navbar = class extends React.Component {
           <Flex py={[1, 1, 2]} as={MaxWidth} width="100%">
             <div className="Navbar-brand" style={{ flex: 1 }}>
               <NavItem to="/" title="Logo">
-                <Image src={logo} alt="AdaptableTools" maxHeight={[60, 80]} />
+                <Image
+                  src={'/img/header-logo.png'}
+                  alt="AdaptableTools"
+                  maxHeight={[80, 100]}
+                />
               </NavItem>
 
               <Box

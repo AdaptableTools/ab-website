@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 
 import { Flex, Box } from 'rebass'
 
-import logo from '../../img/logo-footer.png'
-
 import Button from '../Button'
 
 import './index.scss'
@@ -101,7 +99,7 @@ const Footer = class extends React.Component {
         width={1}
         as="footer"
         flexDirection="column"
-        className="Footer bg-blue-900"
+        className="Footer"
         paddingTop={5}
         paddingBottom={3}
       >
@@ -143,7 +141,7 @@ const Footer = class extends React.Component {
               }}
             >
               <Flex marginBottom={4} alignItems="center" flexDirection="column">
-                <img src={logo} style={{ width: '20em' }} />
+                <img src={'/img/footer-logo.png'} style={{ width: '20em' }} />
               </Flex>
               <p>
                 Adaptable Tools is a startup focussed on transforming the user

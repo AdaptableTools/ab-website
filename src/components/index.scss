@@ -53,8 +53,10 @@
   --ab-font-size-7: 2.25rem; //36px for 1rem=16px
   --ab-font-size-8: 3rem; //36px for 1rem=16px
 
-  --ab-color-blue: rgba(44, 82, 130, 0.95); //rgba(18, 127, 196, 0.97);
+  --ab-color-blue-opaque: rgba(10, 111, 159); //rgba(18, 127, 196, 0.97);
+  --ab-color-blue: rgba(10, 111, 159, 0.95); //rgba(18, 127, 196, 0.97);
   --ab-color-text: #333;
+  --ab-color-footer-bg: rgb(58, 77, 86);
   --ab-color-washedblue: rgb(239, 239, 244);
 }
 .ab-text-dark {
@@ -159,4 +161,12 @@ p + p {
 
 .bg-blue-800 {
   background: var(--ab-color-blue) !important;
+}
+
+.text-blue-800 {
+  color: var(--ab-color-blue-opaque) !important;
+}
+
+.hover\:border-blue-800:hover {
+  border-color: var(--ab-color-blue-opaque) !important;
 }
