@@ -3,6 +3,10 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import BackgroundImage from '../../components/BackgroundImage'
+import AbsoluteNav from '../../components/AbsoluteNav'
+import MaxWidth from '../../components/MaxWidth'
+import Headline from '../../components/Headline'
 
 const TagsPage = ({
   data: {
@@ -13,28 +17,25 @@ const TagsPage = ({
   }
 }) => (
   <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
-      <div className="container content">
-        <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+    <AbsoluteNav />
+    <Helmet title={`Tags | ${title}`} />
+    <BackgroundImage
+      image={'/img/index-page.png'}
+      title={'Adaptable Tools'}
+    ></BackgroundImage>
+    <MaxWidth className="mt-16 mb-8">
+      <Headline as="h3">Tags</Headline>
+
+      <ul className="taglist">
+        {group.map(tag => (
+          <li key={tag.fieldValue}>
+            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+              {tag.fieldValue} ({tag.totalCount})
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </MaxWidth>
   </Layout>
 )
 

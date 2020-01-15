@@ -3,6 +3,11 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
+import BackgroundImage from '../components/BackgroundImage'
+import AbsoluteNav from '../components/AbsoluteNav'
+import MaxWidth from '../components/MaxWidth'
+import Headline from '../components/Headline'
+
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
@@ -22,23 +27,20 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AbsoluteNav />
+        <BackgroundImage
+          image={'/img/index-page.png'}
+          title={'Adaptable Tools'}
+        ></BackgroundImage>
+
+        <Helmet title={`${tag} | ${title}`} />
+        <MaxWidth className="mt-16 mb-8">
+          <Headline as="h3">{tagHeader}</Headline>
+          <ul className="taglist">{postLinks}</ul>
+          <p>
+            <Link to="/tags/">Browse all tags</Link>
+          </p>
+        </MaxWidth>
       </Layout>
     )
   }

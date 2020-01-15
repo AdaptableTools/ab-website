@@ -12,7 +12,7 @@ const NotFoundPage = () => (
       title={'Adaptable Tools'}
     ></BackgroundImage>
 
-    <MaxWidth>
+    <MaxWidth className="mt-16 mb-8">
       <p>Page not found, sorry.</p>
     </MaxWidth>
   </Layout>
