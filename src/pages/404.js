@@ -8,7 +8,7 @@ const NotFoundPage = () => (
   <Layout>
     <AbsoluteNav />
     <BackgroundImage
-      image={'/img/blog-index.png'}
+      image={'/img/index-page.png'}
       title={'Adaptable Tools'}
     ></BackgroundImage>
 

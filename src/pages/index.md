@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: /img/Carousel7.png
+image: /img/index-page.png
 title: Let Adaptable Tools unleash the power of your data
 subtitle: Try it yourself
 mainpitch:
@@ -97,4 +97,3 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
-
