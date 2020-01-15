@@ -2,7 +2,7 @@
 templateKey: index-page
 image: /img/index-page.png
 title: Let Adaptable Tools unleash the power of your data
-subtitle: Try it yourself
+subtitle: Try it Yourself
 mainpitch:
   title: Data Tools to Take Control
 mainpitch_description: >-
