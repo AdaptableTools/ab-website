@@ -15,7 +15,7 @@ export default class BlogIndexPage extends React.Component {
           src={'/img/blog-index.png'}
           title="Latest updates from Adaptable Tools"
           style={{
-            backgroundPosition: 'bottom'
+            backgroundPosition: 'bottom left'
           }}
         ></BackgroundImage>
 
