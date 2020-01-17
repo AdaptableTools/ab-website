@@ -58,7 +58,7 @@ const Navbar = class extends React.Component {
                 <Image
                   src={'/img/header-logo.png'}
                   alt="AdaptableTools"
-                  maxHeight={[80, 100]}
+                  height={[80, 100]}
                 />
               </NavItem>
 
