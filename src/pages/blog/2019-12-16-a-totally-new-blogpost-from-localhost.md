@@ -4,7 +4,7 @@ title: HTML5 revolution
 date: 2017-07-07T13:03:00.000Z
 description: The new standard in desktop technology invading now!
 featuredpost: false
-featuredimage: /img/html5-logo.png
+featuredimage: /img/html5-revolution.jpeg
 tags:
   - gridgurus
 ---
