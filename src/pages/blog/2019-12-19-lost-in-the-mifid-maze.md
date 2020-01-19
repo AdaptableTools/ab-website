@@ -4,7 +4,7 @@ title: Lost in the MIFID Maze
 date: 2017-07-17T09:10:00.000Z
 description: The challenges of regulatory change
 featuredpost: false
-featuredimage: /img/maze.png
+featuredimage: /img/rectmaze.jpg
 tags:
   - gridgurus
 ---
