@@ -2,12 +2,13 @@
 templateKey: blog-post
 title: 'FinTech Cracking Ice '
 date: 2016-09-05T11:51:00.000Z
-description: Adaptable Tools' CEO Danielle Nagler looks at the changing world of Fintech
+description: 'The changing (and awesome) world of Fintech '
 featuredpost: false
 featuredimage: /img/fintech-cracking-ice.jpeg
 tags:
   - news
 ---
+_Adaptable Tools' CEO Danielle Nagler looks at what's really going on in the Fintech universe._
 
 Glance at any technology news site these days and you can’t escape the FinTech glare. All of a sudden blockchain and bitcoin development are the sexy places to be, and the venture capital interest is swarming around ideas that promise disruption within the financial world.
 
