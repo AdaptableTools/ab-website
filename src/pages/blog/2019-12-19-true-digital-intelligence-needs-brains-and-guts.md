@@ -4,7 +4,7 @@ title: 'True Digital Intelligence Needs Brains and Guts '
 date: 2019-01-10T09:37:00.000Z
 description: The body's ecosystem connects thinking and processing
 featuredpost: false
-featuredimage: /img/brain_gut.jpg
+featuredimage: /img/brain_gut.png
 tags:
   - gridgurus
 ---
