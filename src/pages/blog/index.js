@@ -14,9 +14,7 @@ export default class BlogIndexPage extends React.Component {
         <BackgroundImage
           src={'/img/blog-index.png'}
           title="Latest updates from Adaptable Tools"
-          style={{
-            backgroundPosition: 'bottom left'
-          }}
+          
         ></BackgroundImage>
 
         <MaxWidth className="mt-16 pb-8">

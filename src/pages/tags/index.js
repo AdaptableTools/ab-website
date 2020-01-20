@@ -3,6 +3,7 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import Tag from '../../components/Tag'
 import BackgroundImage from '../../components/BackgroundImage'
 import AbsoluteNav from '../../components/AbsoluteNav'
 import MaxWidth from '../../components/MaxWidth'
@@ -28,11 +29,7 @@ const TagsPage = ({
 
       <ul className="taglist">
         {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
+          <Tag tag={tag} key={tag.fieldValue}></Tag>
         ))}
       </ul>
     </MaxWidth>

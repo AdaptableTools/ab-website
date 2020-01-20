@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
+
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import AbsoluteNav from '../components/AbsoluteNav'
 import MaxWidth from '../components/MaxWidth'
+import Tag from '../components/Tag'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -16,6 +17,7 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   tags,
+
   featuredimage,
   title,
   helmet
@@ -43,13 +45,14 @@ export const BlogPostTemplate = ({
                 <p className=" mt-5 mb-8 text-base">{description}</p>
                 <PostContent content={content} className="my-12" />
                 {tags && tags.length ? (
-                  <div style={{ marginTop: `4rem` }}>
-                    <h4>Tags</h4>
+                  <div className="my-4">
+                    <h4 className="mb-2">Tags</h4>
                     <ul className="taglist">
                       {tags.map(tag => (
-                        <li key={tag + `tag`}>
-                          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                        </li>
+                        <Tag
+                          key={tag + `tag`}
+                          tag={tag}
+                        />
                       ))}
                     </ul>
                   </div>

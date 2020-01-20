@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Text, Image, Flex, Box } from 'rebass'
 import { Link } from 'gatsby'
 
@@ -28,100 +28,87 @@ const NavItem = props => {
   )
 }
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false
-    }
-  }
+const Navbar = props => {
+  const [active, setActive] = useState(false)
 
-  toggleHamburger = () => {
+  const toggleHamburger = () => {
     // toggle the active boolean in the state
-    this.setState({
-      active: !this.state.active
-    })
+    setActive(!active)
   }
 
-  render() {
-    return (
-      <nav
-        {...this.props}
-        className={join('Navbar', this.props.className)}
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <Flex width="100%" backgroundColor="washedblue" justifyContent="center">
-          <Flex py={[1, 1, 2]} as={MaxWidth} width="100%">
-            <div className="Navbar-brand" style={{ flex: 1 }}>
-              <NavItem to="/" title="Logo">
-                <Image
-                  src={'/img/header-logo.png'}
-                  alt="AdaptableTools"
-                  height={[80, 100]}
-                />
-              </NavItem>
+  return (
+    <nav
+      {...props}
+      className={join('Navbar', props.className)}
+      role="navigation"
+      aria-label="main-navigation"
+    >
+      <Flex width="100%" backgroundColor="washedblue" justifyContent="center">
+        <Flex py={[1, 1, 2]} as={MaxWidth} width="100%">
+          <div className="Navbar-brand" style={{ flex: 1 }}>
+            <NavItem to="/" title="Logo">
+              <Image
+                src={'/img/header-logo.png'}
+                alt="AdaptableTools"
+                height={[60, 60, 100]}
+              />
+            </NavItem>
 
-              <Box
-                display={['block', 'block', 'none']}
-                style={{ flex: 1 }}
-              ></Box>
-              <Box
-                display={['block', 'block', 'none']}
-                className={`Navbar-burger burger ${
-                  this.state.active ? 'is-active' : ''
-                }`}
-                data-target="navMenu"
-                onClick={() => this.toggleHamburger()}
-              >
-                <span />
-                <span />
-                <span />
-              </Box>
-            </div>
+            <Box display={['block', 'block', 'none']} style={{ flex: 1 }}></Box>
             <Box
-              className={`Navbar-menu`}
-              display={[
-                this.state.active ? 'block' : 'none',
-                this.state.active ? 'block' : 'none',
-                'block'
-              ]}
+              display={['block', 'block', 'none']}
+              className={`Navbar-burger burger ${active ? 'is-active' : ''}`}
+              data-target="navMenu"
+              onClick={() => toggleHamburger()}
             >
-              <Flex flexDirection="column" justifyContent="center">
-                <Flex
-                  justifyContent={'flex-end'}
-                  marginBottom={2}
-                  flexDirection={['column', 'column', 'row']}
-                >
-                  <NavText>
-                    <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
-                      Technical Support
-                    </ExternalLink>
-                  </NavText>
-                </Flex>
-
-                <Flex
-                  alignItems={['flex-start']}
-                  flexDirection={['column', 'column', 'row']}
-                >
-                  <NavItem to="/adaptable">AdapTable</NavItem>
-                  <NavItem to="/grid-gurus">Grid Gurus</NavItem>
-                  <NavItem to="/fintech-partners">Fintech Partners</NavItem>
-                  <NavItem to="/blog">News</NavItem>
-
-                  <NavText>
-                    <ExternalLink href="https://demo.adaptableblotter.com">
-                      Demo
-                    </ExternalLink>
-                  </NavText>
-                </Flex>
-              </Flex>
+              <span />
+              <span />
+              <span />
             </Box>
-          </Flex>
+          </div>
+          <Box
+            className={`Navbar-menu`}
+            display={[
+              active ? 'block' : 'none',
+              active ? 'block' : 'none',
+              'block'
+            ]}
+          >
+            <Flex flexDirection="column-reverse" justifyContent="center">
+              <Flex
+                justifyContent={'flex-end'}
+                marginBottom={2}
+                flexDirection={['column', 'column', 'row']}
+              >
+                <NavText>
+                  <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
+                    Technical Support
+                  </ExternalLink>
+                </NavText>
+              </Flex>
+
+              <Flex
+                alignItems={['flex-start']}
+                flexDirection={['column', 'column', 'row']}
+              >
+                <NavItem to="/">Home</NavItem>
+                <NavItem to="/adaptable">AdapTable</NavItem>
+                <NavItem to="/grid-gurus">Grid Gurus</NavItem>
+                <NavItem to="/fintech-partners">Fintech Partners</NavItem>
+                <NavItem to="/blog">News</NavItem>
+
+                <NavText>
+                  <ExternalLink href="https://demo.adaptableblotter.com">
+                    Demo
+                  </ExternalLink>
+                </NavText>
+              </Flex>
+            </Flex>
+          </Box>
         </Flex>
-      </nav>
-    )
-  }
+      </Flex>
+    </nav>
+  )
 }
 
 export default Navbar

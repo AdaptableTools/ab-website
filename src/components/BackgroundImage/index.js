@@ -20,7 +20,7 @@ const BackgroundImage = ({ src, image, title, ...props }) => (
             ? image.childImageSharp.fluid.src
             : src || image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: `initial`,

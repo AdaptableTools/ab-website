@@ -65,7 +65,11 @@ export const AdaptablePageTemplate = ({
   return (
     <>
       <AbsoluteNav />
-      <BackgroundImage image={image} title={title}></BackgroundImage>
+      <BackgroundImage image={image} title={title}
+      style={{
+        backgroundPosition: '80% center'
+      }}
+      ></BackgroundImage>
       {video || headline || description ? (
         <MaxWidth className="mt-16 pb-8">
           {video ? (

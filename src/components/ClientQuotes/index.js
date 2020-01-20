@@ -22,7 +22,7 @@ export default ({ quotes, avatars }) => (
             width: '2rem',
             position: 'absolute',
             top: 0,
-            [i % 2 == 0 ? 'left' : 'right']: 0
+            left: 0
           }}
         ></Quote>
       )

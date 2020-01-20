@@ -56,7 +56,7 @@
   --ab-color-blue-opaque: rgba(10, 111, 159); //rgba(18, 127, 196, 0.97);
   --ab-color-blue: rgba(10, 111, 159, 0.95); //rgba(18, 127, 196, 0.97);
   --ab-color-text: #333;
-  --ab-color-footer-bg: rgb(58, 77, 86);
+  --ab-color-footer-bg: #637b9b;
   --ab-color-washedblue: rgb(239, 239, 244);
 }
 .ab-text-dark {
@@ -126,7 +126,7 @@ a,
 }
 .link:hover,
 a:hover {
-  text-decoration-style: dashed;
+  // text-decoration-style: solid;
 }
 
 p + p {

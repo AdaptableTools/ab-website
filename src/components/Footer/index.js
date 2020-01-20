@@ -61,27 +61,15 @@ const Footer = class extends React.Component {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode(body)
     })
-      .then(() => () => {
-        setTimeout(() => {
-          this.setState({
-            loading: false,
-            feedback: null,
-            error: null
-          })
-        }, 2000)
+
+    setTimeout(() => {
+      this.setState({
+        loading: false,
+        feedback: null,
+        email: '',
+        error: null
       })
-      .catch(error => {
-        this.setState({
-          error: 'Oups ... there was an error! Try again later'
-        })
-        setTimeout(() => {
-          this.setState({
-            feedback: null,
-            error: null,
-            loading: false
-          })
-        }, 2000)
-      })
+    }, 2000)
   }
 
   render() {
@@ -117,16 +105,17 @@ const Footer = class extends React.Component {
                   <FooterMenuLink to="/grid-gurus">Grid Gurus</FooterMenuLink>
                 </li>
                 <li>
-                  <FooterMenuLink as="div">
-                    <ExternalLink href="https://demo.adaptableblotter.com">
-                      Demo
-                    </ExternalLink>
+                  <FooterMenuLink to="/fintech-partners">
+                    Fintech Partners
                   </FooterMenuLink>
                 </li>
                 <li>
+                  <FooterMenuLink to="/blog">News</FooterMenuLink>
+                </li>
+                <li>
                   <FooterMenuLink as="div">
-                    <ExternalLink href="https://adaptabletools.zendesk.com/hc/en-us">
-                      Technical Support
+                    <ExternalLink href="https://demo.adaptableblotter.com">
+                      Demo
                     </ExternalLink>
                   </FooterMenuLink>
                 </li>
