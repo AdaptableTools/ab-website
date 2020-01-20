@@ -92,8 +92,17 @@ const Footer = class extends React.Component {
         paddingBottom={3}
       >
         <MaxWidth className="text-white">
-          <GridLayout style={{ padding: 0 }} gridGap={'5rem'}>
-            <section className="">
+          <Flex
+            flexDirection={['column', 'column', 'row']}
+            style={{ padding: 0 }}
+            justifyContent="space-between"
+          >
+            <Box
+              as="section"
+              marginBottom={['var(--ab-space-5)', 'var(--ab-space-5)', '']}
+              className="mr-4"
+              style={{ flex: 2 }}
+            >
               <ul>
                 <li>
                   <FooterMenuLink to="/">Home</FooterMenuLink>
@@ -120,28 +129,46 @@ const Footer = class extends React.Component {
                   </FooterMenuLink>
                 </li>
               </ul>
-            </section>
+            </Box>
 
-            <section
-              className="text-base p-3"
+            <Flex
+              order={[-1, -1, 'initial']}
+              flexFlow="row"
+              justifyContent="center"
               style={{
                 paddingTop: 0,
+                flex: 3,
+
                 '--ab-space-4': 'var(--ab-space-3)'
               }}
             >
-              <Flex marginBottom={4} alignItems="center" flexDirection="column">
-                <img src={'/img/footer-logo.png'} style={{ width: '20em' }} />
-              </Flex>
-              <p>
-                Adaptable Tools is a startup focussed on transforming the user
-                interface in data systems.
-              </p>
-              <p>
-                Adaptable Tools currently works with clients in Financial
-                Services and other sectors from its London HQ.
-              </p>
-            </section>
-            <section className=" p-3 pt-0 text-base">
+              <Box
+                as="section"
+                className="text-base p-3 mr-4"
+                maxWidth={['', '', '26rem']}
+                marginBottom={['var(--ab-space-5)', 'var(--ab-space-5)', '']}
+              >
+                <Flex
+                  marginBottom={4}
+                  alignItems="center"
+                  flexDirection="column"
+                >
+                  <img
+                    src={'/img/footer-logo.png'}
+                    style={{ maxWidth: '18rem', width: '100%' }}
+                  />
+                </Flex>
+                <p>
+                  Adaptable Tools is a startup focussed on transforming the user
+                  interface in data systems.
+                </p>
+                <p>
+                  Adaptable Tools currently works with clients in Financial
+                  Services and other sectors from its London HQ.
+                </p>
+              </Box>
+            </Flex>
+            <section className=" p-3 pt-0 text-base" style={{ flex: 2 }}>
               <ul>
                 <li>
                   <Flex
@@ -274,7 +301,7 @@ const Footer = class extends React.Component {
                     />
                   </a>*/}
             </section>
-          </GridLayout>
+          </Flex>
         </MaxWidth>
       </Flex>
     )
