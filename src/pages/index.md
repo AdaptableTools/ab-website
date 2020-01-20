@@ -7,19 +7,18 @@ mainpitch:
   title: Data Tools to Take Control
 mainpitch_description: >-
   Adaptable Tools provides market-leading products to drive effective data use. 
-  Previously known as the Adaptable Blotter, the award-winning,
-  [AdapTable](http://demo.adaptableblotter.com/), is used by some of the world's
-  largest financial services businesses to turbocharge data grids from the
-  frontlines to the back office.  The unique HTML5 toolbox makes working from
-  large amounts of static or dynamic data straightforward, helping users work
-  with the information that matters to them, to make the decisions that drive
-  their business.
+  Previously known as the Adaptable Blotter, the award-winning
+  [AdapTable](./adaptable) is used by some of the world's largest businesses in
+  Financial Services to turbocharge data grids from the front-lines to the back
+  office.  The unique HTML5 toolbox makes it straightforward to work from large
+  amounts of static or dynamic data, helping users handle the information that
+  matters to them, to make the decisions that drive their business.
 highlights:
   - image: /img/charts.svg
     text: >-
       Largest and most powerful data control
-      [toolbox](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/) in
-      the market
+      [toolbox](https://demo.adaptableblotter.com/AdaptableDemoList/) in the
+      market
   - image: /img/pie-chart.svg
     text: >-
       Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
@@ -37,15 +36,12 @@ quotestitle: What some of our clients are saying
 quotestext: >-
   Adaptable Tools already works with some of the world's leading banks and
   financial institutions, as well as global software houses and innovative start
-  ups.  
-
-
-  What they share is a desire to find smart ways to manage the data that drives
-  their business:  That's what Adaptable Tools helps them to achieve.
+  ups.  What they share is a desire to find smart ways to manage the data that
+  drives their business:  That's what Adaptable Tools helps them to achieve.
 quotes:
   - text: >-
-      A **clever** piece of software that delivers powerful, advanced
-      functionality to the end user
+      A clever piece of software that delivers powerful, advanced functionality
+      to the end user
 
 
       ag-Grid
@@ -54,8 +50,8 @@ quotes:
 
       Group CIO, Investment House
   - text: >-
-      A great tool that is packed with cutting-edge functionality:  Adds real
-      value to the software we deliver to our clients
+      A great tool packed with cutting-edge functionality:  Adds real value to
+      the software for our clients
 
 
       CIO, Global Software House
@@ -76,7 +72,7 @@ quotes:
 
       Senior Quant Developer,  Global Asset Manager
 ctatext: See it in action
-ctalink: 'https://demo.adaptabletools.com'
+ctalink: 'https://demo.adaptableblotter.com'
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
@@ -97,3 +93,4 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
+

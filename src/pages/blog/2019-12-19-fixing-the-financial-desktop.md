@@ -2,14 +2,13 @@
 templateKey: blog-post
 title: Fixing the Financial Desktop
 date: 2018-07-01T08:53:00.000Z
-description: >-
-  Adaptable Tools' CTO Jonny Wolfson thinks through the challenges of the
-  Financial Services Desktop
+description: Adaptable Tools' data management
 featuredpost: false
 featuredimage: /img/fixing-the-financial-desktop.png
 tags:
   - gridgurus
 ---
+_Adaptable Tools' CTO Jonny Wolfson thinks through the challenges of the Financial Services Desktop_
 
 I'm slow on the uptake.
 
@@ -21,11 +20,11 @@ Every financial application - irrespective of its purpose, data or users' locati
 
 Building a DataGrid usually takes place right at the end of the system development process (when budgets are tight and deadlines are overdue) and contains 3 steps:
 
-1. Choose a "control" (alternatively known as a "component") from a vendor that you like - either open source or commercial.
+* Choose a "control" (alternatively known as a "component") from a vendor that you like - either open source or commercial.
 
-2. Populate that vendor control with your business data - from whichever source is appropriate - and add column formatting, cell editors etc. as required.
+* Populate that vendor control with your business data - from whichever source is appropriate - and add column formatting, cell editors etc. as required.
 
-3. Add the extra "bespoke functionality" that your users need to meet their business requirements, using the vendor's own API or UI. This usually takes around 200 developer days.
+* Add the extra "bespoke functionality" that your users need to meet their business requirements, using the vendor's own API or UI. This usually takes around 200 developer days.
 
 Duplication
 
@@ -70,4 +69,3 @@ For those not yet familiar with it, a few of the many highlights of this market-
 Summary
 
 For too long financial users have had to put up with DataGrids that are costly to build, impossible to standardise and lack vital features. The Adaptable Blotter offers a single, elegant solution that saves money, standardises the desktop and puts the power back in the hands of users.
-If you want to be part of the Adaptable Blotter community, please drop us a line at sales@adaptabletools.com

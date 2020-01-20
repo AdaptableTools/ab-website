@@ -2,12 +2,13 @@
 templateKey: blog-post
 title: HTML5 revolution
 date: 2017-07-07T13:03:00.000Z
-description: Adaptable Tools' CTO Jonny Wolfson considers the move to the web
+description: The new standard in desktop technology invading now!
 featuredpost: false
-featuredimage: /img/coffee-gear.png
+featuredimage: /img/html5-revolution.jpeg
 tags:
   - gridgurus
 ---
+_Adaptable Tools' CTO Jonny Wolfson considers the move to the web_
 
 The best revolutions are those that proceed quietly to make the world a better place, without disruption or violence along the way. The disadvantage of these kind of transformations is that they can go unnoticed, and those who prefer to stick in the past can more easily turn away from change.
 
@@ -18,7 +19,6 @@ This new world allows for quicker and easier deployment, a universal vendor-free
 Its progress has been tentative to date, largely because despite these advantages, until now HTML5 applications have lacked the capabilities and advanced features that desktop applications offer. Without these, it’s a case of a better system for IT managers but misery for end users who endure inferior applications with reduced functionality.
 
 Enter three musketeers to lead both IT teams and their users to a better place: Finsemble, a deceptively simple, but powerful, framework, built on state of the art technology provided by OpenFin, and containing AdaptableBlotter.JS a fast, data-agnostic HTML5 grid that ships with all the advanced features that super-users expect and demand
-.
 
 Multi-widget frameworks are a common feature on the financial desktop. With names like “Finance Dashboard”, ‘Trader Workstation’ or ‘Sales Console’, they host multiple different components communicating with each other and sharing data and events. They are typically built using technologies like WinForms CAB or WPF Prism.\
 The advantages to the end user are evident: multiple widgets – for trade capture, prices, positions, trades, RFQs, curves, graphs, aggregation views etc. – are visible in one single application. Windows can be sized and positioned to suit, and everything saves and reloads correctly.
@@ -37,7 +37,3 @@ The blotters can share messages; for example, filtering on the instrument column
 Once pricing, aggregation, risk, RFQ and countless other components are added to the mix, the possibilities and potential for HTML5 financial applications get really exciting.
 
 The revolution is happening now as financial services applications migrate from the thick desktop to the web desktop, bringing major benefits for users. Finsemble’s workspace management capabilities, OpenFin’s innovative architecture and the Adaptable Blotter’s fast, powerful, feature-rich grid are leading the charge, and will make sure that everyone makes it successfully into the future.
-
-10/16 preventing fat finger mist
-
-![test](/img/Carousel3.png 'an image title')

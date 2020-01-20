@@ -6,22 +6,21 @@ video: ''
 ctalink: 'mailto:sales@adaptabletools.com'
 cta1: '[Get In Touch](mailto:sales@adaptabletools.com)'
 headline: >-
-  # Controlling data properly requires a range of tools and specialist skills: 
-  AdapTable is one part of the jigsaw, Grid Gurus provide the missing pieces.
-description: >
-  At Adaptable Tools we have built a team that can help you with every aspect of
-  your data project. 
+  # Data solutions require specialist skills:  AdapTable is one part of the
+  jigsaw; Grid Gurus helps provide the missing pieces.
+description: >-
+  At Adaptable Tools we can help you with every aspect of your data project. 
 
 
-  Nicknamed the Grid Gurus, our consultants have a deep understanding of all the
-  options available in the market and provide objective input to help design
-  your system and build it quickly and cost-efficiently.  
+  Nicknamed The Grid Gurus, our consultants have a deep understanding of all the
+  options available in the market and can offer objective input to help design
+  your solution and build it quickly and cost-efficiently.  
 
 
   Grid Gurus can be fully integrated into a development project, or come in for
   a few days to provide direction and specialist configuration.  They can get a
-  Proof of Concept up and running, or set up and configure your DataGrids to
-  suit your precise requirements, leaving the regular development team free to
+  Proof of Concept up and running, or set up and configure a DataGrid to suit
+  your precise requirements, while the regular development team is freed up to
   do other things.
 services:
   - image: /img/system-architecture.svg
@@ -45,9 +44,8 @@ testimonials:
   - text: Contributed new ways of thinking which really strengthened our approach
 blogtitle: Grid Gurus' Blog
 ---
-
 ### How it Works
 
-A member of our Grid Gurus’ team can come in for as little as one day to add value to your project. They can work with you at any stage of the project, although our clients find they add most value if used at the start, to help avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.
+One of our Grid Gurus can come in for as little as one day to add value to your project. They can work with you at any stage, although our clients find they add most value if used at the start when they can help to avoid expensive, time-costly mistakes. They can work on or off site, delivering to any project deadlines.
 
-We can also put together a number of individuals for more complex work. We match skills to the particular challenges and specialisms required, providing a service that can address exactly what you need. The service is priced on a time basis, with competitive rates available for longer projects. [Get In Touch](mailto:sales@adaptabletools.com) to find out more.
+We can also put together a specialist team for more complex work. We match skills to the particular challenges and knowledge areas required, providing a service focussed on exactly what you need. The service is priced on a time basis, with competitive rates available for longer projects. [Get In Touch](mailto:sales@adaptabletools.com) to find out more.

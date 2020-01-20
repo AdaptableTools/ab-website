@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: Adaptable Tools wins top FinTech prize
+title: Adaptable Tools Takes Top FinTech Prize
 date: 2018-11-11T12:45:00.000Z
-description: External recognition as leading Financial Services' innovator
+description: Adaptable Tools CTO Jonny Wolfson with the winners' trophy
 featuredpost: false
 featuredimage: /img/dragons-den-win-2018.jpg
 tags:
@@ -13,7 +13,7 @@ The Adaptable Blotter, from FinTech start-up Adaptable Tools, has been voted top
 
 The Adaptable Blotter took top spot in the Dragon’s Den session for up and coming financial technology at the Fixed Income Leaders’ Summit held in Amsterdam on 6-8 November 2018.
 
-John Greenan, industry expert and one of the summit dragons commented:
+John Greenan, industry expert and one of the summit "dragons" commented:
 
 It's great to see technology that enhances operational and developmental productivity through excellence in design and implementation. Adaptable Tools won the Dragon's Den session and will continue to win for their clients.
 
