@@ -8,18 +8,17 @@ mainpitch:
 mainpitch_description: >-
   Adaptable Tools provides market-leading products to drive effective data use. 
   Previously known as the Adaptable Blotter, the award-winning
-  [AdapTable](http://demo.adaptableblotter.com/) is used by some of the world's
-  largest businesses in Financial Services to turbocharge data grids from the
-  front-lines to the back office.  The unique HTML5 toolbox makes it
-  straightforward to work from large amounts of static or dynamic data, helping
-  users handle the information that matters to them, to make the decisions that
-  drive their business.
+  [AdapTable](./adaptable) is used by some of the world's largest businesses in
+  Financial Services to turbocharge data grids from the front-lines to the back
+  office.  The unique HTML5 toolbox makes it straightforward to work from large
+  amounts of static or dynamic data, helping users handle the information that
+  matters to them, to make the decisions that drive their business.
 highlights:
   - image: /img/charts.svg
     text: >-
       Largest and most powerful data control
-      [toolbox](https://demo.adaptableblotter.com/AdaptableBlotterDemoList/) in
-      the market
+      [toolbox](https://demo.adaptableblotter.com/AdaptableDemoList/) in the
+      market
   - image: /img/pie-chart.svg
     text: >-
       Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
