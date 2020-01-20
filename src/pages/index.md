@@ -72,7 +72,7 @@ quotes:
 
       Senior Quant Developer,  Global Asset Manager
 ctatext: See it in action
-ctalink: 'https://demo.adaptabletools.com'
+ctalink: 'https://demo.adaptableblotter.com'
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
