@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Integrated Charting in the Adaptable Blotter
 date: 2019-03-05T12:13:00.000Z
 description: User-focussed charting brings data to life
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Carousel13.png
 tags:
   - news
