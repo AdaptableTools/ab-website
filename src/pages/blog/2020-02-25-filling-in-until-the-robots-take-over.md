@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Filling in until the robots take over...
-date: 2019-09-25T07:52:00.000Z
+date: 2020-02-25T08:52:00.000Z
 description: >
   Adaptable Tools introduces the most intelligent form of data management
   available today – our very own Grid Gurus
