@@ -25,7 +25,7 @@ ag-Grid is the market leading HTML5 DataGrid providing a wealth of powerful feat
 
 iPushPull enables you easily to connect data and HTML5 applications in real time.  The [AdapTable integration with iPushPull](https://demo.adaptableblotter.com/partners/ipushpulldemo/) allows data to be sent from your grid to Excel, Symphony and elsewhere with exported data updating in real time as your grid data changes.
 
-[Norman & Sons](https://www.normanandsons.com/)
+# [Norman & Sons](https://www.normanandsons.com/)
 
 Norman & Sons deliver digital solutions within the Financial Services sector, taking responsibility for design and delivery.  They work with a [range of leading FinTech ](https://www.normanandsons.com/alliances/)businesses to provide the very latest technology to clients, including AdapTable.
 
