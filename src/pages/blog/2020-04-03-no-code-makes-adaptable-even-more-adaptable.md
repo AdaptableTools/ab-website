@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: '''No Code" makes AdapTable even more... adaptable '
+title: '''No Code'' makes AdapTable even more... adaptable '
 date: 2020-03-30T09:56:00.000Z
 description: >-
   A simple wizard guides the DIY version of getting data from one place into the
