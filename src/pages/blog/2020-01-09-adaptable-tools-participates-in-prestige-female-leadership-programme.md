@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Adaptable Tools Participates in Prestige Female Leadership Programme
 date: 2019-09-25T07:52:00.000Z
 description: Adaptable Tools' CEO Danielle Nagler pitches the company in just 4 minutes.
-featuredpost: false
+featuredpost: true
 featuredimage: /img/danielle-demo-day.jpeg
 ---
 Adaptable Tools has taken part in a pioneering startup programme to recognise women’s leadership.  Backed by Google, Women of Start Up Nation Accelerator identified 11 out of more than 200 technology startups as having star potential.
