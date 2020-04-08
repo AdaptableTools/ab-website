@@ -200,7 +200,8 @@ export class BookDemoForm extends React.Component {
 const ThankYouPage = ({ content }) => {
   let theContent = <HTMLContent content={content} />
 
-  let bookInfo = localStorage.getItem('book-demo')
+  let bookInfo =
+    typeof localStorage === 'undefined' ? '' : localStorage.getItem('book-demo')
   let showLink = false
   try {
     bookInfo = JSON.parse(bookInfo)
