@@ -260,3 +260,22 @@ collections:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Image', name: 'image', widget: 'image' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+
+                - file: 'src/pages/book-demo/index.md'
+        label: 'Book a Demo'
+        name: 'book-demo'
+        fields:
+          - {
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'book-demo',
+            }
+          - {
+            name: 'is_thank_you',
+            widget: 'hidden',
+            default: 'no'
+          }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
