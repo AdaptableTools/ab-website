@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
   quotestitle,
   quotestext,
   awards,
-  mainpitch
+  mainpitch,
 }) => (
   <div>
     <AbsoluteNav />
@@ -42,14 +42,14 @@ export const IndexPageTemplate = ({
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'left',
-        flexDirection: 'column'
+        flexDirection: 'column',
       }}
     >
       <AnimateWhenVisible
         animationName="enter-from-right"
         style={{ margin: '20px auto' }}
       >
-        <CTAButton href="https://demo.adaptableblotter.com/">
+        <CTAButton href="https://demo.adaptabletools.com/">
           {subtitle}
         </CTAButton>
       </AnimateWhenVisible>
@@ -81,6 +81,12 @@ export const IndexPageTemplate = ({
             )
           })}
         </GridLayout>
+
+        <div className="text-center">
+          <CTAButton tone="light" href="book-demo">
+            Book a Demo
+          </CTAButton>
+        </div>
       </MaxWidth>
     </Strip>
 
@@ -119,7 +125,7 @@ IndexPageTemplate.propTypes = {
 
   subtitle: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string
+  description: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -148,7 +154,7 @@ const IndexPage = ({ data }) => {
           ...frontmatter.mainpitch,
           description: fields.frontmattermd.mainpitch_description
             ? fields.frontmattermd.mainpitch_description.html
-            : ''
+            : '',
         }}
         description={frontmatter.description}
       />
@@ -159,9 +165,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 }
 
 export default IndexPage

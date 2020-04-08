@@ -9,10 +9,10 @@ export default ({ title, className, style, animate = true, as = 'h1' }) => {
   )
   style = {
     ...style,
-    position: 'sticky',
+    // position: 'sticky',
     top: 0,
     zIndex: 100,
-    background: 'var(--ab-color-blue)'
+    background: 'var(--ab-color-blue)',
   }
 
   return (

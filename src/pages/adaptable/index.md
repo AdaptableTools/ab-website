@@ -5,7 +5,7 @@ title: 'AdapTable: Transforming your relationship with Data'
 video: 'https://www.youtube.com/embed/l5F3ROZJu5k'
 headline: >-
   Experience the Power of the [AdapTable
-  Toolkit](http://demo.adaptableblotter.com/)
+  Toolkit](http://demo.adaptabletools.com/)
 description: >-
   AdapTable turbo-charges your data store, providing the ultimate toolkit to
   drive your data needs.  
@@ -71,7 +71,7 @@ A licence for AdapTable provides access to all product features as well as quart
 
 Licences can be purchased individually, for a team (minimum 30 end-users), and for integration into software for onward sale.
 
-To try out AdapTable, you can make use of our [demonstrations](https://demo.adaptableblotter.com/), or we can make a trial licence available for a short period of time.
+To try out AdapTable, you can make use of our [demonstrations](https://demo.adaptabletools.com/), or we can make a trial licence available for a short period of time.
 
 [Get in touch](mailto:sales@adaptabletools.com) to identify the most practical and cost-effective solution for you.
 

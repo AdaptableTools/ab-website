@@ -50,7 +50,7 @@ const Navbar = (props) => {
               <Image
                 src={'/img/header-logo.png'}
                 alt="AdaptableTools"
-                height={[60, 60, 100]}
+                height={[50, 50, 80]}
               />
             </NavItem>
 

@@ -11,7 +11,8 @@ export const HTMLContent = ({
   children,
   className,
   style,
-  markdown = true
+  markdown = true,
+  ...props
 }) => {
   className = `${className || ''} ContentCmp ContentCmp--html`
 
@@ -21,7 +22,12 @@ export const HTMLContent = ({
   }
   const Cmp = as || 'div'
   return (
-    <Cmp style={style} className={className} dangerouslySetInnerHTML={{ __html: content }} />
+    <Cmp
+      {...props}
+      style={style}
+      className={className}
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   )
 }
 
@@ -30,7 +36,7 @@ const Content = ({
   content,
   className,
   markdown = true,
-  style
+  style,
 }) => {
   const Cmp = as || 'div'
   return (
@@ -44,7 +50,7 @@ const Content = ({
 
 Content.propTypes = {
   content: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
 }
 
 HTMLContent.propTypes = Content.propTypes

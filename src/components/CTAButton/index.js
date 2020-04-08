@@ -4,6 +4,8 @@ import { HTMLContent } from '../Content'
 import Button from '../Button'
 import ExternalLink from '../ExternalLink'
 
+import { Link } from 'gatsby'
+
 import './index.scss'
 
 export default ({ children, href, style, ...props }) => {
@@ -20,11 +22,13 @@ export default ({ children, href, style, ...props }) => {
   )
 
   if (hasLink) {
-    const LinkCmp = href.indexOf('http') === 0 ? ExternalLink : 'a'
+    const external = href.indexOf('http') === 0
+    const LinkCmp = external ? ExternalLink : Link
+    const extraProps = external ? { href } : { to: href }
     return (
       <LinkCmp
         {...props}
-        href={href}
+        {...extraProps}
         className={`${props.className || ''} CTAButton`}
         style={{ color: 'inherit', ...style }}
       >

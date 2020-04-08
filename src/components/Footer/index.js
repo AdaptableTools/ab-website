@@ -24,7 +24,7 @@ const FooterMenuLink = ({ children, to, as }) => {
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&')
 }
 
@@ -33,16 +33,16 @@ const Footer = class extends React.Component {
     email: '',
     loading: false,
     feedback: '',
-    error: ''
+    error: '',
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
 
     const body = {
       'form-name': form.getAttribute('name'),
-      email: this.state.email
+      email: this.state.email,
     }
 
     if (!this.state.email) {
@@ -53,13 +53,13 @@ const Footer = class extends React.Component {
       feedback: 'Thank you for subscribing!',
       error: null,
       loading: true,
-      email: ''
+      email: '',
     })
 
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode(body)
+      body: encode(body),
     })
 
     setTimeout(() => {
@@ -67,7 +67,7 @@ const Footer = class extends React.Component {
         loading: false,
         feedback: null,
         email: '',
-        error: null
+        error: null,
       })
     }, 2000)
   }
@@ -123,7 +123,7 @@ const Footer = class extends React.Component {
                 </li>
                 <li>
                   <FooterMenuLink as="div">
-                    <ExternalLink href="https://demo.adaptableblotter.com">
+                    <ExternalLink href="https://demo.adaptabletools.com">
                       Demo
                     </ExternalLink>
                   </FooterMenuLink>
@@ -139,7 +139,7 @@ const Footer = class extends React.Component {
                 paddingTop: 0,
                 flex: 3,
 
-                '--ab-space-4': 'var(--ab-space-3)'
+                '--ab-space-4': 'var(--ab-space-3)',
               }}
             >
               <Box
@@ -196,9 +196,9 @@ const Footer = class extends React.Component {
                         type="email"
                         name="email"
                         value={this.state.email}
-                        onChange={e => {
+                        onChange={(e) => {
                           this.setState({
-                            email: e.target.value
+                            email: e.target.value,
                           })
                         }}
                         p={3}
@@ -211,7 +211,7 @@ const Footer = class extends React.Component {
                         style={{
                           marginTop: 0,
                           opacity:
-                            this.state.loading || !this.state.email ? 0.5 : 1
+                            this.state.loading || !this.state.email ? 0.5 : 1,
                         }}
                       >
                         Send
@@ -264,7 +264,7 @@ const Footer = class extends React.Component {
                       display: 'inline-block',
                       position: 'relative',
                       top: -4,
-                      marginRight: 5
+                      marginRight: 5,
                     }}
                   />
                   LinkedIn

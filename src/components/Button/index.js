@@ -1,5 +1,5 @@
 import React from 'react'
-export default ({ children, tone, className, ...props }) => {
+const Button = ({ children, tone, className, ...props }) => {
   const dark = tone == 'dark' || !tone
   const toneClass = dark ? ' text-blue-100' : ' text-blue-800'
   return (
@@ -12,10 +12,12 @@ export default ({ children, tone, className, ...props }) => {
       }
       style={{
         ...props.style,
-        background: dark ? 'var(--ab-color-blue)' : 'white'
+        background: dark ? 'var(--ab-color-blue)' : 'white',
       }}
     >
       {children}
     </button>
   )
 }
+
+export default Button

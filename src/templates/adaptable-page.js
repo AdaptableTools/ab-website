@@ -35,7 +35,7 @@ export const AdaptablePageTemplate = ({
   testimonials,
   keyfeaturestitle,
   description,
-  contentComponent
+  contentComponent,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -48,10 +48,10 @@ export const AdaptablePageTemplate = ({
     hasKeyFeatures,
     hasTestimonials,
     hasUseCases,
-    hasFunctionalities
+    hasFunctionalities,
   ]
   let stripVariants = strips
-    .filter(s => s)
+    .filter((s) => s)
     .map((_, i) => (i % 2 === 0 ? 'dark' : 'light'))
 
   let currentVariant = 0
@@ -65,10 +65,12 @@ export const AdaptablePageTemplate = ({
   return (
     <>
       <AbsoluteNav />
-      <BackgroundImage image={image} title={title}
-      style={{
-        backgroundPosition: '80% center'
-      }}
+      <BackgroundImage
+        image={image}
+        title={title}
+        style={{
+          backgroundPosition: '80% center',
+        }}
       ></BackgroundImage>
       {video || headline || description ? (
         <MaxWidth className="mt-16 pb-8">
@@ -85,6 +87,10 @@ export const AdaptablePageTemplate = ({
             <p className="mt-10 text-xl">
               <HTMLContent>{description}</HTMLContent>
             </p>
+
+            <div className="text-center mt-10">
+              <CTAButton href="/book-demo">Book a Demo</CTAButton>
+            </div>
           </AnimateWhenVisible>
         </MaxWidth>
       ) : null}
@@ -116,6 +122,12 @@ export const AdaptablePageTemplate = ({
                 )
               })}
             </GridLayout>
+
+            <div className="text-center">
+              <CTAButton tone="light" href="/book-demo">
+                Book a Demo
+              </CTAButton>
+            </div>
           </MaxWidth>
         </Strip>
       ) : null}
@@ -154,7 +166,7 @@ export const AdaptablePageTemplate = ({
                   pxMobile={1}
                   className="mt-16 pb-8 pt-8"
                   style={{
-                    textAlign: i % 2 ? 'right' : 'left'
+                    textAlign: i % 2 ? 'right' : 'left',
                   }}
                 >
                   <Flex
@@ -164,7 +176,7 @@ export const AdaptablePageTemplate = ({
                     <Box
                       style={{
                         flex: 4,
-                        textAlign: i % 2 ? 'right' : 'left'
+                        textAlign: i % 2 ? 'right' : 'left',
                       }}
                       paddingLeft={[2, 0]}
                       paddingRight={[2, 0]}
@@ -184,10 +196,10 @@ export const AdaptablePageTemplate = ({
                               <PreviewCompatibleImage
                                 imageStyle={{
                                   maxHeight: '20rem',
-                                  maxWidth: '50vw'
+                                  maxWidth: '50vw',
                                 }}
                                 imageInfo={{
-                                  image: usecase.image
+                                  image: usecase.image,
                                 }}
                               />
                             }
@@ -200,7 +212,7 @@ export const AdaptablePageTemplate = ({
                       flex={[4, 2]}
                       style={{
                         paddingTop: 30,
-                        paddingBottom: 30
+                        paddingBottom: 30,
                       }}
                     >
                       <Timeline
@@ -215,7 +227,7 @@ export const AdaptablePageTemplate = ({
                             : 'dark'
                         }
                         stepStyle={{
-                          maxWidth: 350
+                          maxWidth: 350,
                         }}
                         steps={[usecase.who, usecase.where, <b>+ AdapTable</b>]}
                       />
@@ -230,9 +242,7 @@ export const AdaptablePageTemplate = ({
             animationDelay="0.5s"
             className="text-center pb-10"
           >
-            <CTAButton href="https://demo.adaptableblotter.com">
-              {cta}
-            </CTAButton>
+            <CTAButton href="https://demo.adaptabletools.com">{cta}</CTAButton>
           </AnimateWhenVisible>
         </Strip>
       ) : null}
@@ -252,7 +262,7 @@ export const AdaptablePageTemplate = ({
                       style={{
                         height: '100%',
                         display: 'flex',
-                        flexFlow: 'column'
+                        flexFlow: 'column',
                       }}
                       animationDelay={`${i * 100 +
                         100 +
@@ -266,13 +276,13 @@ export const AdaptablePageTemplate = ({
                           display: 'flex',
                           flexFlow: 'column',
                           alignItems: 'center',
-                          flex: 1
+                          flex: 1,
                         }}
                       >
                         <i
                           className="material-icons mb-4"
                           style={{
-                            fontSize: 'var(--ab-font-size-8)'
+                            fontSize: 'var(--ab-font-size-8)',
                           }}
                         >
                           {functionality.icon}
@@ -309,7 +319,7 @@ AdaptablePageTemplate.propTypes = {
   content: PropTypes.string,
   keyfeaturestitle: PropTypes.string,
   description: PropTypes.string,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
 }
 
 const AdaptableBlotterPage = ({ data }) => {
@@ -338,7 +348,7 @@ const AdaptableBlotterPage = ({ data }) => {
 }
 
 AdaptableBlotterPage.propTypes = {
-  data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired,
 }
 
 export default AdaptableBlotterPage

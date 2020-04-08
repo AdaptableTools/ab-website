@@ -17,20 +17,20 @@ highlights:
   - image: /img/charts.svg
     text: >-
       Largest and most powerful data control
-      [toolbox](https://demo.adaptableblotter.com/AdaptableDemoList/) in the
+      [toolbox](https://demo.adaptabletools.com/AdaptableDemoList/) in the
       market
   - image: /img/pie-chart.svg
     text: >-
-      Live data [visualisation tools](https://demo.adaptableblotter.com/charts/)
+      Live data [visualisation tools](https://demo.adaptabletools.com/charts/)
       to help patterns emerge
   - image: /img/checkbox.svg
     text: >-
       Full [audit functionality
-      ](https://demo.adaptableblotter.com/admin/aggridauditdemo/)to help meet
+      ](https://demo.adaptabletools.com/admin/aggridauditdemo/)to help meet
       regulatory requirements
   - image: /img/road.svg
     text: >-
-      Working with our [partners](https://demo.adaptableblotter.com/partners/)
+      Working with our [partners](https://demo.adaptabletools.com/partners/)
       to create one integrated data universe
 quotestitle: What some of our clients are saying
 quotestext: >-
@@ -72,7 +72,7 @@ quotes:
 
       Senior Quant Developer,  Global Asset Manager
 ctatext: See it in action
-ctalink: 'https://demo.adaptableblotter.com'
+ctalink: 'https://demo.adaptabletools.com'
 awards:
   - image: /img/new-international-finance-awards-logo.png
     text: >-
@@ -93,4 +93,3 @@ awards:
   - image: /img/dataIQ awards.png
     text: 'Final Shortlist, Data-driven Product of the Year, DataIQ Awards 2019'
 ---
-

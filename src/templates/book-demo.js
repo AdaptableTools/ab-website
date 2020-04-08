@@ -255,9 +255,8 @@ export const BookDemoPageTemplate = ({
 }) => {
   return (
     <>
-      <BackgroundImage title={title} image={image}>
-        <AbsoluteNav />
-      </BackgroundImage>
+      <AbsoluteNav />
+      <BackgroundImage title={title} image={image}></BackgroundImage>
       <MaxWidth className="mt-16 pb-16">
         {is_thank_you == 'yes' ? (
           <ThankYouPage content={content} />
