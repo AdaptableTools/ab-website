@@ -5,4 +5,4 @@ title: Thank you
 is_thank_you: yes
 ---
 
-Thank you. We will be in touch to arrange a demo with you shortly.
+We will be in touch to arrange a demo with you shortly.

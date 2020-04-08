@@ -206,9 +206,18 @@ const ThankYouPage = ({ content }) => {
   try {
     bookInfo = JSON.parse(bookInfo)
 
-    if (Date.now() > bookInfo.time + 1000) {
+    if (!bookInfo.name || Date.now() > bookInfo.time + 1000) {
       throw 'old entry'
     }
+
+    theContent = (
+      <>
+        <p style={{ marginBottom: 'var(--ab-space-2)' }}>
+          Thank you <b>{bookInfo.name}.</b>
+        </p>
+        {theContent}
+      </>
+    )
   } catch (ex) {
     theContent =
       ex === 'old entry'
