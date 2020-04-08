@@ -91,7 +91,7 @@ const Navbar = (props) => {
                     Explore
                   </ExternalLink>
                 </NavText>
-                <NavItem to="/book-demo">Book a Demo</NavItem>
+                {/*<NavItem to="/book-demo">Book a Demo</NavItem>*/}
               </Flex>
 
               <Flex
