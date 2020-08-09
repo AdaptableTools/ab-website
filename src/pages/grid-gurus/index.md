@@ -24,10 +24,11 @@ description: >-
   do other things.
 
 
-  The Adaptable Tools' team specialises in delivering value-driven solutions,
-  and they don't duck the difficult questions.  They also run an open surgery
-  for grid-related queries, and you can see their responses to some of the
-  issues raised [here](https://demo.adaptabletools.com/gridgurus/asktheexperts).
+  The Grid Gurus team specialises in delivering value-driven solutions, and they
+  don't duck the difficult questions.  And as a service to the wider development
+  community, they also run a free open surgery for grid-related queries.  You
+  can see their responses to some of the issues raised
+  [here](https://demo.adaptabletools.com/gridgurus/asktheexperts).
 services:
   - image: /img/system-architecture.svg
     name: System Architecture
