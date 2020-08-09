@@ -12,11 +12,17 @@ Every business now understands the value of data – and the need to find approp
 
 It is not enough just to collect or assemble data and hope that it will drive business performance.  Data management and analytics are key to seeing data genuinely improve decision-making and minimise risk.
 
-This requires confronting a few basic challenges:-	
+This requires confronting a few basic challenges:
 
-\- Bringing together proprietary data with that from third parties in a seamless way-	
+* 
 
-\- Being able to handle large amounts of dynamic data, effortlessly-	
+\- Bringing together proprietary data with that from third parties in a seamless way
+
+* 
+
+\- Being able to handle large amounts of dynamic data, effortlessly
+
+* 
 
 \- Breaking down internal data silos – but still ensuring that users can find the data that they want and need
 
