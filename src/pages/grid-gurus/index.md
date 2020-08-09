@@ -22,6 +22,12 @@ description: >-
   Proof of Concept up and running, or set up and configure a DataGrid to suit
   your precise requirements, while the regular development team is freed up to
   do other things.
+
+
+  The Adaptable Tools' team specialises in delivering value-driven solutions,
+  and they don't duck the difficult questions.  They also run an open surgery
+  for grid-related queries, and you can see their responses to some of the
+  issues raised [here](https://demo.adaptabletools.com/gridgurus/asktheexperts).
 services:
   - image: /img/system-architecture.svg
     name: System Architecture
