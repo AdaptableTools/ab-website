@@ -21,6 +21,7 @@ CMS.registerMediaLibrary(cloudinary)
 registerTemplateForPreview('index', IndexPagePreview)
 registerTemplateForPreview('adaptable', AdaptablePagePreview)
 registerTemplateForPreview('fintech-partners', AdaptablePagePreview)
+registerTemplateForPreview('grid-talks', AdaptablePagePreview)
 registerTemplateForPreview('grid-gurus', GridGurusPagePreview)
 
 registerTemplateForPreview('blog', BlogPostPreview)

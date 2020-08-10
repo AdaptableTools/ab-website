@@ -119,6 +119,9 @@ const Footer = class extends React.Component {
                   </FooterMenuLink>
                 </li>
                 <li>
+                  <FooterMenuLink to="/grid-talks">Grid Talks</FooterMenuLink>
+                </li>
+                <li>
                   <FooterMenuLink to="/blog">News</FooterMenuLink>
                 </li>
                 <li>

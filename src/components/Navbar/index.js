@@ -102,6 +102,7 @@ const Navbar = (props) => {
                 <NavItem to="/adaptable">AdapTable</NavItem>
                 <NavItem to="/grid-gurus">Grid Gurus</NavItem>
                 <NavItem to="/fintech-partners">Fintech Partners</NavItem>
+                <NavItem to="/grid-talks">Grid Talks</NavItem>
                 <NavItem to="/blog">News</NavItem>
               </Flex>
             </Flex>
