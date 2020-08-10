@@ -9,6 +9,6 @@ In Grid Talks, Adaptable Tools’ CEO Danielle Nagler interviews leading figures
 
 
 
-* Adaptable Tools talks to ag-Grid founder Niall Crosby
+* [Adaptable Tools talks to ag-Grid founder Niall Crosby](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw)
 * Adaptable Tools talks to Norman and Sons Leader Graeme Harker
 * Adaptable Tools talks to ipushpull CEO Matthew Cheung
