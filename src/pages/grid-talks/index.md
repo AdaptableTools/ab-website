@@ -9,7 +9,7 @@ In Grid Talks, Adaptable Tools’ CEO, Danielle Nagler, interviews leading figur
 
 This unique series of podcasts gives insights into groundbreaking inventions as well as offering perspectives on the future from some of those involved in building it. It’s your chance to find out what could be next.
 
-[Adaptable Tools talks to ag-Grid founder Niall Crosby] (https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw)
+[Adaptable Tools talks to ag-Grid founder Niall Crosby](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw)
 
 Adaptable Tools talks to Norman and Sons Leader Graeme Harker (coming soon)
 
