@@ -12,4 +12,4 @@ Adaptable Tools has launched a new podcast series consisting of interviews with 
 
 Grid Talks kicks off with Danielle in conversation with Niall Crosby, who has single-handedly transformed data management across business sectors with the development of ag-Grid.  He describes how personal frustration gave birth to what is now the world's most popular datagrid, and explains where the top tool may be headed next.
 
-A new conversation will be published each week, and can be accessed via [our dedicated web page](https://adaptabletools.com/grid-talks) .
+A new conversation will be published each Tuesday, and all the interviews can be accessed via [our dedicated web page](https://adaptabletools.com/grid-talks) .
