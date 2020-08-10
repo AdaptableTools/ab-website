@@ -7,6 +7,8 @@ Adaptable Tools, and our core product AdapTable, work at the frontiers of Financ
 
 In Grid Talks, Adaptable Tools’ CEO Danielle Nagler interviews leading figures in the Financial Services technology revolution. This unique series of podcasts gives insights into groundbreaking inventions as well as offering perspectives on the future from some of those involved in building it. It’s your chance to find out what could be next.
 
+
+
 * Adaptable Tools talks to ag-Grid founder Niall Crosby
 * Adaptable Tools talks to Norman and Sons Leader Graeme Harker
 * Adaptable Tools talks to ipushpull CEO Matthew Cheung
