@@ -1,6 +1,6 @@
 ---
 templateKey: adaptable-page
-image: /img/lyra-partners.jpg
+image: /img/grid-talks-banner.png
 title: Today and Tomorrow in the FinTech Universe
 ---
 Adaptable Tools, and our core product AdapTable, work at the frontiers of Financial Services technology. We are focussed on changing the way that systems work so that companies and users can work in ways that were never before possible. And we work alongside others who are similarly committed to turning technological possibilities into transformation.
