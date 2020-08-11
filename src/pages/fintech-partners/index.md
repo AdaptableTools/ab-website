@@ -32,7 +32,7 @@ Norman & Sons deliver digital solutions within the Financial Services sector, ta
 ### [Glue42](https://glue42.com/)
 
 Glue42 facilitates communication between legacy and new apps.
-When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid. [See it in action here](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw).
+When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid. [See it in action here.](https://www.youtube.com/watch?v=tq4hrv_N5Ms&feature=youtu.be)
 
 ### [Infragistics](https://infragistics.com/)
 
