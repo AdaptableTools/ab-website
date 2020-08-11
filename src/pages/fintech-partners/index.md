@@ -3,7 +3,6 @@ templateKey: adaptable-page
 image: /img/lyra-partners.jpg
 title: Driving Forward the Data Management Revolution Together
 ---
-
 At Adaptable Tools we focus on solving the challenges presented by the current unsuitable, duplicated DataGrid offerings within desktop data systems.
 
 Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
@@ -33,7 +32,7 @@ Norman & Sons deliver digital solutions within the Financial Services sector, ta
 ### [Glue42](https://glue42.com/)
 
 Glue42 facilitates communication between legacy and new apps.
-When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid.
+When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid. [See it in action here](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw).
 
 ### [Infragistics](https://infragistics.com/)
 
