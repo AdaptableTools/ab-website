@@ -7,11 +7,6 @@ At Adaptable Tools we focus on solving the challenges presented by the current u
 
 Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
 
-### [Finsemble](https://www.chartiq.com/finsemble/)
-
-Finsemble provides a state of the art window management system for HTML apps.
-Working together, we can deliver [multiple AdapTable instances](https://demo.adaptabletools.com/partners/finsembledemo/) in the same workspace which share data and events with each other and with third party widgets.
-
 ### [OpenFin](https://openfin.co/)
 
 OpenFin is the browser-based Operating System for Finance. When working in the OpenFin container AdapTable offers [exciting additional functionality](https://demo.adaptabletools.com/partners/openfindemo/) such as live Excel updates and access to the system tray.
@@ -28,6 +23,11 @@ iPushPull enables you easily to connect data and HTML5 applications in real time
 # [Norman & Sons](https://www.normanandsons.com/)
 
 Norman & Sons deliver digital solutions within the Financial Services sector, taking responsibility for design and delivery. They work with a [range of leading FinTech ](https://www.normanandsons.com/alliances/)businesses to provide the very latest technology to clients, including AdapTable.
+
+### [Cosaic](https://www.chartiq.com/finsemble/)
+
+[Cosaic's Finsemble ](https://cosaic.io/finsemble/)provides a state of the art window management system for HTML apps.
+Working together, we can deliver [multiple AdapTable instances](https://demo.adaptabletools.com/partners/finsembledemo/) in the same workspace which share data and events with each other and with third party widgets.
 
 ### [Glue42](https://glue42.com/)
 
