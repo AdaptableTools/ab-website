@@ -6,14 +6,14 @@ import ResizeObserverPoly from 'resize-observer-polyfill'
 const setupResizeObserver = (node, callback) => {
   const RO = window.ResizeObserver || ResizeObserverPoly
 
-  const observer = new RO(entries => {
+  const observer = new RO((entries) => {
     const entry = entries[0]
     const { width, height } = entry.contentRect
 
     callback({ width, height })
   })
 
-  observer.observe(node, 'border-box')
+  observer.observe(node, { box: 'border-box' })
 
   return () => {
     observer.disconnect()
@@ -29,13 +29,13 @@ const setupResizeObserver = (node, callback) => {
 export const useResizeObserver = (ref, callback, config = {}) => {
   const sizeRef = useRef({
     width: 0,
-    height: 0
+    height: 0,
   })
 
   const effectFn = () => {
     let disconnect
     if (ref.current) {
-      disconnect = setupResizeObserver(ref.current, size => {
+      disconnect = setupResizeObserver(ref.current, (size) => {
         const prevSize = sizeRef.current
         if (prevSize.width !== size.width || prevSize.height !== size.height) {
           sizeRef.current = size
@@ -65,7 +65,7 @@ export const useResizeObserver = (ref, callback, config = {}) => {
   }, [ref.current, ref, callback, config.earlyAttach])
 }
 
-const ReactResizeObserver = props => {
+const ReactResizeObserver = (props) => {
   const style = useMemo(
     () => ({
       position: 'absolute',
@@ -73,7 +73,7 @@ const ReactResizeObserver = props => {
       left: 0,
       width: '100%',
       height: '100%',
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
     }),
     []
   )
@@ -83,7 +83,7 @@ const ReactResizeObserver = props => {
   const firstTime = useRef(true)
   const ref = useRef(null)
 
-  const onResize = size => {
+  const onResize = (size) => {
     if (firstTime.current && !notifyOnMount) {
       firstTime.current = false
       return
@@ -98,7 +98,7 @@ const ReactResizeObserver = props => {
 
 ReactResizeObserver.defaultProps = {
   notifyOnMount: true,
-  earlyAttach: false
+  earlyAttach: false,
 }
 
 export default ReactResizeObserver
