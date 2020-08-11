@@ -6,4 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &.AdaptableBgImage {
+    background-position: 80% center;
+  }
+  &.grid-talks {
+    background-position: 40% center;
+  }
 }

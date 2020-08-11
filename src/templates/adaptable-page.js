@@ -16,6 +16,7 @@ import ClientQuotes from '../components/ClientQuotes'
 import Button from '../components/Button'
 import { Box, Flex } from 'rebass'
 import avatars from '../components/avatars'
+import join from '../components/join'
 import ExternalLink from '../components/ExternalLink'
 import Timeline from '../components/Timeline'
 import Headline from '../components/Headline'
@@ -36,6 +37,7 @@ export const AdaptablePageTemplate = ({
   keyfeaturestitle,
   description,
   contentComponent,
+  cls,
 }) => {
   const PageContent = contentComponent || Content
 
@@ -68,9 +70,7 @@ export const AdaptablePageTemplate = ({
       <BackgroundImage
         image={image}
         title={title}
-        style={{
-          backgroundPosition: '80% center',
-        }}
+        className={join(cls || '', 'AdaptableBgImage')}
       ></BackgroundImage>
       {video || headline || description ? (
         <MaxWidth className="mt-16 pb-8">
@@ -331,6 +331,7 @@ const AdaptableBlotterPage = ({ data }) => {
       <AdaptablePageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        cls={post.frontmatter.cls}
         video={post.frontmatter.video}
         image={post.frontmatter.image}
         keyfeaturestitle={post.frontmatter.keyfeaturestitle}
@@ -361,6 +362,7 @@ export const adaptableBlotterPageQuery = graphql`
       frontmatter {
         title
         video
+        cls
         headline
         description
         image {

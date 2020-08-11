@@ -231,6 +231,7 @@ collections:
               widget: 'hidden',
               default: 'adaptable-page',
             }
+          - { label: cls, name: cls, widget: hidden, default: 'grid-talks' }
           - { label: Image, name: image, widget: image }
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
