@@ -9,11 +9,6 @@ At Adaptable Tools we focus on solving the challenges presented by the current u
 
 Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
 
-### [Finsemble](https://www.chartiq.com/finsemble/)
-
-Finsemble provides a state of the art window management system for HTML apps.
-Working together, we can deliver [multiple AdapTable instances](https://demo.adaptabletools.com/partners/finsembledemo/) in the same workspace which share data and events with each other and with third party widgets.
-
 ### [OpenFin](https://openfin.co/)
 
 OpenFin is the browser-based Operating System for Finance. When working in the OpenFin container AdapTable offers [exciting additional functionality](https://demo.adaptabletools.com/partners/openfindemo/) such as live Excel updates and access to the system tray.
@@ -31,10 +26,15 @@ iPushPull enables you easily to connect data and HTML5 applications in real time
 
 Norman & Sons deliver digital solutions within the Financial Services sector, taking responsibility for design and delivery. They work with a [range of leading FinTech ](https://www.normanandsons.com/alliances/)businesses to provide the very latest technology to clients, including AdapTable.
 
+### [Cosaic](https://www.chartiq.com/finsemble/)
+
+[Cosaic's Finsemble ](https://cosaic.io/finsemble/)provides a state of the art window management system for HTML apps.
+Working together, we can deliver [multiple AdapTable instances](https://demo.adaptabletools.com/partners/finsembledemo/) in the same workspace which share data and events with each other and with third party widgets.
+
 ### [Glue42](https://glue42.com/)
 
 Glue42 facilitates communication between legacy and new apps.
-When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid. [See it in action here](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw).
+When using Adaptable, Glue42 users are able to export data to Excel with full validation, comprehensive auditing and 2 way data binding between their worksheet and the Grid. [See it in action here.](https://www.youtube.com/watch?v=tq4hrv_N5Ms&feature=youtu.be)
 
 ### [Infragistics](https://infragistics.com/)
 
