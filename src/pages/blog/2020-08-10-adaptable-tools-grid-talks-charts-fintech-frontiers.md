@@ -6,7 +6,7 @@ description: >-
   In a brand new podcast series, Adaptable Tools sets out to interview those
   innovating in Financial Services technology.
 featuredpost: true
-featuredimage: /img/gridtalks-logo.jpg
+featuredimage: /img/grid-talks-banner.png
 ---
 Adaptable Tools has launched a new podcast series consisting of interviews with leading figures in technology development within the FinTech space.  Over the coming weeks Adaptable Tools CEO Danielle Nagler will talk to those individuals - many of them unsung heroes - who are breaking new ground for users in Financial Services.  As well as offering insights into the innovations for which they are responsible, the series will provide perspectives on the future from those who have a key part to play in delivering it.
 
