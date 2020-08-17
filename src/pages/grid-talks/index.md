@@ -1,10 +1,9 @@
 ---
 templateKey: adaptable-page
+cls: grid-talks
 image: /img/grid-talks-banner.png
 title: Today and Tomorrow in the FinTech Universe
-cls: grid-talks
 ---
-
 Adaptable Tools, and our core product AdapTable, work at the frontiers of Financial Services technology. We are focussed on changing the way that systems work so that companies and users can work in ways that were never before possible. And we work alongside others who are similarly committed to turning technological possibilities into transformation.
 
 In Grid Talks, Adaptable Tools’ CEO, Danielle Nagler, interviews leading figures in the Financial Services technology revolution.
@@ -18,3 +17,7 @@ To date Adaptable Tools has talked to:
 Norman and Sons Leader Graeme Harker (coming soon)
 
 ipushpull CEO Matthew Cheung (coming soon)
+
+Cosaic founder Dan Schleifer (coming soon)
+
+Infragistics SVP for Developer Tools Jason Beres (coming soon)
