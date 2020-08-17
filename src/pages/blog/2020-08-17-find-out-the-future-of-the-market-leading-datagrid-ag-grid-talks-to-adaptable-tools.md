@@ -8,7 +8,7 @@ description: >-
   As part of Grid Talks, our groundbreaking podcast series on FinTech
   innovation, CEO Danielle Nagler talks to Niall Crosby of ag-Grid.
 featuredpost: true
-featuredimage: /img/ag-grid.png
+featuredimage: /img/ag-grid.jpg
 ---
 It’s vital we continue to respect the Grid and its complexity.  That’s the key message from the man who in a typically understated way has done more than anyone else to change the face of data management across industries.
 
