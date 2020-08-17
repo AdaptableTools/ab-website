@@ -12,12 +12,12 @@ This unique series of podcasts gives insights into groundbreaking inventions as 
 
 To date Adaptable Tools has talked to:
 
-[ag-Grid founder Niall Crosby](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw)
+[ag-Grid Founder Niall Crosby](https://open.spotify.com/episode/131ejKdW2csw3BzD13EvF6?si=2QSXzh9pSjyF_1Uo2yHldw)
 
-Norman and Sons Leader Graeme Harker (coming soon)
+[Norman & Sons Leader Graeme Harker](https://open.spotify.com/episode/3Y7vfrR2XGok7vfuqtzEx5?si=EZUm6KJyS8yH4IZzRqxxwQ)
 
 ipushpull CEO Matthew Cheung (coming soon)
 
-Cosaic founder Dan Schleifer (coming soon)
+Cosaic Founder Dan Schleifer (coming soon)
 
 Infragistics SVP for Developer Tools Jason Beres (coming soon)
