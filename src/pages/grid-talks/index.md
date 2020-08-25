@@ -16,8 +16,10 @@ To date Adaptable Tools has talked to:
 
 [Norman & Sons Leader Graeme Harker](https://open.spotify.com/episode/3Y7vfrR2XGok7vfuqtzEx5?si=EZUm6KJyS8yH4IZzRqxxwQ)
 
-ipushpull CEO Matthew Cheung (coming soon)
+[ipushpull CEO Matthew Cheung](https://open.spotify.com/episode/1Glcqjx7ZM52GaUaW97pUE?si=MJrF3XdlTcWZHwEOLDv3Cg) 
 
 Cosaic Founder Dan Schleifer (coming soon)
 
 Infragistics SVP for Developer Tools Jason Beres (coming soon)
+
+Financial Services Technology Thought-Leader John Greenan (coming soon)
