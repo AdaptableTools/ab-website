@@ -18,7 +18,7 @@ To date Adaptable Tools has talked to:
 
 [ipushpull CEO Matthew Cheung](https://open.spotify.com/episode/1Glcqjx7ZM52GaUaW97pUE?si=MJrF3XdlTcWZHwEOLDv3Cg) 
 
-Cosaic Founder Dan Schleifer (coming soon)
+[Cosaic Founder Dan Schleifer](https://open.spotify.com/episode/0oQawmayM8kc79Uo2T46kf?si=YYytxFi4Slu5DacBgGnyBQ)
 
 Infragistics SVP for Developer Tools Jason Beres (coming soon)
 
