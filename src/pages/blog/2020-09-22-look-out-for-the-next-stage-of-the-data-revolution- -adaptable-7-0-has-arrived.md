@@ -1,18 +1,20 @@
 ---
 templateKey: blog-post
-title: "Look Out for the Next Stage of the Data Revolution:\_ AdapTable 7.0 has Arrived!"
+title: Look Out for the Next Stage of the Data Revolution
 date: 2020-09-22T12:56:40.083Z
-description: "Adaptable Tools\_provides the data controls of the future with its delivery of AdapTable 7.0.\_"
+description: ' AdapTable 7.0 has Arrived!  '
 featuredpost: true
 featuredimage: /img/calccoleditordark.png
 ---
+**Adaptable Tools provides the data controls of the future with its delivery of AdapTable 7.0.** 
+
 The market-leading toolkit already offered the most powerful functionality available, but with this latest version, AdapTable takes a giant leap forward.
 
 Danielle Nagler, CEO of Adaptable Tools, describes how:
 
 > _We observed the data challenges our users are dealing with every day, and we worked on delivering the solutions that will be game-changing for them.  We also wanted to respond to the increase in time working from home usually with smaller screens.  Our upgrade means that complex data management can become easier and more intuitive, even where screen real estate is constrained._
 
-## Back to Basics 
+## Back to Basics
 
 Building on an extended range of features such as Gradient Columns, Scheduled Reports, Alerts, Team Sharing, State Management and Audit Log, AdapTable v. 7.0 focuses on addressing core functionality in an effort to boost user productivity and efficiency.
 
@@ -34,25 +36,23 @@ Calculated Columns – one of AdapTable’s most popular functions - has had a c
 
 Layouts now update automatically as the grid changes, and the multi-step wizard has been replaced with a one-screen Layout editor in which the user can set:
 
-* Column Visibility
-* Column Order
-* Sorting Information
-* Aggregations and Summaries
-* Row Grouping
-* Pivoting Details
+* \- Column Visibility
+* \- Column Order
+* \- Sorting Information
+* \- Aggregations and Summaries
+* \- Row Grouping
+* \- Pivoting Details
 
 ## Other Improvements
 
 Other highlights in AdapTable 7.0 include:
 
-* Substantial enhancements to React and Angular Wrappers
-* The addition of ‘Scope’ so that the same Conditional Style can be used across multiple columns of a given DataType (e.g. Number).
-* Ranges added to Percent Bars so different colours display based on cell value
-* Enhanced support for Master-Detail and Tree View grids
-* Improvements to custom themes and styles
-* Many new Adaptable API methods so everything available in the GUI can also be done programmatically via code.
-
-
+* \- Substantial enhancements to React and Angular Wrappers
+* \- The addition of ‘Scope’ so that the same Conditional Style can be used across multiple columns of a given DataType (e.g. Number).
+* \- Ranges added to Percent Bars so different colours display based on cell value
+* \- Enhanced support for Master-Detail and Tree View grids
+* \- Improvements to custom themes and styles
+* \- Many new Adaptable API methods so everything available in the GUI can also be done programmatically via code.
 
 ## Find Out More
 
