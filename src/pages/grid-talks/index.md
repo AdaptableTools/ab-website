@@ -20,6 +20,6 @@ To date Adaptable Tools has talked to:
 
 [Cosaic Founder Dan Schleifer](https://open.spotify.com/episode/0oQawmayM8kc79Uo2T46kf?si=YYytxFi4Slu5DacBgGnyBQ)
 
-Infragistics SVP for Developer Tools Jason Beres (coming soon)
+[Infragistics SVP for Developer Tools Jason Beres](https://open.spotify.com/episode/3m2We7zR7c2SoO4YKaLKxN?si=dV1jPzO0SEW_SN7TkPgDXA)
 
 Financial Services Technology Thought-Leader John Greenan (coming soon)
