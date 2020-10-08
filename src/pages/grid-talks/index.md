@@ -22,4 +22,6 @@ To date Adaptable Tools has talked to:
 
 [Infragistics SVP for Developer Tools Jason Beres](https://open.spotify.com/episode/3m2We7zR7c2SoO4YKaLKxN?si=dV1jPzO0SEW_SN7TkPgDXA)
 
-Financial Services Technology Thought-Leader John Greenan (coming soon)
+[Financial Services Technology Thought-Leader John Greenan](https://open.spotify.com/episode/36c5lRH2hQZQxqz1VAFyji?si=D6l8vPyaQwGDoEbTOu1_dw)
+
+Glue42 COO James Wooster (coming soon)
