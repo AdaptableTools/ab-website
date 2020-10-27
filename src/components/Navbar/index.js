@@ -81,7 +81,7 @@ const Navbar = (props) => {
                 flexDirection={['column', 'column', 'row']}
               >
                 <NavText>
-                  <ExternalLink href="https://github.com/AdaptableTools/adaptable/blob/master/packages/adaptable/readme/readme-list.md">
+                  <ExternalLink href="https://docs.adaptabletools.com/">
                     Help
                   </ExternalLink>
                 </NavText>
