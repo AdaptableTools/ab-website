@@ -2,9 +2,7 @@
 templateKey: adaptable-page
 image: /img/lyra-partners.jpg
 title: Driving Forward the Data Management Revolution Together
-cls: fintech-partners
 ---
-
 At Adaptable Tools we focus on solving the challenges presented by the current unsuitable, duplicated DataGrid offerings within desktop data systems.
 
 Our partners have developed smart solutions to some of the other limitations of the desktop, and together we can offer a seamless experience to clients.
@@ -12,6 +10,8 @@ Our partners have developed smart solutions to some of the other limitations of 
 ### [OpenFin](https://openfin.co/)
 
 OpenFin is the browser-based Operating System for Finance. When working in the OpenFin container AdapTable offers [exciting additional functionality](https://demo.adaptabletools.com/partners/openfindemo/) such as live Excel updates and access to the system tray.
+
+[Book now](https://us02web.zoom.us/webinar/register/6916219135348/WN_f6SCDosmSvOk5ent3_wBEQ) for a webinar to see what OpenFin and Adaptable can deliver together.
 
 ### [ag-Grid](https://www.ag-grid.com/)
 
