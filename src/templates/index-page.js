@@ -53,6 +53,15 @@ export const IndexPageTemplate = ({
           {subtitle}
         </CTAButton>
       </AnimateWhenVisible>
+      <AnimateWhenVisible
+        animationName="enter-from-right"
+        style={{ margin: '20px auto' }}
+      >
+        <CTAButton href="https://us02web.zoom.us/webinar/register/6916219135348/WN_f6SCDosmSvOk5ent3_wBEQ">
+          See how OpenFin and AdapTable transform the desktop experience
+          together
+        </CTAButton>
+      </AnimateWhenVisible>
     </div>
 
     <MaxWidth className="mt-16">
