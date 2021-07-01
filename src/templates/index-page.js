@@ -57,7 +57,7 @@ export const IndexPageTemplate = ({
         animationName="enter-from-right"
         style={{ margin: '20px auto' }}
       >
-        <CTAButton href="https://us02web.zoom.us/webinar/register/6916219135348/WN_f6SCDosmSvOk5ent3_wBEQ">
+        <CTAButton href="https://www.youtube.com/watch?v=bQHVDyw2UZ8">
           See how OpenFin and AdapTable transform the desktop experience
           together
         </CTAButton>
